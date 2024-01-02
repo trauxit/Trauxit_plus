@@ -8,6 +8,7 @@ import white from '../assets/images/Group 2608550.svg'
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import lang from '../assets/images/Vector.svg'
 const Nav = () => {
     const [show, setShow] = useState(false);
 
@@ -33,6 +34,14 @@ const Nav = () => {
                                 <input className={`${styles.inputBox}`} id="inputBox" type="text" placeholder="Search...." />
                             </div>
                             <div className={`${styles.notification__body}`}>
+                                <img alt='' src={white} className={`${styles.white2}`} />
+                                <div className={`${styles.lang}`}>
+                                    <span>En</span>
+                                    <img alt='' src={lang} />
+                                </div>
+                            </div>
+                            <div className={`${styles.notification__body}`}>
+                                <img alt='' src={white} className={`${styles.white2}`} />
                                 <img alt='' src={notification} className={styles.noti} />
                             </div>
                             <img alt='' src={msg} className={`${styles.msg}`} />
