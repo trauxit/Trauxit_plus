@@ -1,4 +1,4 @@
-@media (min-width:768px) {
+
     .sidebar {
         background-color: #EEEEEC;
         transition: all .5s ease-in-out;
@@ -262,9 +262,29 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         color: #FF8201;
         font-family: 'AlegreyaSansSC-Regular' !important;
     }
-}
+
 @media (min-width:0px) and (max-width:600px) {
     .sidebar{
         display: none !important;
     }
+}
+@media (min-width:600px) and (max-width:900px) {
+.sidebar {
+        display: none !important;
+    }
+}
+@media (min-width:900px) and (max-width:1200px) {
+    .sidebar{
+        margin-left: 15px !important;
+        width: 100% !important;
+    }
+ul{
+    margin-left: 0px;
+}
+.active::before{
+    left: 37%;
+}
+.active::after{
+    left: 37%;
+}
 }

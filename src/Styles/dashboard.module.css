@@ -122,6 +122,7 @@ width: 56px;
     top: 35px
 }
 
+
 .book__title {
     color: #585B5C;
     font-size: 18px;
@@ -362,4 +363,16 @@ width: 56px;
     .footer__link {
         font-size: 10px;
     }
+}
+@media (min-width:600px) and (max-width:900px) {
+.home {
+        display: flex;
+        flex-direction: column;
+    }
+        .book__title{
+            font-size: 10px;
+        }
+        .book__para{
+            font-size: 12px;
+        }
 }

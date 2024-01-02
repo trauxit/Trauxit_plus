@@ -177,3 +177,19 @@ font-size: 40px !important;
     padding-top: 0px;
 }
 }
+@media (min-width:600px) and (max-width:900px) {
+    .inputBox_container{
+        width: 100%;
+    }
+        .items {
+            display: flex;
+            padding-right: 10px;
+        }
+    .responsive{
+        display: block;
+    }
+        .menu__icon {
+            font-size: 55px !important;
+            padding-top: 15px;
+        }
+}

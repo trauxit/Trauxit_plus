@@ -27,6 +27,10 @@ font-family: 'Alegreya Sans SC', sans-serif;
   font-family: 'AlegreyaSans-Regular';
   src: url(/src/assets/font/Alegreya_Sans/AlegreyaSans-Regular.ttf);
 }
+@font-face {
+  font-family: 'AlegreyaSans-Bold';
+  src: url(/src/assets/font/Alegreya_Sans/AlegreyaSans-Bold.ttf);
+}
 .form-select{
   width: 120px !important;
   height: 50px !important;
