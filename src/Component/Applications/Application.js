@@ -17,9 +17,9 @@ const Application = () => {
                             <p className={`${styles.list__para}`}>Table shows some details about Booking Information</p>
                             <div>
                                 <p className={`${active === 'all' ? styles.app__active : styles.app__para}`} onClick={() => setActive('all')}>All</p>
-                                <p className={`${active === 'pend' ? styles.app__active : styles.app__para}`} onClick={() => setActive('all')}>Pending</p>
-                                <p className={`${active === 'hold' ? styles.app__active : styles.app__para}`} onClick={() => setActive('all')}>On-Hold</p>
-                                <p className={`${active === 'short' ? styles.app__active : styles.app__para}`} onClick={() => setActive('all')}>Shortlisted</p>
+                                <p className={`${active === 'pend' ? styles.app__active : styles.app__para}`} onClick={() => setActive('pend')}>Pending</p>
+                                <p className={`${active === 'hold' ? styles.app__active : styles.app__para}`} onClick={() => setActive('hold')}>On-Hold</p>
+                                <p className={`${active === 'short' ? styles.app__active : styles.app__para}`} onClick={() => setActive('short')}>Shortlisted</p>
                             </div>
                         </div>
                     </div>

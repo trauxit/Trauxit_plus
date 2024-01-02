@@ -11,6 +11,8 @@ import right2 from '../../assets/images/fluent-mdl2_completed-solid.svg'
 import ChartComp from './ChartInsight'
 import TableInsight from './TableDash'
 import Appglobal from '../../Global/Appglobal'
+import { Link } from 'react-router-dom'
+
 const Insight = () => {
     const [active, setActive] = useState('posted')
     const [job, setJob] = useState('post')
@@ -84,9 +86,13 @@ const Insight = () => {
                                 </div>
                                 <TableInsight />
                             </div>
-
                         </Col>
                     </Row>
+                    <div className={`${styles.footer}`}>
+                        <Link className={`${styles.footer__link}`}>news & Updates</Link>
+                        <Link className={`${styles.footer__link}`}>Terms and Conditions</Link>
+                        <Link className={`${styles.footer__link}`}>Legal & Support</Link>
+                    </div>
                 </div>
             </section>
         </>

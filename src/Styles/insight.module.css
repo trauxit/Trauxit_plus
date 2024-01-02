@@ -493,3 +493,28 @@ font-family: 'AlegreyaSans-Regular';
 background-color: var(--second-color, #EEEEEC) !important;
     padding: 10px;
 }
+/*-----------------------------------*/
+.footer {
+    background-color: #EEEEEC;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    color: var(--Black-Shades-100, #72777A);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'AlegreyaSans-Regular' !important;
+    text-decoration-line: underline;
+}
