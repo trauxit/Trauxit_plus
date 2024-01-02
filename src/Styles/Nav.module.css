@@ -107,42 +107,35 @@
 .none {
     display: none;
 }
-/* 
-@media (min-width:0) and (max-width:600px) {
-    .side {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        background-color: #e7e5e5;
-        width: 100%;
-        padding-left: 0px;
-        z-index: 1000;
-        font-family: 'Ubuntu Arabic' !important;
-        height: 60px;
-        display: flex;
-        column-gap: 20px !important;
-        padding-left: 10px;
-        text-align: center;
-    }
-
+.responsive{
+    display: none;
 }
-
-@media (min-width:600px) and (max-width:900px) {
-    .icon {
-        display: none !important;
-    }
-
-    .wrapper {
-        justify-content: left;
-    }
-
-    .items {
-        padding-left: 50px;
-    }
+@media (min-width:0px) and (max-width:600px) {
+.inputBox_container {
+display: none;
 }
-
-@media (min-width:900px) {
-    .icon {
-        display: none !important;
-    }
-} */
+.logo__body{
+    padding-left: 10px;
+}
+.notification__body{
+    padding: 3px 5px;
+}
+.noti{
+    width: 25px;
+}
+.msg,
+.white{
+    width: 40px;
+}
+.items{
+    display: flex;
+}
+.responsive{
+    display: block;
+    cursor: pointer;
+}
+.menu__icon{
+font-size: 40px !important;
+    padding-top: 0px;
+}
+}

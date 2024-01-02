@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../Styles/Nav.module.css'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/APP.png'
 import notification from '../assets/images/notification.svg'
 import msg from '../assets/images/Group 2608549.svg'
 import white from '../assets/images/Group 2608550.svg'
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 const Nav = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
         <>
             <div className={`${styles.navbar}`}>
@@ -26,10 +33,22 @@ const Nav = () => {
                                 <input className={`${styles.inputBox}`} id="inputBox" type="text" placeholder="Search...." />
                             </div>
                             <div className={`${styles.notification__body}`}>
-                                <img alt='' src={notification} />
+                                <img alt='' src={notification} className={styles.noti} />
                             </div>
                             <img alt='' src={msg} className={`${styles.msg}`} />
                             <img alt='' src={white} className={`${styles.white}`} />
+                        </div>
+                        <div className={`${styles.responsive}`}>
+                            <MenuOpenIcon onClick={handleShow} className={`${styles.menu__icon}`} />
+                            <Offcanvas show={show} onHide={handleClose} placement='end'>
+                                <Offcanvas.Header closeButton>
+                                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                                </Offcanvas.Header>
+                                <Offcanvas.Body>
+                                    Some text as placeholder. In real life you can have the elements you
+                                    have chosen. Like, text, images, lists, etc.
+                                </Offcanvas.Body>
+                            </Offcanvas>
                         </div>
                     </div>
                 </div>

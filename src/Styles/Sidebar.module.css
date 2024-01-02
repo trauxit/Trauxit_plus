@@ -263,3 +263,8 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         font-family: 'AlegreyaSansSC-Regular' !important;
     }
 }
+@media (min-width:0px) and (max-width:600px) {
+    .sidebar{
+        display: none !important;
+    }
+}
