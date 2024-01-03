@@ -93,25 +93,177 @@ font-family: 'AlegreyaSans-Bold';
 }
 
 .upload__para {
-    border-radius: 16px !important;
-    background: linear-gradient(180deg, #055618 0%, rgba(11, 90, 30, 0.60) 100%) !important;
-    -webkit-border-radius: 16px !important;
-    -moz-border-radius: 16px !important;
-    -ms-border-radius: 16px !important;
-    -o-border-radius: 16px !important;
-    width: 192px;
-    height: 35px;
-    padding: 20px 64px 37px;
+border-radius: 4px;
+    background: var(--main-color, #FF8201);
+width: 118px;
+    height: 37px;
+    padding: 8px;
     color: #fff;
-    font-family: 'pptelegraf-regular' !important;
+font-family: 'AlegreyaSans-Regular';
     position: absolute;
-    top: 35px;
-    left: 85.2%;
+    top: 12px;
+    left: 55%;
 }
 
 .img {
     width: 150px;
     height: 150px;
+}
+.im{
+    margin-bottom: 70px;
+}
+.lift__para {
+    border: 1px solid var(--black, #1C1A19);
+    background-color: var(--second-color, #EEEEEC);
+    color: var(--black, #1C1A19);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'AlegreyaSans-Bold';
+}
+.lift__para p{
+    padding: 25px;
+    padding-bottom: 10px;
+}
+.lift__para hr{
+    background-color: #1C1A19;
+    border: 1px solid #1C1A19 !important;
+    opacity: 1;
+}
+.skills__para{
+color: var(--black, #1C1A19);
+opacity: 0.4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'AlegreyaSans-Regular';
+}
+/*-------------------------------------*/
+.allpay{
+    display: flex;
+    align-items: center;
+    column-gap: 10%;
+    cursor: pointer;
+}
+.activepay,
+.pay{
+    background-color: #FF8201;
+    padding: 30px 35px 30px 36px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    color: #fff;
+        font-family: 'AlegreyaSans-Regular';
+        width: 427px;
+            height: 172px;
+}
+.pay{
+    background-color: #EEEEEC;
+    color: #000;
+}
+.ico{
+    width: 100px;
+}
+.activepay .active__icon{
+    fill:#fff
+}
+.pay .active__icon{
+    fill:#1C1A19
+}
+.pay__title{
+    font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+.pay__para{
+    font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+}
+.activepay div,
+.fixed{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.svg{
+    position: relative;
+}
+.svg__icon{
+    position: absolute;
+    top:12px;
+    left:0px;
+        width: 100px;
+}
+.usd{
+    display: flex;
+    border-radius: 8px;
+        border: 1px solid var(--subtitle-color, #979C9E);
+display: flex;
+    width: 100px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    }
+.usd p{
+    padding-top: 13px;
+    color: var(--black, #1C1A19);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+                font-family: 'AlegreyaSans-Regular';
+}
+.hour{
+    display: flex;
+        width: 885px;
+        height: 44px;
+        padding: 0px 15px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 210px;
+        border-radius: 8px;
+            border: 1px solid var(--subtitle-color, #979C9E);
+}
+.hour p{
+padding-top: 13px;
+    color: var(--black, #1C1A19);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    font-family: 'AlegreyaSans-Regular';
+}
+.create__price{
+display: flex;
+    align-items: center;
+    gap: 23px;
+margin-bottom: 30px;
+}
+.create__submit{
+    display: flex;
+        width: 416px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+            background-color: var(--main-color, #FF8201);
 }
 .footer {
     background-color: #EEEEEC;

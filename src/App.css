@@ -64,3 +64,14 @@ font-family: 'AlegreyaSans-Regular';
 .second__step textarea.form-control{
     margin-bottom: 0;
 }
+.imagecontact .form-control {
+    background-color: #EEEEEC !important;
+    width: 1000px;
+}
+.imagecontact .form-control::placeholder {
+color: var(--black, #1C1A19);
+font-family: 'AlegreyaSans-Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;}

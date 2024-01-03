@@ -5,6 +5,8 @@ import styles from '../../Styles/create.module.css'
 import { Link } from 'react-router-dom'
 import FirstCreate from './FirstCreate';
 import SecondCreate from './SecondCreate';
+import ThirdCreate from './ThirdCreate';
+import FourthCreate from './FourthCreate';
 const Create = () => {
     const steps = [
         { title: '' },
@@ -17,8 +19,8 @@ const Create = () => {
         switch (activeStep) {
             case 0: return <FirstCreate />;
             case 1: return <SecondCreate />;
-            case 2: return;
-            case 3: return;
+            case 2: return <ThirdCreate />;
+            case 3: return <FourthCreate />;
             default: return null;
         }
     }
@@ -29,14 +31,14 @@ const Create = () => {
                 <div className={`${styles.homeContainer}`}>
                     <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
                     {getSectionComponent()}
-                    {activeStep !== steps.length + 1
+                    {activeStep !== steps.length + 1 && activeStep !== steps.length - 1
                         && <Link className={styles.press__btn} onClick={() => setActiveStep(activeStep - 1)}>Press Enter</Link>
                     }
                     {activeStep !== steps.length - 1
                         && <Link className={styles.log__btn} onClick={() => setActiveStep(activeStep + 1)}>Next</Link>
                     }
                     {activeStep == steps.length - 1
-                        && <Link className={styles.log__btn}>Submit</Link>
+                        && <Link className={styles.create__submit}>Yes, post my project</Link>
                     }
                     <div className={`${styles.footer}`}>
                         <Link className={`${styles.footer__link}`}>news & Updates</Link>
