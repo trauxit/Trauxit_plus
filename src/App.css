@@ -78,3 +78,6 @@ font-family: 'AlegreyaSans-Regular';
     .mantine-yxmaw9{
         display: none !important;
     }
+        .progress-bar{
+            background-color: #FF8201 !important;
+        }

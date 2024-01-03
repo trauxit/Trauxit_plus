@@ -9,6 +9,7 @@ import Application from './Component/Applications/Application';
 import Create from './Component/Create/Create';
 import Footer from './Layout/Footer';
 import Shipment from './Component/Shipment/Shipment';
+import Wallet from './Component/Wallet/Wallet';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/applications" element={<Application />} />
           <Route path="/create" element={<Create />} />
           <Route path="/shipments" element={<Shipment />} />
+          <Route path="/wallet" element={<Wallet />} />
+
         </Routes>
       </BrowserRouter>
     </div>

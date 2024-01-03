@@ -1,0 +1,65 @@
+.home {
+    display: flex;
+    border-radius: 20px;
+}
+
+.homeContainer {
+    flex: 6;
+    font-family: 'AlegreyaSansSC-Regular';
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.new__title {
+    color: #474747;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.new__para {
+    color: #979C9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+.wallet__chart{
+    border-radius: 8px;
+        border: 1px solid var(--second-color, #EEEEEC);
+        background-color: #EEEEEC;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.wchart{
+background-color: #fff !important;
+}
+.chartcol{
+        padding-right: 0 !important;
+}
+.chart__body{
+    padding: 100px;
+}
+.chart__title{
+    color: var(--main-color, #FF8201);
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+            font-family: 'AlegreyaSans-Regular';
+}
+.chart__para{
+    color: var(--black, #1C1A19);
+    font-family: 'AlegreyaSans-Bold';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+}
+.chart__prog{
+    background-color: rgba(255, 130, 1, 0.20);
+}

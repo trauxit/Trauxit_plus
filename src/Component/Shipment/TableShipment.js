@@ -120,8 +120,8 @@ const TableShipment = () => {
                         Cell: ({ renderedCellValue, row, cell }) => (
                             <>
                                 <div>
-                                    <button onClick={() => handleview(row.original.id)}>
-                                        <p className={`${view === row.original.id ? styles.view__active : styles.view__dis}`}>View</p>
+                                    <button onClick={() => handleview(row.original.id)} className={`${view === row.original.id ? styles.view__active : styles.view__dis}`}>
+                                        <p >View</p>
                                     </button>
                                 </div>
                             </>
