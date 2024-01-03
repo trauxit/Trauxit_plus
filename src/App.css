@@ -1,0 +1,66 @@
+.css-h5odmr-MuiButtonBase-root-MuiCheckbox-root{
+    display: none !important;
+}
+.css-8k4lth {
+    position: absolute !important;
+    top: 900px !important;
+    left: 80% !important;
+    background-color: #EEEEEC !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+.css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+    background-color: #FF8201 !important;
+    color: #fff !important;
+}
+.css-1yhpg23-MuiTableCell-root{
+    border-bottom: none !important;
+    font-family: 'AlegreyaSans-Regular' !important;
+}
+.css-1ndpvdd-MuiTableCell-root {
+    background-color: #EEEEEC !important;
+    border-bottom: none !important;
+font-family: 'AlegreyaSans-Regular' !important;
+    color: var(--title-page) !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+}
+
+.css-1ndpvdd-MuiTableCell-root:nth-child(1) {
+    border-radius: 10px 0px 0px 0px !important;
+    -webkit-border-radius: 10px 0px 0px 0px !important;
+    -moz-border-radius: 10px 0px 0px 0px !important;
+    -ms-border-radius: 10px 0px 0px 0px !important;
+    -o-border-radius: 10px 0px 0px 0px !important;
+}
+
+.css-1ndpvdd-MuiTableCell-root:last-child {
+    border-radius: 0px 10px 0px 0px !important;
+    -webkit-border-radius: 0px 10px 0px 0px !important;
+    -moz-border-radius: 0px 10px 0px 0px !important;
+    -ms-border-radius: 0px 10px 0px 0px !important;
+    -o-border-radius: 0px 10px 0px 0px !important;
+}
+.css-exd1zr{
+    display: none !important;
+}
+textarea.form-control {
+    background-color: #F8F8F7 !important;
+    margin-bottom: 70px;
+}
+textarea.form-control::placeholder {
+color: var(--black, #a19e9d);
+font-family: 'AlegreyaSans-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.second__step textarea.form-control{
+    margin-bottom: 0;
+}

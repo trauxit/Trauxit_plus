@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Sidebar from '../../Layout/Sidebar'
 import styles from '../../Styles/insight.module.css'
-
 import bag from '../../assets/images/fluent-mdl2_add-work.svg'
 import { Col, Row } from 'react-bootstrap'
 import logo from '../../assets/images/APP.png'

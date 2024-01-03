@@ -6,6 +6,8 @@ import Dashboard from './Component/Dashboard/Dashboard';
 import Nav from './Layout/Nav';
 import Insight from './Component/Insight/Insight';
 import Application from './Component/Applications/Application';
+import Create from './Component/Create/Create';
+import Footer from './Layout/Footer';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/insights" element={<Insight />} />
           <Route path="/applications" element={<Application />} />
+          <Route path="/create" element={<Create />} />
         </Routes>
       </BrowserRouter>
     </div>
