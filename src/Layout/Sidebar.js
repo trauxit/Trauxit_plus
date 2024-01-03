@@ -45,8 +45,8 @@ const Sidebar = (props) => {
                                 <span className={`${styles.span}`}>Financial Insights </span>
                             </li>
                         </Link>
-                        <Link to="/financial" style={{ textDecoration: "none" }}>
-                            <li className={` ${active === 'financial' ? styles.active : styles.li}`}>
+                        <Link to="/shipments" style={{ textDecoration: "none" }}>
+                            <li className={` ${active === 'shipments' ? styles.active : styles.li}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                     <g clip-path="url(#clip0_18_495)">
                                         <path d="M11 0.785713V7.07143M0.785706 7.07143H21.2143V19.6429C21.2143 20.0596 21.0487 20.4593 20.754 20.754C20.4593 21.0487 20.0596 21.2143 19.6428 21.2143H2.35713C1.94037 21.2143 1.54067 21.0487 1.24597 20.754C0.951266 20.4593 0.785706 20.0596 0.785706 19.6429V7.07143Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
