@@ -33,6 +33,7 @@
         border: 1px solid var(--second-color, #EEEEEC);
         background-color: #EEEEEC;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+        margin-left: 8px !important;
 }
 .wchart{
 background-color: #fff !important;
@@ -61,5 +62,156 @@ background-color: #fff !important;
         margin-bottom: 20px;
 }
 .chart__prog{
-    background-color: rgba(255, 130, 1, 0.20);
+    background-color: rgba(255, 130, 1, 0.20) !important;
+}
+.verified{
+    border-radius: 8px;
+        border: 1px solid rgba(151, 156, 158, 0.25);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+height: 365px;
+}
+.verified__body{
+
+        padding: 15px 24px;
+}
+.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.user__body{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.user__body p{
+    padding-top: 15px;
+    color: var(--black, #1C1A19);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+                    font-family: 'AlegreyaSans-Regular';
+}
+.balance{
+    text-align: center;
+    padding-top: 70px;
+}
+.balance p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: var(--black, #1C1A19);
+                    font-family: 'AlegreyaSans-Regular';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.balance h3{
+    color: var(--black, #1C1A19);
+    font-family: 'AlegreyaSans-Bold';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+.btns{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btns button{
+        display: flex;
+        padding:5px 30px !important;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        border: 1px solid #FF8201;
+        border-radius:4px;
+        background-color: #FF8201;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        -ms-border-radius:4px;
+        -o-border-radius:4px;
+}
+.btns button svg{
+    width: 10px;
+    height: 10px;
+}
+.btns span{
+    color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: 'AlegreyaSans-Regular';
+}
+.invoice{
+    border-radius: 8px;
+        border: 1px solid rgba(151, 156, 158, 0.25);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+        margin-top: 30px;
+        padding: 15px 25px;
+}
+.invoice__body{
+    background-color: var(--222222, #F8F8F7);
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.invoice__user{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.invoice__user h2{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: var(--black, #1C1A19);
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+                font-family: 'AlegreyaSans-Regular';
+}
+.invoice__user p{
+    color: var(--subtitle-color, #979C9E);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+                        font-family: 'AlegreyaSans-Regular';
+}
+.price{
+color: var(--black, #1C1A19);
+font-family: 'AlegreyaSans-Regular';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.pend__title{
+    color: var(--black, #1C1A19);
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+                                font-family: 'AlegreyaSans-Regular';
+}
+.pend__para{
+    color: #979C9E;
+                                font-family: 'AlegreyaSans-Regular';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 }
