@@ -11,6 +11,7 @@ import Footer from './Layout/Footer';
 import Shipment from './Component/Shipment/Shipment';
 import Wallet from './Component/Wallet/Wallet';
 import Msg from './Component/Mssg/Msg';
+import Plus from './Component/HeaderContent/Plus';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/shipments" element={<Shipment />} />
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/message" element={<Msg />} />
+          <Route path="/plus" element={<Plus />} />
 
         </Routes>
       </BrowserRouter>

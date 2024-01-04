@@ -17,6 +17,7 @@ const Wallet = () => {
                 <Sidebar active='wallet' />
                 <div className={`${styles.homeContainer}`}>
                     <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
+
                     <Row>
                         <Col xxl='8'>
                             <Row className={`${styles.wallet__chart}`}>

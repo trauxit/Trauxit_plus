@@ -13,7 +13,7 @@ const Header = (props) => {
                     </div>
                     <div className={`${styles.items}`}>
                         <div className={`${styles.item} ${styles.side}`}>
-                            <Link to='' className={`${styles.item__link} ${active === 'plus' ? styles.active : styles.not}`}>Dashboard +Plus</Link>
+                            <Link to='/plus' className={`${styles.item__link} ${active === 'plus' ? styles.active : styles.not}`}>Dashboard +Plus</Link>
                             <Link to='' className={`${styles.item__link} ${active === 'lists' ? styles.active : styles.not}`}>Lists</Link>
                             <Link to='' className={`${styles.item__link} ${active === 'task' ? styles.active : styles.not}`} >Task lists</Link>
                             <Link to='' className={`${styles.item__link} ${active === 'project' ? styles.active : styles.not}`}>My Projects</Link>
