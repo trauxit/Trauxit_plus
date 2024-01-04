@@ -7,6 +7,7 @@ import FirstCreate from './FirstCreate';
 import SecondCreate from './SecondCreate';
 import ThirdCreate from './ThirdCreate';
 import FourthCreate from './FourthCreate';
+import Header from '../../Layout/Header';
 const Create = () => {
     const steps = [
         { title: '' },
@@ -26,6 +27,7 @@ const Create = () => {
     }
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='create' />
                 <div className={`${styles.homeContainer}`}>

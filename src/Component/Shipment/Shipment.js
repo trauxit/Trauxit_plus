@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import Sidebar from '../../Layout/Sidebar'
 import styles from '../../Styles/shipment.module.css'
 import TableShipment from './TableShipment'
+import Header from '../../Layout/Header'
 const Shipment = () => {
     const [active, setActive] = useState('all')
 
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='shipments' />
                 <div className={`${styles.homeContainer}`}>

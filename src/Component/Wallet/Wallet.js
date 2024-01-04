@@ -8,10 +8,11 @@ import user from '../../assets/images/APP.png'
 import verified from '../../assets/images/material-symbols_verified.svg'
 import view from '../../assets/images/Rectangle 3463660.png'
 import Accordion from 'react-bootstrap/Accordion';
-
+import Header from '../../Layout/Header'
 const Wallet = () => {
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='wallet' />
                 <div className={`${styles.homeContainer}`}>

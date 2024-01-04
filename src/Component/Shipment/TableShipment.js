@@ -120,7 +120,7 @@ const TableShipment = () => {
                         Cell: ({ renderedCellValue, row, cell }) => (
                             <>
                                 <div>
-                                    <button onClick={() => handleview(row.original.id)} className={`${view === row.original.id ? styles.view__active : styles.view__dis}`}>
+                                    <button onClick={() => handleview(row.original.id)} className={`${view === row.original.id ? 'view__active' : styles.view__dis}`}>
                                         <p >View</p>
                                     </button>
                                 </div>
@@ -132,7 +132,9 @@ const TableShipment = () => {
         ],
         [],
     );
-
+    const CustomExpandIcon = ({ isExpanded }) => (
+        <span>{isExpanded ? '-' : '+'}</span>
+    );
     const table = useMantineReactTable({
         columns,
         data, //must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
@@ -152,9 +154,10 @@ const TableShipment = () => {
         mantineSearchTextInputProps: {
             placeholder: 'Search Employees',
         },
+
+        positionExpandColumn: 'last',
         renderDetailPanel: ({ row }) => (
             <>
-                <p>jjkjk</p>
                 <Box
                     sx={{
                         display: 'flex',
@@ -164,7 +167,7 @@ const TableShipment = () => {
                         padding: '16px',
                     }}
                 >
-                    <p>jj</p>j
+                    <Text>View Details</Text> {/* Change the expand icon to text */}
                     <Box sx={{ textAlign: 'center' }}>
                         <Title>Signature Catch Phrase:</Title>
                         <Text>&quot;{row.original.signatureCatchPhrase}&quot;</Text>

@@ -7,11 +7,7 @@
 font-family: 'AlegreyaSans-Regular';
     border-bottom: 1px solid #f7f7f767;
     background-color: #1C1A19;
-    border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
-    -ms-border-radius: 10px 10px 0 0;
-    -o-border-radius: 10px 10px 0 0;
+
 }
 
 .wrapper {

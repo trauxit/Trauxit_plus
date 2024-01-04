@@ -12,10 +12,12 @@ import mute from '../../assets/images/mingcute_notification-off-line.svg'
 import action from '../../assets/images/charm_menu-kebab.svg'
 import logo from '../../assets/images/APP.png'
 import Form from 'react-bootstrap/Form';
+import Header from '../../Layout/Header'
 
 const Msg = () => {
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='message' />
                 <div className={`${styles.homeContainer}`}>

@@ -11,9 +11,11 @@ import price from '../../assets/images/healthicons_money-bag.svg'
 import bag from '../../assets/images/fluent-mdl2_add-work.svg'
 import TableDash from './Table'
 import { Link } from 'react-router-dom'
+import Header from '../../Layout/Header'
 const Dashboard = () => {
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='dashboard' />
                 <div className={`${styles.homeContainer}`}>

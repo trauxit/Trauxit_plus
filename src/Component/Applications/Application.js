@@ -4,11 +4,12 @@ import styles from '../../Styles/application.module.css'
 import Appglobal from '../../Global/Appglobal'
 import TableApp from './TableApp'
 import { Link } from 'react-router-dom'
-
+import Header from '../../Layout/Header'
 const Application = () => {
     const [active, setActive] = useState('all')
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='applications' />
                 <div className={`${styles.homeContainer}`}>

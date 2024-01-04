@@ -11,12 +11,13 @@ import ChartComp from './ChartInsight'
 import TableInsight from './TableDash'
 import Appglobal from '../../Global/Appglobal'
 import { Link } from 'react-router-dom'
-
+import Header from '../../Layout/Header'
 const Insight = () => {
     const [active, setActive] = useState('posted')
     const [job, setJob] = useState('post')
     return (
         <>
+            <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='insights' />
                 <div className={`${styles.homeContainer}`}>
