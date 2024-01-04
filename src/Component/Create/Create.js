@@ -42,11 +42,7 @@ const Create = () => {
                     {activeStep == steps.length - 1
                         && <Link className={styles.create__submit}>Yes, post my project</Link>
                     }
-                    <div className={`${styles.footer}`}>
-                        <Link className={`${styles.footer__link}`}>news & Updates</Link>
-                        <Link className={`${styles.footer__link}`}>Terms and Conditions</Link>
-                        <Link className={`${styles.footer__link}`}>Legal & Support</Link>
-                    </div>
+
                 </div>
             </section>
         </>
