@@ -10,6 +10,7 @@ import Create from './Component/Create/Create';
 import Footer from './Layout/Footer';
 import Shipment from './Component/Shipment/Shipment';
 import Wallet from './Component/Wallet/Wallet';
+import Msg from './Component/Mssg/Msg';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/create" element={<Create />} />
           <Route path="/shipments" element={<Shipment />} />
           <Route path="/wallet" element={<Wallet />} />
+          <Route path="/message" element={<Msg />} />
 
         </Routes>
       </BrowserRouter>

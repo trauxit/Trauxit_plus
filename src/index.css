@@ -65,3 +65,16 @@ outline: none !important;
 .accordion-body{
   background-color: rgba(151, 156, 158, 0.40) !important;
 }
+.form__send textarea.form-control {
+  background-color: #fff !important;
+margin: 40px 22px 10px 22px;
+width: 94%;
+}
+.form__send textarea.form-control::placeholder {
+padding-top: 5px;
+color: var(--subtitle-color, #979C9E);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

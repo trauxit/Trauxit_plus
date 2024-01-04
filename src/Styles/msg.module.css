@@ -1,0 +1,287 @@
+.home {
+    display: flex;
+    border-radius: 20px;
+}
+
+.homeContainer {
+    flex: 6;
+    font-family: 'AlegreyaSansSC-Regular';
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.new__title {
+    color: #474747;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 5px;
+    margin-bottom: 50px;
+}
+
+.new__para {
+    color: #979C9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+.msg__side{
+    border-radius: 8px;
+        background-color: var(--second-color, #EEEEEC);
+        padding: 32px 13px;
+        width: 400px;
+}
+.inputBox_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 370px;
+    height: 50px;
+border-radius: 8px;
+    background-color: var(--222222, #F8F8F7);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.06);    border-radius: 0.8em;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.search_icon {
+    height: 1em;
+    padding: 0 0.5em 0 0.8em;
+    fill: #333;
+}
+
+.inputBox {
+    background-color: transparent;
+    color: #777;
+    outline: none;
+    width: 100%;
+    border: 0;
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: var(--color-place);
+}
+.pin__msg{
+    color: var(--black, #1C1A19);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        opacity: 0.5;
+        font-family: 'AlegreyaSans-Bold';
+        padding: 24px 22px 10px;
+}
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.user__chat{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding:  0 22px;
+}
+.user__chat img{
+    width: 70px;
+}
+.user__chat h3{
+    color: var(--black, #1C1A19);
+opacity: 0.5;
+    font-family: 'AlegreyaSans-Bold';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+}
+.user__chat p{
+    color: var(--black, #1C1A19);
+font-family: 'AlegreyaSans-Regular';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.name p{
+    color: var(--black, #1C1A19);
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-family: 'AlegreyaSans-Regular';
+        padding-bottom: 0;
+        margin-bottom: 0;
+}
+.num{
+    position: relative;
+    text-align: right;
+}
+.num img{
+    width: 15px;
+}
+.num p{
+    position: absolute;
+    color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+                font-family: 'AlegreyaSans-Regular';
+                top: 6px;
+                left: 26px;
+}
+/*--------------------------------*/
+.msg__content{
+    border-radius: 8px;
+        background: var(--second-color, #EEEEEC);
+        padding: 10px;
+        padding-bottom: 70px;
+        
+
+}
+.online{
+    position: relative;
+}
+.online__img{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50px;
+    left: 29px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1C1A19;
+    padding-bottom: 10px;
+    margin-bottom:50px ;
+}
+.action__body img{
+margin-right: 10px;
+}
+.received{
+    margin-bottom: 10px;
+}
+.received__body{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 0px 22px;
+}
+.received__body p{
+    border-radius: 0px 40px 40px 0px;
+        background-color: #FFF;
+        padding: 10px 25px 10px 15px;
+        color: var(--black, #1C1A19);
+font-family: 'AlegreyaSans-Regular';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+}
+.seen{
+    text-align: right;
+    padding-right: 50px;
+}
+.seen span{
+    color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-family: 'AlegreyaSans-Regular';
+}
+.send{
+    margin-top: 30px;
+    padding-right: 25px;
+}
+.send__body {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 0px 22px;
+    justify-content: right;
+}
+.send__body img{
+    width: 46px;
+        height: 46px;
+}
+.send__body p {
+    border-radius: 40px 0px 0px 40px;
+    background-color: #FFF;
+    padding: 10px 25px 10px 15px;
+    color: var(--black, #1C1A19);
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    -webkit-border-radius: 40px 0px 0px 40px;
+    -moz-border-radius: 40px 0px 0px 40px;
+    -ms-border-radius: 40px 0px 0px 40px;
+    -o-border-radius: 40px 0px 0px 40px;
+}
+.icons{
+    margin-left: 22px;
+}
+.icons svg{
+    margin-right: 10px;
+    width: 16px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    column-gap: 30px;
+    padding-right: 27px;
+    margin-top: 30px;
+}
+.cancel__btn{
+border-radius: 8px;
+    border: 1px solid var(--main-color, #FF8201);
+    background-color: #FFF;
+    display: flex;
+        width: 123px;
+        height: 38px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        color: var(--main-color, #FF8201);
+            text-align: center;
+font-family: 'AlegreyaSans-Bold';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+}
+.send__btn{
+    border-radius: 8px;
+        background-color: var(--main-color, #FF8201);
+        display: flex;
+            width: 123px;
+            height: 38px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+                    color: #fff;
+                        text-align: center;
+                        font-family: 'AlegreyaSans-Bold';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        border: 1px solid #FF8201;
+                    
+}
