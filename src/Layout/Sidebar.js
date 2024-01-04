@@ -77,14 +77,7 @@ const Sidebar = (props) => {
                                 <span className={`${styles.span}`}>Shipments </span>
                             </li>
                         </Link>
-                        <Link to="/financial" style={{ textDecoration: "none" }}>
-                            <li className={` ${active === 'financial' ? styles.active : styles.li}`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M19.618 21.25H4.38202M12 16.962V2.75M12 16.962L6.14352 11.1055M12 16.962L17.8565 11.1055" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <span className={`${styles.span}`}>Loads </span>
-                            </li>
-                        </Link>
+
                         <Link to="/create" style={{ textDecoration: "none" }}>
                             <li className={` ${active === 'create' ? styles.active : styles.li}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -94,7 +87,7 @@ const Sidebar = (props) => {
                                 <span className={`${styles.span}`}>Create a new Job </span>
                             </li>
                         </Link>
-                        <Link to="/financial" style={{ textDecoration: "none" }}>
+                        <Link to="" style={{ textDecoration: "none" }}>
                             <li className={` ${active === 'financial' ? styles.active : styles.li}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M3 21V3H12V5H5V19H12V21H3ZM16 17L14.625 15.55L17.175 13H9V11H17.175L14.625 8.45L16 7L21 12L16 17Z" fill="black" />
@@ -102,7 +95,7 @@ const Sidebar = (props) => {
                                 <span className={`${styles.span}`}>Log Out</span>
                             </li>
                         </Link>
-                        <Link to="/financial" style={{ textDecoration: "none" }}>
+                        <Link to="/" style={{ textDecoration: "none" }}>
                             <li className={` ${styles.li2}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                     <g clip-path="url(#clip0_114_1034)">
