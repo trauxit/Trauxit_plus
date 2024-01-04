@@ -12,6 +12,7 @@ const Plus = () => {
                 <div className={`${styles.homeContainer}`}>
                     <h3 className={`${styles.plus__title}`}>DashBoard - Plus</h3>
                     <p className={`${styles.plus__para}`}>Table shows some details about Projects information</p>
+
                     <div className={`${styles.logo__body}`}>
                         <div className={`${styles.project__para}`}>
                             <img alt='' src={logo} />
