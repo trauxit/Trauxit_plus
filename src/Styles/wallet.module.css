@@ -34,6 +34,7 @@
         background-color: #EEEEEC;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
         margin-left: 8px !important;
+        width: 98%;
 }
 .wchart{
 background-color: #fff !important;
@@ -42,7 +43,7 @@ background-color: #fff !important;
         padding-right: 0 !important;
 }
 .chart__body{
-    padding: 100px;
+    padding: 90px;
 }
 .chart__title{
     color: var(--main-color, #FF8201);
@@ -214,4 +215,81 @@ font-family: 'AlegreyaSans-Regular';
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+}
+.accordion{
+    border-radius: 8px;
+        border: 1px solid rgba(151, 156, 158, 0.25);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+        padding: 15px;
+        margin-left: 8px !important;
+        margin-top:20px ;
+}
+.date__body{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: flex-end !important;
+
+}
+.acc__user{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.acc__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    column-gap: 50px;
+}
+.acc__body p{
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    color: var(--black, #1C1A19);
+                                font-family: 'AlegreyaSans-Regular';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.pending{
+    border-radius: 8px;
+        background-color: #FDD78C;
+        padding: 5px 20px 5px;
+}
+.acc__details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.acc__details h2{
+    color: #575555;
+        font-family: 'AlegreyaSans-Regular';
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+.acc__details p{
+    color: #575555;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.277px;
+        font-family: 'AlegreyaSans-Regular';
+}
+.hint{
+    border-radius: 0px 0px 16px 0px;
+        background-color: var(--second-color, #EEEEEC);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+}
+.hint__span {
+    width: 100px !important;
+    padding-top: 10px;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }

@@ -42,3 +42,26 @@ outline: none !important;
 .css-1ex1afd-MuiTableCell-root{
   border-bottom: none !important;
 }
+.accordion-item{
+  margin-bottom: 20px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important;
+}
+.accordion-item:not(:first-of-type){
+  border-top:1px solid #F8F8F7 !important ;
+}
+.accordion-item .accordion-button{
+  border-radius: 4px !important;
+    background-color: var(--222222, #F8F8F7) !important;
+}
+.accordion-item:focus{
+  box-shadow: none !important;
+}
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+.accordion-body{
+  background-color: rgba(151, 156, 158, 0.40) !important;
+}
