@@ -14,6 +14,7 @@ const List = () => {
                 <div className={`${styles.homeContainer}`}>
                     <h3 className={`${styles.plus__title}`}>Lists</h3>
                     <p className={`${styles.plus__para}`}>Table shows some details about Projects information</p>
+
                     <Row>
                         <Col xxl='3'>
                             <div className={`${styles.list}`}>

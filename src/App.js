@@ -13,6 +13,7 @@ import Wallet from './Component/Wallet/Wallet';
 import Msg from './Component/Mssg/Msg';
 import Plus from './Component/HeaderContent/Plus';
 import List from './Component/HeaderContent/List';
+import Project from './Component/HeaderContent/Project';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/message" element={<Msg />} />
           <Route path="/plus" element={<Plus />} />
           <Route path="/lists" element={<List />} />
+          <Route path="/project" element={<Project />} />
 
         </Routes>
       </BrowserRouter>

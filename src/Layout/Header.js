@@ -16,7 +16,7 @@ const Header = (props) => {
                             <Link to='/plus' className={`${styles.item__link} ${active === 'plus' ? styles.active : styles.not}`}>Dashboard +Plus</Link>
                             <Link to='/lists' className={`${styles.item__link} ${active === 'lists' ? styles.active : styles.not}`}>Lists</Link>
                             <Link to='' className={`${styles.item__link} ${active === 'task' ? styles.active : styles.not}`} >Task lists</Link>
-                            <Link to='' className={`${styles.item__link} ${active === 'project' ? styles.active : styles.not}`}>My Projects</Link>
+                            <Link to='/project' className={`${styles.item__link} ${active === 'project' ? styles.active : styles.not}`}>My Projects</Link>
                             <Link to='' className={`${styles.item__link} ${active === 'feed' ? styles.active : styles.not}`}>Feedback</Link>
 
                         </div>

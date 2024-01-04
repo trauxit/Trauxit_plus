@@ -38,6 +38,12 @@ font-family: 'Alegreya Sans SC', sans-serif;
 .form-select:focus{
   box-shadow: none !important;
 outline: none !important;
+
+}
+.select-project .form-select{
+  width: 70px !important;
+    height: 40px !important;
+    background-color: var(--second-color, #EEEEEC) !important;
 }
 .css-1ex1afd-MuiTableCell-root{
   border-bottom: none !important;
