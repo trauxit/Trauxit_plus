@@ -93,3 +93,25 @@ color: var(--subtitle-color, #979C9E);
     transition: all 100ms ease-in-out;
     width: 600px;
 }
+/************************************/
+.mantine-kq5u63{
+  display: none !important;
+}
+.mantine-a5v3r0[data-with-border]{
+  border: none !important;
+  box-shadow: none !important;
+}
+.mantine-augnbd>thead>tr>th{
+  border-bottom: none !important;
+}
+.mantine-augnbd>tbody>tr>td{
+  border-top: none !important;
+}
+.mantine-1qybf08:nth-child(2){
+  background-color: #EEEEEC !important;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}

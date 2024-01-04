@@ -18,6 +18,7 @@ export const data = [
         address: '555 Cedar Street',
         city: 'Seattle',
         state: 'Washington',
+        status: "pending"
     },
     {
         id: '2',
@@ -28,6 +29,7 @@ export const data = [
         address: '987 Walnut Court',
         city: 'New York',
         state: 'New York',
+        status: "pending"
     },
     {
         id: '3',
@@ -38,6 +40,7 @@ export const data = [
         address: '654 Maple Avenue',
         city: 'Los Angeles',
         state: 'California',
+        status: "pending"
     },
     {
         id: '4',
@@ -48,6 +51,7 @@ export const data = [
         address: '261 Battle Ford',
         city: 'Columbus',
         state: 'Ohio',
+        status: "pending"
     },
     {
         id: '5',
@@ -58,6 +62,7 @@ export const data = [
         address: '566 Brakus Inlet',
         city: 'Westerville',
         state: 'West Virginia',
+        status: "pending"
     },
     {
         id: '6',
@@ -68,6 +73,7 @@ export const data = [
         address: '7777 Kuhic Knoll',
         city: 'South Linda',
         state: 'West Virginia',
+        status: "pending"
     },
     {
         id: '7',
@@ -78,6 +84,7 @@ export const data = [
         address: '722 Emie Stream',
         city: 'Huntington',
         state: 'Washington',
+        status: "pending"
     },
     {
         id: '8',
@@ -88,6 +95,7 @@ export const data = [
         address: '1 Kuhic Knoll',
         city: 'Ohiowa',
         state: 'Nebraska',
+        status: "pending"
     },
 
 ];
@@ -107,26 +115,48 @@ const TableShipment = () => {
                 id: 'employee', //id used to define `group` column
                 columns: [
                     {
-                        accessorKey: 'email', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        accessorKey: 'id', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
-                        header: 'Email',
-                        size: 300,
+                        header: 'ID',
+                        size: 100,
                     },
                     {
-                        accessorKey: 'id',
-                        header: `View`,
-                        columnDefType: 'display',
-                        enableColumnOrdering: 1,
-                        Cell: ({ renderedCellValue, row, cell }) => (
-                            <>
-                                <div>
-                                    <button onClick={() => handleview(row.original.id)} className={`${view === row.original.id ? 'view__active' : styles.view__dis}`}>
-                                        <p >View</p>
-                                    </button>
-                                </div>
-                            </>
-                        ),
+                        accessorKey: 'address', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        enableClickToCopy: true,
+                        header: ' Date Applied',
+                        size: 200,
                     },
+                    {
+                        accessorKey: 'name.firstName', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        enableClickToCopy: true,
+                        header: 'Pick up ',
+                        size: 200,
+                    },
+                    {
+                        accessorKey: 'name.lastName', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        enableClickToCopy: true,
+                        header: 'Drop Off',
+                        size: 200,
+                    },
+                    {
+                        accessorKey: 'city', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        enableClickToCopy: true,
+                        header: 'Distance',
+                        size: 200,
+                    },
+                    {
+                        accessorKey: 'state', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        enableClickToCopy: true,
+                        header: 'Price $',
+                        size: 200,
+                    },
+                    {
+                        accessorKey: 'status', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
+                        enableClickToCopy: true,
+                        header: 'Status',
+                        size: 200,
+                    },
+
                 ],
             },
         ],
