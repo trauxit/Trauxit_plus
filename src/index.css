@@ -115,3 +115,48 @@ color: var(--subtitle-color, #979C9E);
   -ms-border-radius: 10px !important;
   -o-border-radius: 10px !important;
 }
+.shipment_first__Myu7y div .form-control{
+width: 400px !important;
+color: var(--subtitle-color, #979C9E) !important;
+    font-family: 'AlegreyaSans-Regular' !important;
+  font-size: 17px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.shipment_first__Myu7y div label,
+.shipment_second__CNIXc div label {
+color: var(--black, #1C1A19) !important;
+    font-family: 'AlegreyaSans-Bold' !important;
+      font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 500;
+  line-height: normal !important;
+}
+.input-group-text{
+background-color: var(--subtitle-color, #979C9E) !important;
+color:  #fff !important;
+}
+.shipment_second__CNIXc div .form-control{
+  width: 418px !important;
+    color: var(--subtitle-color, #979C9E) !important;
+    font-family: 'AlegreyaSans-Regular' !important;
+    font-size: 17px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+.shipment_second__CNIXc div .form-control:focus,
+.shipment_first__Myu7y div .form-control:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+.form-control::placeholder{
+  color: var(--subtitle-color, #979C9E);
+    font-family: 'AlegreyaSans-Regular' !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

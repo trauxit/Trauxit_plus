@@ -13,6 +13,7 @@ const Shipment = () => {
                 <Sidebar active='shipments' />
                 <div className={`${styles.homeContainer}`}>
                     <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
+
                     <div className='mt-5'>
                         <p className={`${styles.list__title}`}>Shipments list</p>
                         <div className={`${styles.list__body}`}>

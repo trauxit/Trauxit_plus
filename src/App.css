@@ -1,6 +1,7 @@
-.css-h5odmr-MuiButtonBase-root-MuiCheckbox-root{
+.css-h5odmr-MuiButtonBase-root-MuiCheckbox-root {
     display: none !important;
 }
+
 .css-8k4lth {
     position: absolute !important;
     top: 970px !important;
@@ -12,18 +13,21 @@
     -ms-border-radius: 10px !important;
     -o-border-radius: 10px !important;
 }
-.css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+
+.css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
     background-color: #FF8201 !important;
     color: #fff !important;
 }
-.css-1yhpg23-MuiTableCell-root{
+
+.css-1yhpg23-MuiTableCell-root {
     border-bottom: none !important;
     font-family: 'AlegreyaSans-Regular' !important;
 }
+
 .css-1ndpvdd-MuiTableCell-root {
     background-color: #EEEEEC !important;
     border-bottom: none !important;
-font-family: 'AlegreyaSans-Regular' !important;
+    font-family: 'AlegreyaSans-Regular' !important;
     color: var(--title-page) !important;
     font-size: 16px !important;
     font-style: normal !important;
@@ -46,38 +50,57 @@ font-family: 'AlegreyaSans-Regular' !important;
     -ms-border-radius: 0px 10px 0px 0px !important;
     -o-border-radius: 0px 10px 0px 0px !important;
 }
-.css-exd1zr{
+
+.css-exd1zr {
     display: none !important;
 }
+
 textarea.form-control {
     background-color: #F8F8F7 !important;
     margin-bottom: 70px;
 }
+
 textarea.form-control::placeholder {
-color: var(--black, #a19e9d);
-font-family: 'AlegreyaSans-Regular';
+    color: var(--black, #a19e9d);
+    font-family: 'AlegreyaSans-Regular';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.second__step textarea.form-control{
+
+.second__step textarea.form-control {
     margin-bottom: 0;
 }
+
 .imagecontact .form-control {
     background-color: #EEEEEC !important;
     width: 1000px;
 }
+
 .imagecontact .form-control::placeholder {
-color: var(--black, #1C1A19);
-font-family: 'AlegreyaSans-Regular';
+    color: var(--black, #1C1A19);
+    font-family: 'AlegreyaSans-Regular';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;}
-    .mantine-yxmaw9{
-        display: none !important;
-    }
-        .progress-bar{
-            background-color: #FF8201 !important;
-        }
+    line-height: normal;
+}
+
+.mantine-yxmaw9 {
+    display: none !important;
+}
+
+.progress-bar {
+    background-color: #FF8201 !important;
+}
+
+.mantine-1bauqbv {
+    display: none !important;
+}
+.mantine-15m2thz[data-active]{
+    background-color: #FF8201 !important;
+}
+.mantine-augnbd[data-hover]>tbody>tr{
+    background-color: transparent !important;
+}

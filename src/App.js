@@ -14,7 +14,8 @@ import Msg from './Component/Mssg/Msg';
 import Plus from './Component/HeaderContent/Plus';
 import List from './Component/HeaderContent/List';
 import Project from './Component/HeaderContent/Project';
-
+import ShipmentDetails from './Component/Shipment/ShipmentDetails';
+import CreateShipment from './Component/Shipment/Create'
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,8 @@ function App() {
           <Route path="/plus" element={<Plus />} />
           <Route path="/lists" element={<List />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/shipment-details/:id" element={<ShipmentDetails />} />
+          <Route path="/create-shipment" element={<CreateShipment />} />
 
         </Routes>
         <Footer />
