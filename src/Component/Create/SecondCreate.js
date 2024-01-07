@@ -35,7 +35,10 @@ const SecondCreate = () => {
             <h3 className={`${styles.tell__title}`}>Tell us what you need done</h3>
             <p className={`${styles.tell__para}`}>Create Job for our  Workers to apply and review bids - please take your time writing your job post for better results </p>
             <h3 className={`${styles.ti__title}`}>TiTLE</h3>
-            <p className={`${styles.need__para}`}>Need ForkLift for Ras Gharib Concession </p>
+            <Form.Group controlId="need" className={`${styles.need__para} mb-3 mt-4`}>
+                <Form.Control className={`${styles.need__input}`} placeholder='Need ForkLift for Ras Gharib Concession' name="need"
+                />
+            </Form.Group>
             <h3 className={`${styles.ti__title}`}>Project Description</h3>
             <div className='second__step'>
                 <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.textareaship} mb-3 mt-4`}>

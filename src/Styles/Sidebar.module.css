@@ -14,7 +14,9 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
     }
-
+body[dir='rtl'] .sidebar{
+    margin-right: 40px;
+}
     .sidebar:hover .span {
         transition: all .5s ease-in-out;
     }
@@ -113,7 +115,23 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         background-position: center;
         background-repeat: no-repeat;
     }
-
+        body[dir='rtl'] .li:hover {
+width: 300px;
+    margin: 5px 20px 0px 0px !important;
+        }
+    
+        body[dir='rtl'] .li:hover::after {
+            right: 35%;
+                background-image: url('../assets/images/inrev.png');
+                top: -45px;
+    
+        }
+    
+        body[dir='rtl'] .li:hover::before {
+        right: 33%;
+            background-image: url('../assets/images/onrev.png');
+            top: 26px;
+        }
     .active {
         display: flex;
         align-items: center !important;
@@ -164,10 +182,21 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         background-position: center;
         background-repeat: no-repeat;
     }
-
-    body[dir="rtl"] .active {
-        flex-direction: row-reverse;
+    body[dir='rtl'] .active{
+        width: 300px;
+                margin: 5px 20px 0px 0px !important;
     }
+body[dir='rtl'] .active::after{
+    right: 35%;
+    background-image: url('../assets/images/inrev.png');
+    top: -45px;
+
+}
+body[dir='rtl'] .active::before{
+    right: 33%;
+    background-image: url('../assets/images/onrev.png');
+    top:26px;
+}
 
     .active .span,
     .active .icon {
@@ -179,8 +208,9 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         font-size: 23px;
     }
 
-    body[dir="rtl"] .icon {
+    body[dir="rtl"] .span {
         margin-right: 5px;
+        
     }
 
     .span {
@@ -262,6 +292,10 @@ font-family: 'AlegreyaSansSC-Regular' !important;
         color: #FF8201;
         font-family: 'AlegreyaSansSC-Regular' !important;
     }
+         body[dir="rtl"] .contactus {
+        padding-right: 10px;
+    
+         }
 
 @media (min-width:0px) and (max-width:600px) {
     .sidebar{

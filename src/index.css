@@ -160,3 +160,15 @@ color:  #fff !important;
     font-weight: 500;
     line-height: normal;
 }
+.create_need__para__oUS3q textarea.form-control{
+  margin-bottom: 0 !important;
+  background-color: transparent !important;
+}
+.create_need__para__oUS3q textarea.form-control::placeholder{
+color: var(--black, #1C1A19) !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+  font-family: 'AlegreyaSans-Bold' !important;
+}
