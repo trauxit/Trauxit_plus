@@ -45,7 +45,9 @@ const Nav = () => {
                                 <img alt='' src={notification} className={styles.noti} />
                             </div>
                             <img alt='' src={msg} className={`${styles.msg}`} />
-                            <img alt='' src={white} className={`${styles.white}`} />
+                            <Link to='/user'>
+                                <img alt='' src={white} className={`${styles.white}`} />
+                            </Link>
                         </div>
                         <div className={`${styles.responsive}`}>
                             <MenuOpenIcon onClick={handleShow} className={`${styles.menu__icon}`} />
