@@ -37,7 +37,9 @@ const Application = () => {
                             </div>
                         </div>
                     </div>
-                    <TableApp />
+                    <div className={`${styles.t}`}>
+                        <TableApp />
+                    </div>
 
                 </div>
             </section>
