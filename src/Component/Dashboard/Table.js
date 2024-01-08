@@ -8,18 +8,22 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import styles from '../../Styles/dashboard.module.css'
 import StarIcon from '@mui/icons-material/Star';
+import { useTranslation } from 'react-i18next';
+
 const TableDash = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <TableContainer component={Paper} className={`${styles.tabs}`}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead className={`${styles.tabcontrol}`}>
                         <TableRow>
-                            <TableCell className={`${styles.tabcontrol__title}`}>Client Name</TableCell>
-                            <TableCell className={`${styles.tabcontrol__title}`} > Date</TableCell>
-                            <TableCell className={`${styles.tabcontrol__title}`} >Cost / H</TableCell>
-                            <TableCell className={`${styles.tabcontrol__title}`} >Status</TableCell>
-                            <TableCell className={`${styles.tabcontrol__title}`} >Rating</TableCell>
+                            <TableCell className={`${styles.tabcontrol__title}`}>{t("Client Name")}</TableCell>
+                            <TableCell className={`${styles.tabcontrol__title}`} > {t("Date")}</TableCell>
+                            <TableCell className={`${styles.tabcontrol__title}`} >{t("Cost / H")}</TableCell>
+                            <TableCell className={`${styles.tabcontrol__title}`} >{t("Status")}</TableCell>
+                            <TableCell className={`${styles.tabcontrol__title}`} >{t("Rating")}</TableCell>
 
 
                         </TableRow>

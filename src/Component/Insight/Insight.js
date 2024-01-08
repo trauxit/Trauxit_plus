@@ -12,16 +12,20 @@ import TableInsight from './TableDash'
 import Appglobal from '../../Global/Appglobal'
 import { Link } from 'react-router-dom'
 import Header from '../../Layout/Header'
+import { useTranslation } from 'react-i18next';
+
 const Insight = () => {
     const [active, setActive] = useState('posted')
     const [job, setJob] = useState('post')
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='insights' />
                 <div className={`${styles.homeContainer}`}>
-                    <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
+                    <p className={`${styles.new__title}`}>{t("Recent News:")} <span className={`${styles.new__para}`}> {t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")}</span> </p>
                     <Appglobal />
                     <Row className='mt-5'>
                         <Col xxl='4'>
@@ -30,13 +34,13 @@ const Insight = () => {
                                     <img alt='' src={eliilogo} className={`${styles.ellilogo}`} />
                                     <img alt='' src={logo} className={`${styles.logo}`} />
                                 </div>
-                                <p className={`${styles.profile__para}`}>Profile Summary</p>
+                                <p className={`${styles.profile__para}`}>{t("Profile Summary")}</p>
                                 <ul>
                                     <li className={` ${active === 'posted' ? styles.active : styles.li}`} onClick={() => setActive('posted')}>
                                         <img alt='' src={bag} className={`${styles.job__img}`} />
                                         <div>
                                             <p className={`${styles.insight__para}`}>+10</p>
-                                            <span className={`${styles.span}`}>Jobs Posted</span>
+                                            <span className={`${styles.span}`}>{t("Jobs Posted")}</span>
                                         </div>
                                     </li>
                                     <li className={` ${active === 'active' ? styles.active : styles.li}`} onClick={() => setActive('active')}>
@@ -44,7 +48,7 @@ const Insight = () => {
 
                                         <div>
                                             <p className={`${styles.insight__para}`}>+10</p>
-                                            <span className={`${styles.span}`}>Actives Jobs</span>
+                                            <span className={`${styles.span}`}>{t("Active Jobs")}</span>
                                         </div>
                                     </li>
                                     <li className={` ${active === 'completed' ? styles.active : styles.li}`} onClick={() => setActive('completed')}>
@@ -52,7 +56,7 @@ const Insight = () => {
 
                                         <div>
                                             <p className={`${styles.insight__para}`}>+10</p>
-                                            <span className={`${styles.span}`}>Completed Jobs</span>
+                                            <span className={`${styles.span}`}>{t("Completed Jobs")}</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -60,12 +64,12 @@ const Insight = () => {
                         </Col>
                         <Col xxl='7'>
                             <div className={`${styles.summary__chart}`}>
-                                <h3 className={`${styles.summary__title}`}>Profile Summary</h3>
+                                <h3 className={`${styles.summary__title}`}>{t("Profile Summary")}</h3>
                                 <div className={`${styles.summary__body}`}>
-                                    <p className={`${job === 'post' ? styles.active__job : styles.job__para}`} onClick={() => setJob('post')}>Jobs Posted</p>
-                                    <p className={`${job === 'pend' ? styles.active__job : styles.job__para}`} onClick={() => setJob('pend')}>Pending</p>
-                                    <p className={`${job === 'approve' ? styles.active__job : styles.job__para}`} onClick={() => setJob('approve')}>Approved</p>
-                                    <p className={`${job === 'reject' ? styles.active__job : styles.job__para}`} onClick={() => setJob('reject')}>Rejected</p>
+                                    <p className={`${job === 'post' ? styles.active__job : styles.job__para}`} onClick={() => setJob('post')}> {t("Jobs Posted")}</p>
+                                    <p className={`${job === 'pend' ? styles.active__job : styles.job__para}`} onClick={() => setJob('pend')}>{t("Pending")}</p>
+                                    <p className={`${job === 'approve' ? styles.active__job : styles.job__para}`} onClick={() => setJob('approve')}>{t("Approved")}</p>
+                                    <p className={`${job === 'reject' ? styles.active__job : styles.job__para}`} onClick={() => setJob('reject')}>{t("Rejected")}</p>
                                 </div>
                             </div>
                             <div className={`${styles.chart}`}>
@@ -74,8 +78,8 @@ const Insight = () => {
                             <div className={`${styles.table}`}>
                                 <div className={`${styles.table__body}`}>
                                     <div>
-                                        <h3 className={`${styles.active__title}`}>Recent Activites</h3>
-                                        <p className={`${styles.active__para}`}>Table shows some details about Booking Information</p>
+                                        <h3 className={`${styles.active__title}`}>{t("Recent Activities")}</h3>
+                                        <p className={`${styles.active__para}`}>{t("Table shows some details about Booking Information")}</p>
                                     </div>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Weekly</option>

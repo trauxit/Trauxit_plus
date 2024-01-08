@@ -18,6 +18,7 @@ import {
     TableRow,
     Typography,
 } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 export const data = [
     {
@@ -236,38 +237,50 @@ export const data = [
         city: 'Denver',
         state: 'Colorado',
     },
+    {
+        name: {
+            firstName: 'Sarah',
+            lastName: 'Wilson',
+        },
+        address: '321 Pine Road',
+        city: 'Denver',
+        state: 'Colorado',
+    },
 ];
 
-const columns = [
-    {
-        accessorKey: 'name.firstName',
-        header: 'First Name',
-    },
-    {
-        accessorKey: 'name.lastName',
-        header: 'Last Name',
-    },
-    {
-        accessorKey: 'address',
-        header: 'Address',
-    },
-    {
-        accessorKey: 'city',
-        header: 'City',
-    },
-    {
-        accessorKey: 'state',
-        header: 'State',
-    },
-];
+
 const TableApp = () => {
+    const { t, i18n } = useTranslation();
+
+    const columns = [
+        {
+            accessorKey: 'name.firstName',
+            header: `${t("ID")}`,
+        },
+        {
+            accessorKey: 'name.lastName',
+            header: `${t("Date Applied")}`,
+        },
+        {
+            accessorKey: 'address',
+            header: `${t("Applicant Name")}`,
+        },
+        {
+            accessorKey: 'city',
+            header: `${t("Company Name")}`,
+        },
+        {
+            accessorKey: 'state',
+            header: `${t("Position")}`,
+        },
+    ];
     const table = useMaterialReactTable({
         columns,
         data, //must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
         //MRT display columns can still work, optionally override cell renders with `displayColumnDefOptions`
 /*         enableRowSelection: true,
  */        initialState: {
-            pagination: { pageSize: 7, pageIndex: 0 },
+            pagination: { pageSize: 6, pageIndex: 0 },
             showGlobalFilter: true,
             showColumnFilters: true
         },

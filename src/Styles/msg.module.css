@@ -21,6 +21,9 @@
     padding-left: 5px;
     margin-bottom: 50px;
 }
+body[dir='rtl'] .new__title{
+    text-align: right;
+}
 
 .new__para {
     color: #979C9E;
@@ -77,6 +80,9 @@ border-radius: 8px;
         font-family: 'AlegreyaSans-Bold';
         padding: 24px 22px 10px;
 }
+body[dir='rtl'] .pin__msg {
+    text-align: right;
+}
 .chat{
     display: flex;
     align-items: center;
@@ -102,6 +108,9 @@ opacity: 0.5;
         font-weight: 800;
         line-height: normal;
 }
+body[dir='rtl'] .user__chat h3 {
+    text-align: right;
+}
 .user__chat p{
     color: var(--black, #1C1A19);
 font-family: 'AlegreyaSans-Regular';
@@ -109,6 +118,9 @@ font-family: 'AlegreyaSans-Regular';
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+}
+body[dir='rtl'] .user__chat p {
+    text-align: right;
 }
 .name p{
     color: var(--black, #1C1A19);
@@ -190,9 +202,19 @@ font-family: 'AlegreyaSans-Regular';
             line-height: normal;
             margin-bottom: 0;
 }
+body[dir='rtl'] .received__body p{
+    border-radius: 40px 0 0 40px;
+    -webkit-border-radius: 40px 0 0 40px;
+    -moz-border-radius: 40px 0 0 40px;
+    -ms-border-radius: 40px 0 0 40px;
+    -o-border-radius: 40px 0 0 40px;
+}
 .seen{
     text-align: right;
     padding-right: 50px;
+}
+body[dir='rtl'] .seen{
+    text-align: left;
 }
 .seen span{
     color: #000;
@@ -206,12 +228,18 @@ font-family: 'AlegreyaSans-Regular';
     margin-top: 30px;
     padding-right: 25px;
 }
+body[dir='rtl'] .send{
+    direction: rtl;
+}
 .send__body {
     display: flex;
     align-items: center;
     column-gap: 15px;
     padding: 0px 22px;
     justify-content: right;
+}
+body[dir='rtl'] .send__body {
+justify-content: left !important;
 }
 .send__body img{
     width: 46px;
@@ -232,6 +260,13 @@ font-family: 'AlegreyaSans-Regular';
     -moz-border-radius: 40px 0px 0px 40px;
     -ms-border-radius: 40px 0px 0px 40px;
     -o-border-radius: 40px 0px 0px 40px;
+}
+body[dir='rtl'] .send__body p {
+    border-radius: 0px 40px 40px 0px;
+    -webkit-border-radius: 0px 40px 40px 0px;
+    -moz-border-radius: 0px 40px 40px 0px;
+    -ms-border-radius: 0px 40px 40px 0px;
+    -o-border-radius: 0px 40px 40px 0px;
 }
 .icons{
     margin-left: 22px;

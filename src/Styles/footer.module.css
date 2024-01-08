@@ -24,3 +24,7 @@
     font-family: 'AlegreyaSans-Regular' !important;
     text-decoration-line: underline;
 }
+body[dir='rtl'] .footer{
+    margin-right: 18% !important;
+    margin-left: 40px !important;
+}

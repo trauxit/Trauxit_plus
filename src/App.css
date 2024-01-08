@@ -13,7 +13,14 @@
     -ms-border-radius: 10px !important;
     -o-border-radius: 10px !important;
 }
-
+body[dir='rtl'] .css-8k4lth{
+    right: 20%;
+    left: 0% !important;
+    width: fit-content !important;
+    margin-bottom: 15% !important;
+    top:900px !important;
+    height: fit-content;
+}
 .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
     background-color: #FF8201 !important;
     color: #fff !important;
@@ -103,4 +110,11 @@ textarea.form-control::placeholder {
 }
 .mantine-augnbd[data-hover]>tbody>tr{
     background-color: transparent !important;
+}
+body[dir='rtl'] .accordion-button::after{
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+body[dir='rtl'] .mantine-2kfh7k{
+    text-align: right !important;
 }

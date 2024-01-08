@@ -26,6 +26,10 @@
     font-weight: 400;
     line-height: 25px;
 }
+body[dir='rtl'] .new__title {
+    text-align: right;
+    padding-right: 5px;
+}
 .booked {
     display: flex;
     align-items: center;
@@ -163,6 +167,25 @@
      background-position: center;
      background-repeat: no-repeat;
  }
+ body[dir='rtl'] .li {
+     margin: 35px 20px 0px 0px !important;
+ }
+         body[dir='rtl'] .li:hover {
+             margin: 35px 20px 0px 0px !important;
+         }
+    
+         body[dir='rtl'] .li:hover::after {
+             right: 45%;
+             background-image: url('../assets/images/inrev.png');
+             top: -45px;
+    
+         }
+    
+         body[dir='rtl'] .li:hover::before {
+             right: 45%;
+             background-image: url('../assets/images/onrev.png');
+             top: 26px;
+         }
  .active {
      display: flex;
      align-items: center !important;
@@ -214,6 +237,22 @@
      background-position: center;
      background-repeat: no-repeat;
  }
+        body[dir='rtl'] .active { 
+            margin: 35px 20px 0px 0px !important;
+        }
+    
+        body[dir='rtl'] .active::after {
+            right: 45%;
+            background-image: url('../assets/images/inrev.png');
+            top: -45px;
+    
+        }
+    
+        body[dir='rtl'] .active::before {
+            right: 45%;
+            background-image: url('../assets/images/onrev.png');
+            top: 26px;
+        }
  .span {
 
      color: #000 !important;
@@ -233,7 +272,9 @@
         font-weight: 400;
         line-height: 23px;
                     font-family: 'AlegreyaSans-Regular';
-
+ }
+ body[dir='rtl'] .span{
+    margin-right: 10px;
  }
  .insight__jobs{
     background-color: #EEEEEC;
@@ -256,7 +297,10 @@
             line-height: 23px;
             font-family: 'AlegreyaSans-Regular';
  }
- 
+ body[dir='rtl'] .insight__para{
+    text-align: right;
+    padding-right: 10px;
+ }
  .logo__body{
     position: relative;
     text-align: center;
@@ -358,6 +402,9 @@ font-family: 'AlegreyaSans-Regular';
         font-weight: 700;
         line-height: normal;
 }
+body[dir='rtl'] .active__title{
+    text-align: right;
+}
 .active__para{
     color: var(--White-Shades-900, #979C9E);
 font-family: 'AlegreyaSans-Regular';
@@ -387,7 +434,9 @@ font-family: 'AlegreyaSans-Regular';
     text-transform: capitalize !important;
     font-family: 'AlegreyaSans-Regular' !important;
 }
-
+body[dir='rtl'] .tabcontrol__title{
+    text-align: right;
+}
 .tab__para p {
     margin-bottom: 0;
 }
@@ -492,6 +541,17 @@ font-family: 'AlegreyaSans-Regular';
 .headerinsight{
 background-color: var(--second-color, #EEEEEC) !important;
     padding: 10px;
+}
+body[dir='rtl'] .name {
+    text-align: right;
+}
+
+body[dir='rtl'] .tab__para1 {
+    text-align: right;
+}
+
+body[dir='rtl'] .tab__para {
+    text-align: right;
 }
 /*-----------------------------------*/
 .footer {

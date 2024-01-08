@@ -9,22 +9,26 @@ import verified from '../../assets/images/material-symbols_verified.svg'
 import view from '../../assets/images/Rectangle 3463660.png'
 import Accordion from 'react-bootstrap/Accordion';
 import Header from '../../Layout/Header'
+import { useTranslation } from 'react-i18next';
+
 const Wallet = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='wallet' />
                 <div className={`${styles.homeContainer}`}>
-                    <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
+                    <p className={`${styles.new__title}`}>{t("Recent News:")} <span className={`${styles.new__para}`}>{t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")}</span> </p>
 
                     <Row>
                         <Col xxl='8'>
                             <Row className={`${styles.wallet__chart}`}>
                                 <Col>
                                     <div className={`${styles.chart__body}`}>
-                                        <h3 className={`${styles.chart__title}`}>Main Balance</h3>
-                                        <h2 className={`${styles.chart__para}`}>$203,772.77</h2>
+                                        <h3 className={`${styles.chart__title}`}>{t("Main Balance")}</h3>
+                                        <h2 className={`${styles.chart__para}`}>{t("$203,772.77")}</h2>
                                         <ProgressBar now={60} className={`${styles.chart__prog}`} />
                                     </div>
                                 </Col>
@@ -34,12 +38,12 @@ const Wallet = () => {
                             </Row>
                             <div className={`${styles.accordion}`}>
                                 <div className={`${styles.date__body}`}>
-                                    <p>Monthly</p>
-                                    <p>Weekly</p>
-                                    <p>Today</p>
+                                    <p>{t("Monthly")}</p>
+                                    <p>{t("Weekly")}</p>
+                                    <p>{t("Today")}</p>
                                 </div>
-                                <h3 className={`${styles.acc__title}`}>Payment History</h3>
-                                <p className={`${styles.acc__para}`}>View your payment history here</p>
+                                <h3 className={`${styles.acc__title}`}>{t("Payment History")}</h3>
+                                <p className={`${styles.acc__para}`}>{t("View your payment history here")}</p>
                                 <Accordion>
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header >
@@ -226,12 +230,12 @@ const Wallet = () => {
                                     <div className={`${styles.user__body}`}>
                                         <img alt='' src={user} className={`${styles.user}`} />
                                         <img alt='' src={verified} />
-                                        <p>Verified user</p>
+                                        <p>{t("Verified user")}</p>
                                     </div>
                                 </div>
                                 <div className={`${styles.balance}`}>
-                                    <p>Wallet Balance</p>
-                                    <h3>$203,772.77</h3>
+                                    <p>{t("Wallet Balance")}</p>
+                                    <h3>{t("$203,772.77")}</h3>
                                     <div className={`${styles.btns}`}>
                                         <button>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
@@ -248,7 +252,7 @@ const Wallet = () => {
                                                     </clipPath>
                                                 </defs>
                                             </svg>
-                                            <span>Top Up</span>
+                                            <span>{t("Top Up")}</span>
                                         </button>
                                         <button>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -263,14 +267,14 @@ const Wallet = () => {
                                                     </clipPath>
                                                 </defs>
                                             </svg>
-                                            <span>Pay Invoice</span>
+                                            <span>{t("Pay Invoice")}</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div className={`${styles.invoice}`}>
-                                <h3 className={`${styles.pend__title}`}>Pending Invoices</h3>
-                                <p className={`${styles.pend__para}`}>View your pending invoices here</p>
+                                <h3 className={`${styles.pend__title}`}>{t("Pending Invoices")}</h3>
+                                <p className={`${styles.pend__para}`}>{t("View your pending invoices here")}</p>
                                 <div className={`${styles.invoice__body}`}>
                                     <div className={`${styles.invoice__user}`}>
                                         <img alt='' src={view} />

@@ -13,15 +13,18 @@ import action from '../../assets/images/charm_menu-kebab.svg'
 import logo from '../../assets/images/APP.png'
 import Form from 'react-bootstrap/Form';
 import Header from '../../Layout/Header'
+import { useTranslation } from 'react-i18next';
 
 const Msg = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='message' />
                 <div className={`${styles.homeContainer}`}>
-                    <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
+                    <p className={`${styles.new__title}`}>{t("Recent News:")} <span className={`${styles.new__para}`}> {t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")}</span> </p>
                     <Row>
                         <Col xxl='4'>
                             <div className={`${styles.msg__side}`}>
@@ -30,9 +33,9 @@ const Msg = () => {
                                         <path d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z" className={`${styles.ico}`}>
                                         </path>
                                     </svg>
-                                    <input className={`${styles.inputBox}`} id="inputBox" type="text" placeholder="Search...." />
+                                    <input className={`${styles.inputBox}`} id="inputBox" type="text" placeholder={t("Search....")} />
                                 </div>
-                                <h3 className={`${styles.pin__msg}`}>Pinned Messages</h3>
+                                <h3 className={`${styles.pin__msg}`}>{t("Pinned Messages")}</h3>
                                 <div className={`${styles.chat}`}>
                                     <div className={`${styles.user__chat}`}>
                                         <img alt='' src={user} className={`${styles.user}`} />
@@ -64,7 +67,7 @@ const Msg = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <h3 className={`${styles.pin__msg}`}>Recent Messages</h3>
+                                <h3 className={`${styles.pin__msg}`}>{t("Recent Messages")}</h3>
                                 <div className={`${styles.chat}`}>
                                     <div className={`${styles.user__chat}`}>
                                         <img alt='' src={user} className={`${styles.user}`} />
@@ -179,7 +182,7 @@ const Msg = () => {
                                 <div className="form__send">
                                     <Form>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                            <Form.Control as="textarea" rows={2} placeholder='Write your message here....' />
+                                            <Form.Control as="textarea" rows={2} placeholder={t("Write your message here....")} />
                                         </Form.Group>
                                     </Form>
                                 </div>
@@ -208,13 +211,13 @@ const Msg = () => {
                                 </div>
                                 <div className={`${styles.btns}`}>
                                     <button className={`${styles.cancel__btn}`}>
-                                        Cancel
+                                        {t("Cancel")}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                             <path d="M9.77051 8.97699C9.87618 9.08266 9.93554 9.22599 9.93554 9.37543C9.93554 9.52487 9.87618 9.66819 9.77051 9.77387C9.66483 9.87954 9.52151 9.9389 9.37207 9.9389C9.22263 9.93891 9.0793 9.87954 8.97363 9.77387L5.99754 6.79683L3.02051 9.77293C2.91483 9.8786 2.77151 9.93797 2.62207 9.93797C2.47263 9.93797 2.3293 9.8786 2.22363 9.77293C2.11796 9.66726 2.05859 9.52393 2.05859 9.37449C2.05859 9.22505 2.11796 9.08173 2.22363 8.97605L5.20066 5.99996L2.22457 3.02293C2.1189 2.91726 2.05953 2.77393 2.05953 2.62449C2.05953 2.47505 2.1189 2.33173 2.22457 2.22605C2.33024 2.12038 2.47356 2.06102 2.62301 2.06102C2.77245 2.06102 2.91577 2.12038 3.02144 2.22605L5.99754 5.20309L8.97457 2.22558C9.08024 2.11991 9.22356 2.06055 9.37301 2.06055C9.52245 2.06055 9.66577 2.11991 9.77144 2.22558C9.87712 2.33126 9.93648 2.47458 9.93648 2.62402C9.93648 2.77347 9.87712 2.91679 9.77144 3.02246L6.79441 5.99996L9.77051 8.97699Z" fill="#FF8201" />
                                         </svg>
                                     </button>
                                     <button className={`${styles.send__btn}`}>
-                                        Send
+                                        {t("Send")}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                             <g clip-path="url(#clip0_215_11739)">
                                                 <path d="M10.1173 2.84329C10.3333 2.24579 9.75428 1.66679 9.15678 1.88329L1.85428 4.52429C1.25478 4.74129 1.18228 5.55929 1.73378 5.87879L4.06478 7.22829L6.14628 5.14679C6.24058 5.05571 6.36688 5.00531 6.49798 5.00645C6.62908 5.00759 6.75448 5.06018 6.84719 5.15288C6.93989 5.24558 6.99247 5.37099 6.99361 5.50209C6.99475 5.63319 6.94436 5.75949 6.85328 5.85379L4.77178 7.93529L6.12178 10.2663C6.44078 10.8178 7.25878 10.7448 7.47578 10.1458L10.1173 2.84329Z" fill="white" />

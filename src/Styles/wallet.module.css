@@ -20,7 +20,9 @@
     line-height: 25px;
     padding-left: 5px;
 }
-
+body[dir='rtl'] .new__title{
+    text-align: right;
+}
 .new__para {
     color: #979C9E;
     font-size: 18px;
@@ -42,6 +44,9 @@ background-color: #fff !important;
 .chartcol{
         padding-right: 0 !important;
 }
+body[dir='rtl'] .chartcol {
+padding-left: 0 !important;
+}
 .chart__body{
     padding: 90px;
 }
@@ -53,6 +58,9 @@ background-color: #fff !important;
         line-height: normal;
             font-family: 'AlegreyaSans-Regular';
 }
+body[dir='rtl'] .chart__title {
+    text-align: right;
+}
 .chart__para{
     color: var(--black, #1C1A19);
     font-family: 'AlegreyaSans-Bold';
@@ -61,6 +69,9 @@ background-color: #fff !important;
         font-weight: 700;
         line-height: normal;
         margin-bottom: 20px;
+}
+body[dir='rtl'] .chart__para {
+    text-align: right;
 }
 .chart__prog{
     background-color: rgba(255, 130, 1, 0.20) !important;
@@ -229,7 +240,9 @@ font-family: 'AlegreyaSans-Regular';
     align-items: center;
     column-gap: 20px;
     justify-content: flex-end !important;
-
+}
+body[dir='rtl'] .date__body{
+justify-content: flex-start !important;
 }
 .acc__user{
     display: flex;
@@ -292,4 +305,16 @@ font-family: 'AlegreyaSans-Regular';
     padding-top: 10px;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+}
+body[dir='rtl'] .acc__title{
+text-align: right;
+}
+body[dir='rtl'] .acc__para {
+    text-align: right;
+}
+body[dir='rtl'] .pend__title {
+    text-align: right;
+}
+body[dir='rtl'] .pend__para {
+    text-align: right;
 }

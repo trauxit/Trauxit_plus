@@ -28,7 +28,10 @@
     font-weight: 400;
     line-height: 25px;
 }
-
+body[dir='rtl'] .new__title{
+    text-align: right;
+    padding-right: 5px;
+}
 /*--------------------------------*/
 .business__body {
     border-radius: 16px;
@@ -39,7 +42,9 @@
     height: 150px;
     padding-left: 40px;
 }
-
+body[dir='rtl'] .business__body{
+    padding-right: 20px;
+}
 .business__img {
     position: relative;
 }
@@ -64,6 +69,9 @@
     font-weight: 400;
     line-height: 25px;
 }
+body[dir='rtl'] .business__title{
+    text-align: right;
+}
 
 .business__para {
     color: #979C9E;
@@ -74,6 +82,29 @@
     font-family: 'AlegreyaSansSC-Regular';
 }
 
+.switch {
+    text-align: center;
+    position: relative;
+}
+
+.switch__link {
+    border-radius: 20px;
+    border: 1px solid var(--main-color, #FF8201);
+    background-color: #FF8201;
+    text-decoration: none;
+    padding: 15px 40px;
+    color: #FFF;
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+body[dir='rtl'] .switch{ 
+    display: flex;
+    flex-direction: row-reverse;
+
+}
 /*-----------------------------------------*/
 .booked {
     display: flex;
@@ -95,7 +126,9 @@
     margin-right: 20px;
     padding: 20px 0px 20px 30px;
 }
-
+body[dir='rtl'] .loads{
+    flex-direction: row-reverse;
+}
 .elli1 {
     height: 120px;
     position: relative;
@@ -168,7 +201,9 @@ width: 56px;
     font-weight: 700;
     line-height: normal;
 }
-
+body[dir='rtl'] .info__title{
+    text-align: right;
+}
 .info__para {
     color: var(--White-Shades-900, #979C9E);
     font-family: 'AlegreyaSansSC-Regular';
@@ -198,6 +233,9 @@ width: 56px;
     line-height: normal !important;
     text-transform: capitalize !important;
     font-family: 'AlegreyaSans-Regular' !important;
+}
+body[dir='rtl'] .tabcontrol__title{
+    text-align: right;
 }
 
 .tab__para p {
@@ -301,7 +339,15 @@ width: 56px;
     color: #FFEFCD !important;
     width: 12px;
 }
-
+body[dir='rtl'] .name{
+    text-align: right;
+}
+body[dir='rtl'] .tab__para1{
+    text-align: right;
+}
+body[dir='rtl'] .tab__para {
+    text-align: right;
+}
 /*-----------------------------------*/
 .footer {
     background-color: #EEEEEC;

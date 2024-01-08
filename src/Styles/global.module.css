@@ -21,6 +21,9 @@
     margin-right: 20px;
     padding: 20px 0px 20px 30px;
 }
+body[dir='rtl'] .loads {
+    flex-direction: row-reverse;
+}
 
 .elli1 {
     height: 120px;

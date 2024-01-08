@@ -20,6 +20,9 @@
     line-height: 25px;
     padding-left: 5px;
 }
+body[dir='rtl'] .new__title{
+    text-align: right;
+}
 
 .new__para {
     color: #979C9E;
@@ -35,6 +38,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+body[dir='rtl'] .list__title {
+    text-align: right;
 }
 
 .list__para {
@@ -95,6 +101,9 @@
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+body[dir='rtl'] .route{
+    text-align: right;
 }
 .row__details{
     background-color: #EEEEEC;
@@ -171,6 +180,9 @@ padding: 30px 20px;
 .shipment{
     margin-top: 10px;
 }
+body[dir='rtl'] .shipment {
+    text-align: right;
+}
 .shipment span{
     color: var(--black, #1C1A19);
     font-family: 'AlegreyaSans-Bold';
@@ -185,6 +197,12 @@ padding: 30px 20px;
     display: flex;
     align-items: center;
     column-gap: 20px;
+}
+body[dir='rtl'] .first {
+    text-align: right;
+}
+body[dir='rtl'] .second {
+    text-align: right;
 }
 .second{
     margin-bottom: 35px;

@@ -115,6 +115,9 @@ body[dir='rtl'] .sidebar{
         background-position: center;
         background-repeat: no-repeat;
     }
+    body[dir='rtl'] .li{
+        margin: 5px 20px 0px 0px !important;
+    }
         body[dir='rtl'] .li:hover {
 width: 300px;
     margin: 5px 20px 0px 0px !important;
@@ -131,6 +134,7 @@ width: 300px;
         right: 33%;
             background-image: url('../assets/images/onrev.png');
             top: 26px;
+            
         }
     .active {
         display: flex;
