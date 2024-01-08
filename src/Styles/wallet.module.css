@@ -253,7 +253,7 @@ justify-content: flex-start !important;
     display: flex;
     align-items: center;
     justify-content: space-between !important;
-    column-gap: 50px;
+    column-gap: 100px;
 }
 .acc__body p{
     padding-bottom: 0 !important;

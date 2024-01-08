@@ -223,8 +223,7 @@ body[dir='rtl'] .info__title{
 
 /*******************************/
 .tabcontrol {
-    background-color: rgba(217, 217, 217, 0.27);
-
+background-color: var(--second-color, #EEEEEC);
 }
 
 .tabs {
