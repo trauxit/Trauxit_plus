@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../../Layout/Sidebar'
 import Header from '../../Layout/Header'
 import styles from '../../Styles/plus.module.css'
 import logo from '../../assets/images/APP.png'
 import { Link } from 'react-router-dom'
+import Form from 'react-bootstrap/Form';
 const Plus = () => {
+    const [data, setData] = useState([]);
+    const [input1, setInput1] = useState('');
+    const [input2, setInput2] = useState('');
+    const [input3, setInput3] = useState('');
+    const [input4, setInput4] = useState('');
+
+    const handleAdd = () => {
+        const newData = {
+            input1,
+            input2,
+            input3,
+            input4
+        };
+        setData([...data, newData]);
+        setInput1('');
+        setInput2('');
+        setInput3('');
+        setInput4('');
+    };
+    const [active, setActive] = useState('')
     return (
         <>
             <Header active='plus' />
@@ -35,7 +56,47 @@ const Plus = () => {
                             <p>Invoices</p>
                         </div>
                     </div>
-                    <p className={`${styles.create__para}`}>Create Milestone Payment</p>
+                    <p className={`${styles.create__para}`} onClick={() => setActive("create")}>Create Milestone Payment</p>
+
+                    <div className={`${active === "create" ? styles.inputs : styles.none}`}>
+                        <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
+                            <Form.Control type="text"
+                                placeholder="Freelancer"
+                                className={`${styles.gruoinput}`}
+                                value={input1}
+                                onChange={(e) => setInput1(e.target.value)}
+                            />
+                        </Form.Group>
+                        <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
+                            <Form.Control type="text"
+                                placeholder="Project Name"
+                                className={`${styles.gruoinput}`}
+                                value={input2}
+                                onChange={(e) => setInput2(e.target.value)}
+                            />
+                        </Form.Group>
+                        <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
+                            <Form.Control type="number"
+                                placeholder="Amount"
+                                className={`${styles.gruoinput}`}
+                                value={input3}
+                                onChange={(e) => setInput3(e.target.value)}
+                            />
+                        </Form.Group>
+                        <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
+                            <Form.Control type="text"
+                                placeholder="Description"
+                                className={`${styles.gruoinput}`}
+                                value={input4}
+                                onChange={(e) => setInput4(e.target.value)}
+                            />
+                        </Form.Group>
+                        <button className={`${styles.add__btn}`}
+                            type="button"
+                            onClick={handleAdd}
+                        >Add to table</button>
+                    </div>
+
                     <div class="table-responsive mt-4">
                         <table class="table">
                             <thead >
@@ -73,6 +134,20 @@ const Plus = () => {
                                     <td className={`${styles.head__para}`}>Completed</td>
                                     <td className={`${styles.head__para}`}>View history</td>
                                 </tr>
+
+                                {
+                                    data.map((item, index) => (
+                                        <tr>
+                                            <td className={`${styles.head__para}`}>{item.input1}</td>
+                                            <td className={`${styles.head__para}`}>{item.input2}</td>
+                                            <td className={`${styles.head__para}`}>{item.input3}</td>
+                                            <td className={`${styles.head__para}`}>{item.input4}</td>
+                                            <td className={`${styles.head__para}`}>Pending</td>
+                                            <td className={`${styles.head__para}`}>View history</td>
+                                        </tr>
+                                    ))
+                                }
+
                             </tbody>
                         </table>
                     </div>
