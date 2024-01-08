@@ -41,6 +41,8 @@ body[dir='rtl'] .new__title{
     justify-content: space-between;
     height: 150px;
     padding-left: 40px;
+    padding-right: 60px;
+    margin-right: 20px;
 }
 body[dir='rtl'] .business__body{
     padding-right: 20px;
@@ -99,6 +101,11 @@ body[dir='rtl'] .business__title{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+.switch svg {
+    position: absolute;
+    left: 90%;
+    top: -12px;
 }
 body[dir='rtl'] .switch{ 
     display: flex;

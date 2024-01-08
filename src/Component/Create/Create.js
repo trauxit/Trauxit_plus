@@ -8,6 +8,7 @@ import SecondCreate from './SecondCreate';
 import ThirdCreate from './ThirdCreate';
 import FourthCreate from './FourthCreate';
 import Header from '../../Layout/Header';
+import { useTranslation } from 'react-i18next';
 const Create = () => {
     const steps = [
         { title: '' },
@@ -25,24 +26,26 @@ const Create = () => {
             default: return null;
         }
     }
+    const { t, i18n } = useTranslation();
     return (
         <>
             <Header />
             <section className={`${styles.home}`}>
                 <Sidebar active='create' />
                 <div className={`${styles.homeContainer}`}>
-                    <p className={`${styles.new__title}`}>Recent News: <span className={`${styles.new__para}`}> El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023</span> </p>
+                    <p className={`${styles.new__title}`}>{t("Recent News:")}  <span className={`${styles.new__para}`}> {t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")} </span> </p>
                     {getSectionComponent()}
-                    {activeStep !== steps.length + 1 && activeStep !== steps.length - 1
-                        && <Link className={styles.press__btn} onClick={() => setActiveStep(activeStep - 1)}>Press Enter</Link>
-                    }
-                    {activeStep !== steps.length - 1
-                        && <Link className={styles.log__btn} onClick={() => setActiveStep(activeStep + 1)}>Next</Link>
-                    }
-                    {activeStep == steps.length - 1
-                        && <Link className={styles.create__submit}>Yes, post my project</Link>
-                    }
-
+                    <div className={`${styles.steps__btn}`}>
+                        {activeStep !== steps.length + 1 && activeStep !== steps.length - 1
+                            && <Link className={styles.press__btn} onClick={() => setActiveStep(activeStep - 1)}>{t("Press Enter")}</Link>
+                        }
+                        {activeStep !== steps.length - 1
+                            && <Link className={styles.log__btn} onClick={() => setActiveStep(activeStep + 1)}>{t("Next")}</Link>
+                        }
+                        {activeStep == steps.length - 1
+                            && <Link className={styles.create__submit}>{t("Yes, post my project")}</Link>
+                        }
+                    </div>
                 </div>
             </section>
         </>

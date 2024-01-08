@@ -2,7 +2,11 @@ import React, { useRef, useState } from 'react'
 import styles from '../../Styles/create.module.css'
 import Form from 'react-bootstrap/Form';
 import img from '../../assets/images/fluent_attach-16-regular.svg'
+import { useTranslation } from 'react-i18next';
+
 const SecondCreate = () => {
+    const { t, i18n } = useTranslation();
+
     const [formData, setFormData] = useState({
         img: '',
     })
@@ -32,19 +36,19 @@ const SecondCreate = () => {
     }
     return (
         <>
-            <h3 className={`${styles.tell__title}`}>Tell us what you need done</h3>
-            <p className={`${styles.tell__para}`}>Create Job for our  Workers to apply and review bids - please take your time writing your job post for better results </p>
-            <h3 className={`${styles.ti__title}`}>TiTLE</h3>
+            <h3 className={`${styles.tell__title}`}>{t("Tell us what you need done")}</h3>
+            <p className={`${styles.tell__para}`}>{t("Create Job for our Workers to apply and review bids - please take your time writing your job post for better results")}</p>
+            <h3 className={`${styles.ti__title}`}>{t("TiTLE")}</h3>
             <Form.Group controlId="need" className={`${styles.need__para} mb-3 mt-4`}>
-                <Form.Control className={`${styles.need__input}`} placeholder='Need ForkLift for Ras Gharib Concession' name="need"
+                <Form.Control className={`${styles.need__input}`} placeholder={t("Need ForkLift for Ras Gharib Concession")} name="need"
                 />
             </Form.Group>
-            <h3 className={`${styles.ti__title}`}>Project Description</h3>
+            <h3 className={`${styles.ti__title}`}>{t("Project Description")}</h3>
             <div className='second__step'>
                 <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.textareaship} mb-3 mt-4`}>
-                    <Form.Control as="textarea" className='cont shipt' rows={8} placeholder='Describe your project here' name="Pickupdescription"
+                    <Form.Control as="textarea" className='cont shipt' rows={8} placeholder={t("Describe your project here")} name="Pickupdescription"
                     />
-                    <Form.Text>10,000 characters left</Form.Text>
+                    <Form.Text>{t("10,000 characters left")}</Form.Text>
                 </Form.Group>
             </div>
             <div className={`${styles.im}`}>
@@ -57,9 +61,9 @@ const SecondCreate = () => {
                 <>
                     <div ref={addFile} onClick={() => { handleLogo() }}>
                         <Form.Group className={`${styles.imagecontact} imagecontact mb-3`} controlId="title" ref={imageFirmRef}>
-                            <Form.Control placeholder="Drag & drop any images or documents that might be helpful in explaining your brief here (Max file size: 25 MB)." className='cont all p-3' name="email"
+                            <Form.Control placeholder={t("Drag & drop any images or documents that might be helpful in explaining your brief here (Max file size: 25 MB).")} className='cont all p-3' name="email"
                             />
-                            <p className={`${styles.upload__para}`}>Attach Files <img alt='' src={img} /></p>
+                            <p className={`${styles.upload__para}`}>{t("Attach Files")} <img alt='' src={img} /></p>
 
                         </Form.Group>
                     </div>
