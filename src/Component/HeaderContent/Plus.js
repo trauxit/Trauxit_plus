@@ -3,6 +3,7 @@ import Sidebar from '../../Layout/Sidebar'
 import Header from '../../Layout/Header'
 import styles from '../../Styles/plus.module.css'
 import logo from '../../assets/images/APP.png'
+import { Link } from 'react-router-dom'
 const Plus = () => {
     return (
         <>
@@ -22,8 +23,8 @@ const Plus = () => {
                             </div>
                         </div>
                         <div>
-                            <button className={`${styles.post}`}>Post a Project</button>
-                            <button className={`${styles.browse}`}>Browse our services</button>
+                            <Link to='/create'> <button className={`${styles.post}`}>Post a Project</button></Link>
+                            <Link to='/applications'><button className={`${styles.browse}`}>Browse our services</button></Link>
                         </div>
                     </div>
                     <div className={`${styles.mange}`}>

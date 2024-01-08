@@ -26,7 +26,8 @@ body[dir='rtl'] .css-8k4lth{
     color: #fff !important;
 }
 
-.css-1yhpg23-MuiTableCell-root {
+.css-1yhpg23-MuiTableCell-root,
+.css-1a4b21o {
     border-bottom: none !important;
     font-family: 'AlegreyaSans-Regular' !important;
 }
@@ -283,4 +284,7 @@ body[dir='rtl'] .mantine-2kfh7k{
     font-weight: 700 !important;
     line-height: normal !important;
     font-family: 'AlegreyaSans-Bold' !important;
+}
+.css-1a4b21o{
+    border-bottom: none !important;
 }
