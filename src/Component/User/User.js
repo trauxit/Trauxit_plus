@@ -109,7 +109,7 @@ const User = () => {
 
                                 </div>
                             </div>
-                            <Modal show={show} onHide={handleClose}>
+                            <Modal show={show} onHide={handleClose} className={`${styles.modal}`}>
 
                                 <Modal.Header closeButton>
                                     <Modal.Title>{t("Create a post")}</Modal.Title>
