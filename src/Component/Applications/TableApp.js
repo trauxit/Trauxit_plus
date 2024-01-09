@@ -23,8 +23,8 @@ import { useTranslation } from 'react-i18next';
 export const data = [
     {
         name: {
-            firstName: 'Christopher',
-            lastName: 'Lee',
+            firstName: '1',
+            lastName: '1-2-2023',
         },
         address: '555 Cedar Street',
         city: 'Seattle',
@@ -32,8 +32,8 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Rachel',
-            lastName: 'Anderson',
+            firstName: '2',
+            lastName: '10-5-2023',
         },
         address: '987 Walnut Court',
         city: 'New York',
@@ -41,7 +41,115 @@ export const data = [
     },
     {
         name: {
-            firstName: 'David',
+            firstName: '3',
+            lastName: '4-5-2024',
+        },
+        address: '654 Maple ',
+        city: 'Los Angeles',
+        state: 'California',
+    },
+    {
+        name: {
+            firstName: '4',
+            lastName: '7-1-2024',
+        },
+        address: '261 Battle Ford',
+        city: 'Columbus',
+        state: 'Ohio',
+    },
+    {
+        name: {
+            firstName: '5',
+            lastName: '9-4-2022',
+        },
+        address: '566 Brakus Inlet',
+        city: 'Westerville',
+        state: 'West Virginia',
+    },
+    {
+        name: {
+            firstName: '6',
+            lastName: '4-8-2023',
+        },
+        address: '7777 Kuhic Knoll',
+        city: 'South Linda',
+        state: 'West Virginia',
+    },
+    {
+        name: {
+            firstName: '7',
+            lastName: '1-7-2022',
+        },
+        address: '722 Emie Stream',
+        city: 'Huntington',
+        state: 'Washington',
+    },
+    {
+        name: {
+            firstName: '8',
+            lastName: '6-5-2024',
+        },
+        address: '1 Kuhic Knoll',
+        city: 'Ohiowa',
+        state: 'Nebraska',
+    },
+    {
+        name: {
+            firstName: '9',
+            lastName: '6-3-2023',
+        },
+        address: '123 Main Street',
+        city: 'Springfield',
+        state: 'Illinois',
+    },
+    {
+        name: {
+            firstName: '10',
+            lastName: '10-7-2022',
+        },
+        address: '456 Elm Avenue',
+        city: 'Portland',
+        state: 'Oregon',
+    },
+    {
+        name: {
+            firstName: '11',
+            lastName: '6-8-2023',
+        },
+        address: '789 Oak Lane',
+        city: 'Austin',
+        state: 'Texas',
+    },
+    {
+        name: {
+            firstName: '12',
+            lastName: '7-9-2024',
+        },
+        address: '321 Pine Road',
+        city: 'Denver',
+        state: 'Colorado',
+    },
+    {
+        name: {
+            firstName: '13',
+            lastName: '10-9-2023',
+        },
+        address: '555 Cedar Street',
+        city: 'Seattle',
+        state: 'Washington',
+    },
+    {
+        name: {
+            firstName: '14',
+            lastName: '14-5-2022',
+        },
+        address: '987 Walnut Court',
+        city: 'New York',
+        state: 'New York',
+    },
+    {
+        name: {
+            firstName: '15',
             lastName: 'Garcia',
         },
         address: '654 Maple Avenue',
@@ -50,7 +158,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Zachary',
+            firstName: '16',
             lastName: 'Davis',
         },
         address: '261 Battle Ford',
@@ -59,7 +167,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Robert',
+            firstName: '17',
             lastName: 'Smith',
         },
         address: '566 Brakus Inlet',
@@ -68,7 +176,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Kevin',
+            firstName: '18',
             lastName: 'Yan',
         },
         address: '7777 Kuhic Knoll',
@@ -77,7 +185,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'John',
+            firstName: '19',
             lastName: 'Upton',
         },
         address: '722 Emie Stream',
@@ -86,7 +194,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Nathan',
+            firstName: '20',
             lastName: 'Harris',
         },
         address: '1 Kuhic Knoll',
@@ -95,7 +203,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Emily',
+            firstName: '21',
             lastName: 'Smith',
         },
         address: '123 Main Street',
@@ -104,7 +212,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Jessica',
+            firstName: '22',
             lastName: 'Johnson',
         },
         address: '456 Elm Avenue',
@@ -113,7 +221,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Michael',
+            firstName: '23',
             lastName: 'Davis',
         },
         address: '789 Oak Lane',
@@ -122,7 +230,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Sarah',
+            firstName: '24',
             lastName: 'Wilson',
         },
         address: '321 Pine Road',
@@ -131,115 +239,7 @@ export const data = [
     },
     {
         name: {
-            firstName: 'Christopher',
-            lastName: 'Lee',
-        },
-        address: '555 Cedar Street',
-        city: 'Seattle',
-        state: 'Washington',
-    },
-    {
-        name: {
-            firstName: 'Rachel',
-            lastName: 'Anderson',
-        },
-        address: '987 Walnut Court',
-        city: 'New York',
-        state: 'New York',
-    },
-    {
-        name: {
-            firstName: 'David',
-            lastName: 'Garcia',
-        },
-        address: '654 Maple Avenue',
-        city: 'Los Angeles',
-        state: 'California',
-    },
-    {
-        name: {
-            firstName: 'Zachary',
-            lastName: 'Davis',
-        },
-        address: '261 Battle Ford',
-        city: 'Columbus',
-        state: 'Ohio',
-    },
-    {
-        name: {
-            firstName: 'Robert',
-            lastName: 'Smith',
-        },
-        address: '566 Brakus Inlet',
-        city: 'Westerville',
-        state: 'West Virginia',
-    },
-    {
-        name: {
-            firstName: 'Kevin',
-            lastName: 'Yan',
-        },
-        address: '7777 Kuhic Knoll',
-        city: 'South Linda',
-        state: 'West Virginia',
-    },
-    {
-        name: {
-            firstName: 'John',
-            lastName: 'Upton',
-        },
-        address: '722 Emie Stream',
-        city: 'Huntington',
-        state: 'Washington',
-    },
-    {
-        name: {
-            firstName: 'Nathan',
-            lastName: 'Harris',
-        },
-        address: '1 Kuhic Knoll',
-        city: 'Ohiowa',
-        state: 'Nebraska',
-    },
-    {
-        name: {
-            firstName: 'Emily',
-            lastName: 'Smith',
-        },
-        address: '123 Main Street',
-        city: 'Springfield',
-        state: 'Illinois',
-    },
-    {
-        name: {
-            firstName: 'Jessica',
-            lastName: 'Johnson',
-        },
-        address: '456 Elm Avenue',
-        city: 'Portland',
-        state: 'Oregon',
-    },
-    {
-        name: {
-            firstName: 'Michael',
-            lastName: 'Davis',
-        },
-        address: '789 Oak Lane',
-        city: 'Austin',
-        state: 'Texas',
-    },
-    {
-        name: {
-            firstName: 'Sarah',
-            lastName: 'Wilson',
-        },
-        address: '321 Pine Road',
-        city: 'Denver',
-        state: 'Colorado',
-    },
-    {
-        name: {
-            firstName: 'Sarah',
+            firstName: '25',
             lastName: 'Wilson',
         },
         address: '321 Pine Road',

@@ -94,7 +94,7 @@ const Wallet = () => {
                                             <div className={`${styles.acc__body}`}>
                                                 <div className={`${styles.acc__user}`}>
                                                     <img alt='' src={view} />
-                                                    <p>Mahmoud Hok</p>
+                                                    <p>Ashraf ibrahem</p>
                                                 </div>
                                                 <p>Jun 6,2024</p>
                                                 <p>-$23,000</p>
@@ -138,7 +138,7 @@ const Wallet = () => {
                                             <div className={`${styles.acc__body}`}>
                                                 <div className={`${styles.acc__user}`}>
                                                     <img alt='' src={view} />
-                                                    <p>Mahmoud Hok</p>
+                                                    <p>Basmala ayman</p>
                                                 </div>
                                                 <p>Jun 6,2024</p>
                                                 <p>-$23,000</p>
@@ -182,7 +182,7 @@ const Wallet = () => {
                                             <div className={`${styles.acc__body}`}>
                                                 <div className={`${styles.acc__user}`}>
                                                     <img alt='' src={view} />
-                                                    <p>Mahmoud Hok</p>
+                                                    <p>Ahmed khaled</p>
                                                 </div>
                                                 <p>Jun 6,2024</p>
                                                 <p>-$23,000</p>
@@ -289,7 +289,7 @@ const Wallet = () => {
                                     <div className={`${styles.invoice__user}`}>
                                         <img alt='' src={view} />
                                         <div>
-                                            <h2>Mahmoud Hok</h2>
+                                            <h2>Basmala</h2>
                                             <p>Due on Jun 14, 2024</p>
                                         </div>
                                     </div>
@@ -299,7 +299,7 @@ const Wallet = () => {
                                     <div className={`${styles.invoice__user}`}>
                                         <img alt='' src={view} />
                                         <div>
-                                            <h2>Mahmoud Hok</h2>
+                                            <h2>Ahmed</h2>
                                             <p>Due on Jun 14, 2024</p>
                                         </div>
                                     </div>
@@ -309,7 +309,7 @@ const Wallet = () => {
                                     <div className={`${styles.invoice__user}`}>
                                         <img alt='' src={view} />
                                         <div>
-                                            <h2>Mahmoud Hok</h2>
+                                            <h2>Ola</h2>
                                             <p>Due on Jun 14, 2024</p>
                                         </div>
                                     </div>

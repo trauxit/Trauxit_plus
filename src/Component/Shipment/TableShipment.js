@@ -22,9 +22,9 @@ export const data = [
             firstName: 'Christopher',
             lastName: 'Lee',
         },
-        address: '555 Cedar Street',
-        city: 'Seattle',
-        state: 'Washington',
+        address: '5-5-20222',
+        city: '15',
+        state: '200',
         status: "pending"
     },
     {
@@ -33,9 +33,9 @@ export const data = [
             firstName: 'Rachel',
             lastName: 'Anderson',
         },
-        address: '987 Walnut Court',
-        city: 'New York',
-        state: 'New York',
+        address: '1-2-2022',
+        city: '22',
+        state: '150',
         status: "pending"
     },
     {
@@ -44,9 +44,9 @@ export const data = [
             firstName: 'David',
             lastName: 'Garcia',
         },
-        address: '654 Maple Avenue',
-        city: 'Los Angeles',
-        state: 'California',
+        address: '8-5-2023',
+        city: '10',
+        state: '30',
         status: "pending"
     },
     {
@@ -55,9 +55,9 @@ export const data = [
             firstName: 'Zachary',
             lastName: 'Davis',
         },
-        address: '261 Battle Ford',
-        city: 'Columbus',
-        state: 'Ohio',
+        address: '2-10-2024',
+        city: '70',
+        state: '140',
         status: "pending"
     },
     {
@@ -66,9 +66,9 @@ export const data = [
             firstName: 'Robert',
             lastName: 'Smith',
         },
-        address: '566 Brakus Inlet',
-        city: 'Westerville',
-        state: 'West Virginia',
+        address: '4-7-2022',
+        city: '50',
+        state: '200',
         status: "pending"
     },
     {
@@ -77,9 +77,9 @@ export const data = [
             firstName: 'Kevin',
             lastName: 'Yan',
         },
-        address: '7777 Kuhic Knoll',
-        city: 'South Linda',
-        state: 'West Virginia',
+        address: '30-1-2023',
+        city: '17',
+        state: '60',
         status: "pending"
     },
     {
@@ -88,9 +88,9 @@ export const data = [
             firstName: 'John',
             lastName: 'Upton',
         },
-        address: '722 Emie Stream',
-        city: 'Huntington',
-        state: 'Washington',
+        address: '18-9-20222',
+        city: '120',
+        state: '140',
         status: "pending"
     },
     {
@@ -99,9 +99,9 @@ export const data = [
             firstName: 'Nathan',
             lastName: 'Harris',
         },
-        address: '1 Kuhic Knoll',
-        city: 'Ohiowa',
-        state: 'Nebraska',
+        address: '8-9-2023',
+        city: '50',
+        state: '50',
         status: "pending"
     },
     {
@@ -110,9 +110,9 @@ export const data = [
             firstName: 'Kevin',
             lastName: 'Yan',
         },
-        address: '7777 Kuhic Knoll',
-        city: 'South Linda',
-        state: 'West Virginia',
+        address: '14-2-2022',
+        city: '8',
+        state: '140',
         status: "pending"
     },
     {
@@ -121,9 +121,9 @@ export const data = [
             firstName: 'John',
             lastName: 'Upton',
         },
-        address: '722 Emie Stream',
-        city: 'Huntington',
-        state: 'Washington',
+        address: '23-1-2024',
+        city: '13',
+        state: '190',
         status: "pending"
     },
     {
@@ -132,9 +132,9 @@ export const data = [
             firstName: 'Nathan',
             lastName: 'Harris',
         },
-        address: '1 Kuhic Knoll',
-        city: 'Ohiowa',
-        state: 'Nebraska',
+        address: '4-1-2023',
+        city: '140',
+        state: '200',
         status: "pending"
     }, {
         id: '6',
@@ -142,9 +142,9 @@ export const data = [
             firstName: 'Kevin',
             lastName: 'Yan',
         },
-        address: '7777 Kuhic Knoll',
-        city: 'South Linda',
-        state: 'West Virginia',
+        address: '20-2-2015',
+        city: '30',
+        state: '100',
         status: "pending"
     },
     {
@@ -153,9 +153,9 @@ export const data = [
             firstName: 'John',
             lastName: 'Upton',
         },
-        address: '722 Emie Stream',
-        city: 'Huntington',
-        state: 'Washington',
+        address: '7-5-2023',
+        city: '70',
+        state: '130',
         status: "pending"
     },
     {
@@ -164,9 +164,9 @@ export const data = [
             firstName: 'Nathan',
             lastName: 'Harris',
         },
-        address: '1 Kuhic Knoll',
-        city: 'Ohiowa',
-        state: 'Nebraska',
+        address: '12-8-2021',
+        city: '180',
+        state: '180',
         status: "pending"
     },
 ];
