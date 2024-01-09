@@ -288,3 +288,7 @@ body[dir='rtl'] .mantine-2kfh7k{
 .css-1a4b21o{
     border-bottom: none !important;
 }
+textarea.form-control {
+    margin-bottom: 0 !important;
+    background-color: transparent !important;
+}
