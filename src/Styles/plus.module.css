@@ -31,7 +31,12 @@
     line-height: normal;
     text-transform: capitalize;
 }
-
+body[dir='rtl'] .plus__title{
+    text-align: right;
+}
+body[dir='rtl'] .plus__para {
+    text-align: right;
+}
 .logo__body {
     display: flex;
     align-items: center;
@@ -69,6 +74,9 @@
     line-height: 25px;
     font-family: 'AlegreyaSans-Bold';
 
+}
+body[dir='rtl'] .plus__project h3 {
+    text-align: right;
 }
 
 .post {
@@ -165,7 +173,9 @@
     cursor: pointer;
 
 }
-
+body[dir='rtl'] .create__para{
+    text-align: right;
+}
 
 
 .head__title{

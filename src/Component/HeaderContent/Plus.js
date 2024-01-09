@@ -5,6 +5,7 @@ import styles from '../../Styles/plus.module.css'
 import logo from '../../assets/images/APP.png'
 import { Link } from 'react-router-dom'
 import Form from 'react-bootstrap/Form';
+import { useTranslation } from 'react-i18next';
 const Plus = () => {
     const [data, setData] = useState([]);
     const [input1, setInput1] = useState('');
@@ -26,42 +27,44 @@ const Plus = () => {
         setInput4('');
     };
     const [active, setActive] = useState('')
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <Header active='plus' />
             <section className={`${styles.home}`}>
                 <Sidebar active='dashboard' />
                 <div className={`${styles.homeContainer}`}>
-                    <h3 className={`${styles.plus__title}`}>DashBoard - Plus</h3>
-                    <p className={`${styles.plus__para}`}>Table shows some details about Projects information</p>
+                    <h3 className={`${styles.plus__title}`}>{t("DashBoard - Plus")}</h3>
+                    <p className={`${styles.plus__para}`}>{t("Table shows some details about Projects information")}</p>
 
                     <div className={`${styles.logo__body}`}>
                         <div className={`${styles.project__para}`}>
                             <img alt='' src={logo} />
                             <div className={`${styles.plus__project}`}>
-                                <h3>Welcome to TRAUXIT Plus</h3>
-                                <p>If you are new to our website, here are a few things to get you started!</p>
+                                <h3>{t("Welcome to TRAUXIT Plus")}</h3>
+                                <p>{t("If you are new to our website, here are a few things to get you started!")}</p>
                             </div>
                         </div>
                         <div>
-                            <Link to='/create'> <button className={`${styles.post}`}>Post a Project</button></Link>
-                            <Link to='/applications'><button className={`${styles.browse}`}>Browse our services</button></Link>
+                            <Link to='/create'> <button className={`${styles.post}`}>{t("Post a Project")}</button></Link>
+                            <Link to='/applications'><button className={`${styles.browse}`}>{t("Browse our services")}</button></Link>
                         </div>
                     </div>
                     <div className={`${styles.mange}`}>
-                        <h3>Project Management</h3>
+                        <h3>{t("Project Management")}</h3>
                         <div>
-                            <p>Milestones</p>
-                            <p>Milestones Requests</p>
-                            <p>Invoices</p>
+                            <p>{t("Milestones")}</p>
+                            <p>{t("Milestones Requests")}</p>
+                            <p>{t("Invoices")}</p>
                         </div>
                     </div>
-                    <p className={`${styles.create__para}`} onClick={() => setActive("create")}>Create Milestone Payment</p>
+                    <p className={`${styles.create__para}`} onClick={() => setActive("create")}>{t("Create Milestone Payment")}</p>
 
                     <div className={`${active === "create" ? styles.inputs : styles.none}`}>
                         <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
                             <Form.Control type="text"
-                                placeholder="Freelancer"
+                                placeholder={t("Freelancer")}
                                 className={`${styles.gruoinput}`}
                                 value={input1}
                                 onChange={(e) => setInput1(e.target.value)}
@@ -69,7 +72,7 @@ const Plus = () => {
                         </Form.Group>
                         <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
                             <Form.Control type="text"
-                                placeholder="Project Name"
+                                placeholder={t("Project Name")}
                                 className={`${styles.gruoinput}`}
                                 value={input2}
                                 onChange={(e) => setInput2(e.target.value)}
@@ -77,7 +80,7 @@ const Plus = () => {
                         </Form.Group>
                         <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
                             <Form.Control type="number"
-                                placeholder="Amount"
+                                placeholder={t("Amount")}
                                 className={`${styles.gruoinput}`}
                                 value={input3}
                                 onChange={(e) => setInput3(e.target.value)}
@@ -85,7 +88,7 @@ const Plus = () => {
                         </Form.Group>
                         <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
                             <Form.Control type="text"
-                                placeholder="Description"
+                                placeholder={t("Description")}
                                 className={`${styles.gruoinput}`}
                                 value={input4}
                                 onChange={(e) => setInput4(e.target.value)}
@@ -94,19 +97,19 @@ const Plus = () => {
                         <button className={`${styles.add__btn}`}
                             type="button"
                             onClick={handleAdd}
-                        >Add to table</button>
+                        > {t("Add to table")}</button>
                     </div>
 
                     <div class="table-responsive mt-4">
                         <table class="table">
                             <thead >
                                 <tr>
-                                    <th scope="col" className={`${styles.head__title}`}>Freelancer</th>
-                                    <th scope="col" className={`${styles.head__title}`}>Project Name</th>
-                                    <th scope="col" className={`${styles.head__title}`}>Amount</th>
-                                    <th scope="col" className={`${styles.head__title}`}>Short Description</th>
-                                    <th scope="col" className={`${styles.head__title}`}>Status</th>
-                                    <th scope="col" className={`${styles.head__title}`}>Actions</th>
+                                    <th scope="col" className={`${styles.head__title}`}>{t("Freelancer")}</th>
+                                    <th scope="col" className={`${styles.head__title}`}>{t("Project Name")}</th>
+                                    <th scope="col" className={`${styles.head__title}`}>{t("Amount")}</th>
+                                    <th scope="col" className={`${styles.head__title}`}>{t("Short Description")}</th>
+                                    <th scope="col" className={`${styles.head__title}`}>{t("Status")}</th>
+                                    <th scope="col" className={`${styles.head__title}`}>{t("Actions")}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -152,44 +155,44 @@ const Plus = () => {
                         </table>
                     </div>
                     <div className={`${styles.mange}`}>
-                        <h3>Quick Stats</h3>
+                        <h3>{t("Quick Stats")}</h3>
                     </div>
                     <div className={`${styles.inside}`}>
                         <div className={`${styles.first}`}>
-                            <h3>Projects Posted</h3>
+                            <h3>{t("Projects Posted")}</h3>
                             <div className={`${styles.inside__body}`}>
                                 <div>
                                     <p>0</p>
-                                    <p>Past 30 Days</p>
+                                    <p> {t("Past 30 Days")}</p>
                                 </div>
                                 <div>
                                     <p>0</p>
-                                    <p>Past 30 Days</p>
+                                    <p>{t("Past 30 Days")}</p>
                                 </div>
                             </div>
                         </div>
                         <div className={`${styles.first}`}>
-                            <h3>Work in Progress</h3>
+                            <h3> {t("Work in Progress")}</h3>
                             <div className={`${styles.inside__body}`}>
                                 <div>
                                     <p>$0.00</p>
-                                    <p>0 Active projects</p>
+                                    <p>{t("0 Active projects")}</p>
                                 </div>
                                 <div>
                                     <p>$0.00</p>
-                                    <p>0 Active projects</p>
+                                    <p>{t("0 Active projects")}</p>
                                 </div>
                             </div>
                         </div>
                         <div className={`${styles.first}`}>
-                            <h3>Drivers Hired</h3>
+                            <h3>{t("Drivers Hired")}</h3>
                             <div className={`${styles.inside__body}`}>
                                 <div>
 
                                 </div>
                                 <div>
                                     <p>0</p>
-                                    <p>lifetime</p>
+                                    <p>{t("lifetime")}</p>
                                 </div>
 
                             </div>
