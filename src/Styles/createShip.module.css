@@ -47,6 +47,12 @@ body[dir='rtl'] .new__title{
         font-weight: 400;
         line-height: normal;
 }
+body[dir='rtl'] .info__title {
+    text-align: right;
+}
+body[dir='rtl'] .info__para {
+    text-align: right;
+}
 .newcreate__title{
     color: #000;
     font-family: 'AlegreyaSans-Bold' !important;
@@ -56,6 +62,9 @@ body[dir='rtl'] .new__title{
         line-height: normal;
         margin-top: 40px;
 }
+body[dir='rtl'] .newcreate__title {
+    text-align: right;
+}
 .pickmap,
 .pickdate{
     color: #000;
@@ -64,6 +73,12 @@ body[dir='rtl'] .new__title{
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+}
+body[dir='rtl'] .pickmap {
+    text-align: right;
+}
+body[dir='rtl'] .pickdate {
+    text-align: right;
 }
 .pickdate{
     margin-top: 30px;
@@ -78,6 +93,7 @@ body[dir='rtl'] .new__title{
 .group svg{
     margin-right: 10px;
 }
+
 .gruoinput{
     background-color: transparent !important;
     border: none !important;
@@ -108,9 +124,14 @@ body[dir='rtl'] .new__title{
     top:15px;
     left: 20px;
 }
-
+body[dir='rtl'] .line {
+right: 31px;
+}
 .mapphoto{
     text-align: right !important;
+}
+body[dir='rtl'] .mapphoto {
+    text-align: left !important;
 }
 .additems{
     margin-top: 40px;
@@ -154,6 +175,11 @@ body[dir='rtl'] .new__title{
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+}
+body[dir='rtl'] .field{
+    text-align: right !important;
+    justify-content: right;
+    direction: rtl;
 }
 .total{
     border-radius: 0px 0px 15px 15px;
@@ -222,6 +248,9 @@ body[dir='rtl'] .new__title{
         font-weight: 700;
         line-height: normal;
         border: none !important;
+}
+body[dir='rtl'] .addbtn{
+margin-left: 10px;
 }
 .collect{
     border-radius: 15px;

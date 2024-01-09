@@ -81,19 +81,19 @@ const Create = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                         <circle cx="12.5" cy="12.5" r="12.5" fill="#FF8201" />
                                     </svg>
-                                    <Form.Control type="text" placeholder="Pick up location" className={`${styles.gruoinput}`} name='pickup' />
+                                    <Form.Control type="text" placeholder={t("Pick up location")} className={`${styles.gruoinput}`} name='pickup' />
                                 </Form.Group>
                                 <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                         <circle cx="12.5" cy="12.5" r="12.5" fill="#FF8201" />
                                     </svg>
-                                    <Form.Control type="text" placeholder="Drop off location" className={`${styles.gruoinput}`} name='dropoff' />
+                                    <Form.Control type="text" placeholder={t("Drop off location")} className={`${styles.gruoinput}`} name='dropoff' />
                                 </Form.Group>
                                 <img alt='' src={line} className={`${styles.line}`} />
 
                                 <h3 className={`${styles.pickdate}`}>{t("Pick up date")}</h3>
                                 <Form.Group className={`${styles.group} mb-3`} controlId="exampleForm.ControlInput1">
-                                    <Form.Control type="date" placeholder="Drop off location" className={`${styles.gruoinput}`} name='data' />
+                                    <Form.Control type="date" placeholder={t("Drop off location")} className={`${styles.gruoinput}`} name='data' />
                                 </Form.Group>
                             </Form>
                         </Col>
@@ -248,18 +248,15 @@ const Create = () => {
                                                 <Row>
                                                     <Col>
                                                         <Form.Label className={`${styles.label}`}>{t("Freight class")}</Form.Label>
-                                                        <select class={`${styles.selectclass} ${styles.info__input} form-select`}
-                                                            aria-label="Default select example"
+                                                        <Form.Control type="number"
+                                                            placeholder="from 0 to 500"
+                                                            min='1'
+                                                            max='500'
                                                             name='freight'
                                                             value={singleService.freight}
                                                             onChange={(e) => handleServiceChange(e, index)}
-
-                                                        >
-                                                            <option selected>{t("Select...")}</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
+                                                            className={`${styles.info__input}`}
+                                                        />
                                                     </Col>
                                                     <Col>
                                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

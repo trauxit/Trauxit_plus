@@ -6,7 +6,6 @@
     color: #fff;
     font-family: 'AlegreyaSans-Regular';
 border-radius: 0px 0px 10px 10px;
-    background: #A0A0A0;
     
 
 }
@@ -17,6 +16,10 @@ border-radius: 0px 0px 10px 10px;
     display: flex;
     align-items: center !important;
     justify-content: space-between;
+    position: fixed;
+        background: #A0A0A0;
+        z-index: 999999;
+        height: 70px;
 }
 
 

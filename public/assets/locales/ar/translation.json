@@ -229,5 +229,9 @@
     "Create a New Project":"انشئ مشروع جديد",
     "Create a new project and get your project done in an easy way":"إنشاء مشروع جديد وإنجاز مشروعك بطريقة سهلة ",
     "Open Projects":"فتح مشاريع",
-    "Past Projects":"مشاريع قديمة"
+    "Past Projects":"مشاريع قديمة",
+    "Pick up location":"موقع الالتقاط",
+    "Drop off location":"موقع النزول",
+    "Width":"العرض",
+    "Freight class":"فئة الشحن"
   }

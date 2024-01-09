@@ -233,5 +233,9 @@
     "Create a new project and get your project done in an easy way":"Create a new project and get your project done in an easy way",
     "Create a new project":"Create a new project",
     "Past Projects":"Past Projects",
-    "Open Projects":"Open Projects"
+    "Open Projects":"Open Projects",
+    "Pick up location":"Pick up location",
+    "Drop off location":"Drop off location",
+    "Width":"Width",
+    "Freight class":"Freight class"
 }
