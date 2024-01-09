@@ -5,7 +5,7 @@
 
 .homeContainer {
     flex: 6;
-    font-family: 'AlegreyaSansSC-Regular';
+font-family: 'AlegreyaSans-Regular';
     text-align: left;
     padding-top: 30px;
     padding-left: 40px;
@@ -65,7 +65,7 @@ body[dir='rtl'] .business__body{
 
 .business__title {
     color: #FF8201;
-    font-family: 'AlegreyaSansSC-Bold';
+font-family: 'AlegreyaSans-Bold';
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -81,7 +81,7 @@ body[dir='rtl'] .business__title{
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    font-family: 'AlegreyaSansSC-Regular';
+font-family: 'AlegreyaSans-Regular';
 }
 
 .switch {
@@ -175,7 +175,7 @@ width: 56px;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    font-family: 'AlegreyaSansSC-Regular';
+    font-family: 'AlegreyaSans-Regular';
 }
 
 .book__para {
@@ -187,7 +187,7 @@ width: 56px;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-family: 'AlegreyaSansSC-Bold';
+    font-family: 'AlegreyaSans-Bold';
 }
 
 .book__num {
@@ -207,7 +207,7 @@ width: 56px;
 
 .info__title {
     color: var(--Black-Shades-100, #72777A);
-    font-family: 'AlegreyaSansSC-Bold';
+    font-family: 'AlegreyaSans-Bold';
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -218,7 +218,7 @@ body[dir='rtl'] .info__title{
 }
 .info__para {
     color: var(--White-Shades-900, #979C9E);
-    font-family: 'AlegreyaSansSC-Regular';
+    font-family: 'AlegreyaSans-Regular';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
