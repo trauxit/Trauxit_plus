@@ -12,6 +12,8 @@ import play from '../../assets/images/youtube-removebg-preview.png'
 import emo from '../../assets/images/mdi_emoji-outline.svg'
 import vector from '../../assets/images/Vector (1).svg'
 import cars from '../../assets/images/1688577297479 1.png'
+import { useTranslation } from 'react-i18next';
+
 const User = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -34,6 +36,8 @@ const User = () => {
         setVideo('')
         setArea(area)
     }
+    const { t, i18n } = useTranslation();
+
     return (
         <>
 
@@ -52,7 +56,7 @@ const User = () => {
                                 <p>TRAUXIT LLC</p>
                             </div>
                             <div className={`${styles.switch}`}>
-                                <Link className={`${styles.switch__link}`} to='/'>Switch to Dashboard</Link>
+                                <Link className={`${styles.switch__link}`} to='/'>{t("Switch to Dashboard")}</Link>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
                                     <path d="M6.625 37.5413H11.9184C13.6937 37.5412 15.4428 37.113 17.0174 36.293C18.5921 35.473 19.9457 34.2854 20.9637 32.831L21.3546 32.2723M29.4371 20.7293L29.828 20.1684C30.8459 18.7139 32.1996 17.5263 33.7742 16.7063C35.3488 15.8864 37.098 15.4581 38.8733 15.458H46.375" stroke="#FF8201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M39.75 8.83301L46.375 15.458L39.75 22.083M6.625 15.458H11.9184C13.6937 15.4581 15.4428 15.8864 17.0174 16.7063C18.5921 17.5263 19.9457 18.7139 20.9637 20.1684L29.828 32.831C30.8459 34.2855 32.1996 35.473 33.7742 36.293C35.3488 37.113 37.098 37.5412 38.8733 37.5413H46.375" stroke="#FF8201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -61,21 +65,21 @@ const User = () => {
                             </div>
                             <div className={`${styles.numbers}`}>
                                 <div>
-                                    <h3>Profile viewers</h3>
+                                    <h3>{t("Profile viewers")}</h3>
                                     <p>302</p>
                                 </div>
                                 <div>
-                                    <h3>Post impressions</h3>
+                                    <h3>{t("Post impressions")}</h3>
                                     <p>2304</p>
                                 </div>
                             </div>
                             <div className={`${styles.followers}`}>
                                 <div className={`${styles.follow}`}>
-                                    <h3>My followers</h3>
+                                    <h3>{t("My followers")}</h3>
                                     <p>302</p>
                                 </div>
                                 <div className={`${styles.see}`}>
-                                    <Link className={`${styles.see__link}`} >see all</Link>
+                                    <Link className={`${styles.see__link}`} >{t("see all")}</Link>
                                 </div>
                                 <div className={`${styles.images}`}>
                                     <img alt='' src={user} className={`${styles.follower}`} />
@@ -91,16 +95,16 @@ const User = () => {
                             <div className={`${styles.user__post}`}>
                                 <div className={`${styles.post}`}>
                                     <img alt='' src={user} className={`${styles.userimg}`} />
-                                    <button className={`${styles.post__btn}`} onClick={handleShow}>Start a post</button>
+                                    <button className={`${styles.post__btn}`} onClick={handleShow}>{t("Start a post")}</button>
                                 </div>
                                 <div className={`${styles.social__btn}`}>
                                     <button className={`${styles.btns}`}>
                                         <img alt='' src={photo} className={`${styles.social__img}`} />
-                                        <span className={`${styles.social__para}`}>Media</span>
+                                        <span className={`${styles.social__para}`}>{t("Media")}</span>
                                     </button>
                                     <button className={`${styles.btns}`}>
                                         <img alt='' src={emo} className={`${styles.social__img}`} />
-                                        <span className={`${styles.social__para}`}>Actions</span>
+                                        <span className={`${styles.social__para}`}>{t("Actions")}</span>
                                     </button>
 
                                 </div>
@@ -108,7 +112,7 @@ const User = () => {
                             <Modal show={show} onHide={handleClose}>
 
                                 <Modal.Header closeButton>
-                                    <Modal.Title>Create a post</Modal.Title>
+                                    <Modal.Title>{t("Create a post")}</Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
                                     <div className={`${styles.info__details}`}>
@@ -118,7 +122,7 @@ const User = () => {
                                         </div>
                                     </div>
                                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                        <Form.Control as="textarea" rows={4} placeholder='what do you want to talk about ?'
+                                        <Form.Control as="textarea" rows={4} placeholder={t("what do you want to talk about ?")}
                                             className={`${styles.input}`}
                                             value={textarea}
                                             onChange={(e) => setTextArea(e.target.value)}
@@ -135,7 +139,7 @@ const User = () => {
                                                     style={{ display: "none" }}
                                                     onChange={handleImg} />
                                                 <p className={`${styles.select}`}>
-                                                    <label htmlFor='file' >select an image to share</label>
+                                                    <label htmlFor='file' >{t("select an image to share")}</label>
                                                 </p>
                                                 {imgupload && <img src={URL.createObjectURL(imgupload)} className={`${styles.uploadimg}`} />}
                                             </>
