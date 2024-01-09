@@ -23,11 +23,14 @@ const ThirdCreate = () => {
                 />
             </Form.Group>
             {/*             <p className={`${styles.need__para}`}>We are seeking a skilled and experienced Forklift Operator to join our team at the Ras Gharib concession. As a Forklift Operator, you will play a crucial role in ensuring the efficient and safe movement of materials and equipment within our operational facility. The ideal candidate should have a strong background in forklift operation, adhere to safety guidelines, and possess excellent attention to detail.</p>
- */}            <h3 className={`${styles.ti__title}`}>{t("What skills are required?")}</h3>
-            <p className={`${styles.skills__para}`}>{t("Enter up to 5 skills that best describe your project.")}</p>
+ */}
+            <h3 className={`${styles.ti__title}`}>{t("What skills are required?")}</h3>
+            <div className={`${styles.dir}`}>
+                <p className={`${styles.skills__para}`}>{t("Enter up to 5 skills that best describe your project.")}</p>
+            </div>
             <div className='second__step mb-5'>
                 <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.textareaship} mb-3 mt-4`}>
-                    <Form.Control as="textarea" className='cont shipt' rows={7} placeholder={t('Enter Skills here... ')} name="Pickupdescription"
+                    <Form.Control as="textarea" className='cont shipt' rows={7} placeholder={t('Enter Skills here...')} name="Pickupdescription"
                     />
                 </Form.Group>
             </div>

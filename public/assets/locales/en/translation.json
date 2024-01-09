@@ -237,5 +237,14 @@
     "Pick up location":"Pick up location",
     "Drop off location":"Drop off location",
     "Width":"Width",
-    "Freight class":"Freight class"
+    "Freight class":"Freight class",
+    "What skills are required?":"What skills are required?",
+    "Enter up to 5 skills that best describe your project.":"Enter up to 5 skills that best describe your project.",
+    "Enter Skills here...":"Enter Skills here...",
+    "How do you want to pay?":"How do you want to pay?",
+    "Please choose how would you like to pay for your project...":"Please choose how would you like to pay for your project...",
+    "Hire based on an hourly rate and pay for hours billed. Best for ongoing work.":"Hire based on an hourly rate and pay for hours billed. Best for ongoing work.",
+    "Agree on a price and release payment when the job is done. Best for one-off tasks.":"Agree on a price and release payment when the job is done. Best for one-off tasks.",
+    "What is your estimated budget?":"What is your estimated budget?"
+
 }

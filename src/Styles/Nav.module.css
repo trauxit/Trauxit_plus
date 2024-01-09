@@ -18,6 +18,7 @@ font-family: 'AlegreyaSans-Regular';
     justify-content: space-between;
     position: fixed;
         background-color: #1C1A19;
+        z-index: 99999 !important;
 }
 
 .logo__body {

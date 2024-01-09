@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import styles from '../../Styles/create.module.css'
+import { useTranslation } from 'react-i18next';
+
 const FourthCreate = () => {
     const [active, setActive] = useState('hour')
+    const { t, i18n } = useTranslation();
+
     return (
         <>
 
-            <h3 className={`${styles.tell__title}`}>How do you want to pay?</h3>
-            <p className={`${styles.tell__para}`}>Please choose how would you like to pay for your project...</p>
+            <h3 className={`${styles.tell__title}`}>{t("How do you want to pay?")}</h3>
+            <p className={`${styles.tell__para}`}>{t("Please choose how would you like to pay for your project...")}</p>
             <div className={`${styles.allpay}`}>
                 <div className={`${active === 'hour' ? styles.activepay : styles.pay}`} onClick={() => setActive('hour')}>
-                    <h3 className={`${styles.pay__title}`}>Pay by the hour</h3>
+                    <h3 className={`${styles.pay__title}`}>{t("Pay by the hour")}</h3>
                     <div className={`${styles.fixed}`}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none" className={`${styles.ico}`}>
                             <g clip-path="url(#clip0_183_506)">
@@ -23,11 +27,11 @@ const FourthCreate = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p className={`${styles.pay__para}`}>Hire based on an hourly rate and pay for hours billed. Best for ongoing work.</p>
+                        <p className={`${styles.pay__para}`}>{t("Hire based on an hourly rate and pay for hours billed. Best for ongoing work.")}</p>
                     </div>
                 </div>
                 <div className={`${active === 'fixed' ? styles.activepay : styles.pay}`} onClick={() => setActive('fixed')}>
-                    <h3 className={`${styles.pay__title}`}>Pay fixed price</h3>
+                    <h3 className={`${styles.pay__title}`}>{t("Pay fixed price")}</h3>
                     <div className={`${styles.fixed}`}>
                         <div className={`${styles.svg}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="47" height="59" viewBox="0 0 47 59" fill="none" className={`${styles.ico}`}>
@@ -37,20 +41,20 @@ const FourthCreate = () => {
                                 <path d="M16.1173 2.36458C8.52298 2.36458 2.36523 8.52232 2.36523 16.1167C2.36523 23.711 8.52298 29.8687 16.1173 29.8687C23.7117 29.8687 29.8694 23.711 29.8694 16.1167C29.8694 8.52232 23.7117 2.36458 16.1173 2.36458ZM16.1173 27.5358C9.81223 27.5358 4.69818 22.4217 4.69818 16.1167C4.69818 9.81158 9.81223 4.69752 16.1173 4.69752C22.4224 4.69752 27.5365 9.81158 27.5365 16.1167C27.5365 22.4217 22.4224 27.5358 16.1173 27.5358ZM17.5815 15.4045L16.8019 15.2234V11.1008C17.9683 11.2605 18.6897 11.991 18.8125 12.8874C18.8278 13.0102 18.9322 13.0992 19.055 13.0992H20.4333C20.5775 13.0992 20.6911 12.9733 20.6788 12.8291C20.4916 10.9167 18.9168 9.68879 16.8141 9.47698V8.4732C16.8141 8.33814 16.7036 8.22763 16.5686 8.22763H15.706C15.5709 8.22763 15.4604 8.33814 15.4604 8.4732V9.48619C13.2871 9.698 11.5865 10.8982 11.5865 13.1391C11.5865 15.2142 13.1152 16.2149 14.7206 16.5986L15.4788 16.792V21.1724C14.122 20.9913 13.3608 20.2668 13.2042 19.2907C13.1858 19.174 13.0814 19.0881 12.9617 19.0881H11.5435C11.3992 19.0881 11.2857 19.2109 11.2979 19.3552C11.4361 21.0435 12.7161 22.5967 15.4481 22.7962V23.7601C15.4481 23.8952 15.5586 24.0057 15.6937 24.0057H16.5655C16.7006 24.0057 16.8111 23.8952 16.8111 23.757L16.8049 22.784C19.2085 22.5722 20.9275 21.286 20.9275 18.9776C20.9244 16.8472 19.5707 15.8956 17.5815 15.4045ZM15.4758 14.9072C15.3039 14.8581 15.1596 14.8121 15.0153 14.7537C13.9778 14.3792 13.4958 13.7745 13.4958 12.9948C13.4958 11.8805 14.34 11.2451 15.4758 11.1008V14.9072ZM16.8019 21.1816V17.0775C16.897 17.1051 16.983 17.1266 17.072 17.145C18.5239 17.587 19.012 18.201 19.012 19.1433C19.012 20.3436 18.1095 21.065 16.8019 21.1816Z" className={`${styles.active__icon}`} />
                             </svg>
                         </div>
-                        <p className={`${styles.pay__para}`}>Agree on a price and release payment when the job is done. Best for one-off tasks.</p>
+                        <p className={`${styles.pay__para}`}>{t("Agree on a price and release payment when the job is done. Best for one-off tasks.")}</p>
                     </div>
                 </div>
             </div>
-            <h3 className={`${styles.ti__title}`}>What is your estimated budget?</h3>
+            <h3 className={`${styles.ti__title}`}>{t("What is your estimated budget?")}</h3>
             <div className={`${styles.create__price}`}>
                 <div className={`${styles.usd}`}>
-                    <p>USD</p>
+                    <p>{t("USD")}</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                     </svg>
                 </div>
                 <div className={`${styles.hour}`}>
-                    <p>Standard ($25-$100 USD Per Hour)</p>
+                    <p>{t("Standard ($25-$100 USD Per Hour)")}</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                     </svg>
@@ -61,14 +65,14 @@ const FourthCreate = () => {
 
                     active === 'fixed' ?
                         <>
-                            <h3 className={`${styles.ti__title}`}>Minimum budget</h3>
+                            <h3 className={`${styles.ti__title}`}>{t("Minimum budget")}</h3>
                             <div className={`${styles.hour}`}>
                                 <p>$10</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                                 </svg>
                             </div>
-                            <h3 className={`${styles.ti__title}`}>Minimum budget</h3>
+                            <h3 className={`${styles.ti__title}`}>{t("Minimum budget")}</h3>
                             <div className={`${styles.hour}`}>
                                 <p>$10</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">

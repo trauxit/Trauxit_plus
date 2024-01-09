@@ -329,3 +329,15 @@ body[dir='rtl'] .steps__btn{
 body[dir='rtl'] .press__btn{
     margin-left: 10px;
 }
+body[dir='rtl'] .dir {
+    text-align: right !important;
+}
+
+body[dir='rtl'] .pay__para {
+    text-align: right;
+
+}
+body[dir='rtl'] .pay__title {
+    text-align: center;
+
+}
