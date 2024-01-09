@@ -246,5 +246,10 @@
     "Profile viewers":"مشاهدو الملفات الشخصية",
     "Post impressions":"انطباعات ما بعد",
     "My followers":"متابعيني",
-    "see all":"رؤية الكل"
+    "see all":"رؤية الكل",
+    "Payment ID":"معرف الدفع",
+    "Payment Method":"طريقة الدفع",
+    "Invoice Date":"تاريخ الفاتورة",
+    "Date Paid":"تاريخ الدفع",
+    "Payment Done via Bank transfers can’t be disputed":"لا يمكن الاعتراض على الدفع الذي تم عن طريق التحويلات المصرفية"
   }

@@ -249,6 +249,11 @@
     "Profile viewers":"Profile viewers",
     "Post impressions":"Post impressions",
     "My followers":"My followers",
-    "see all":"see all"
+    "see all":"see all",
+    "Payment ID":"Payment ID",
+    "Payment Method":"Payment Method",
+    "Invoice Date":"Invoice Date",
+    "Date Paid":"Date Paid",
+    "Payment Done via Bank transfers can’t be disputed":"Payment Done via Bank transfers can’t be disputed"
 
 }

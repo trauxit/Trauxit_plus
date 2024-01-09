@@ -12,7 +12,7 @@ import lang from '../assets/images/Vector.svg'
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import cookies from 'js-cookie'
-import one from '../assets/images/one.png'
+import user from '../assets/images/user.png'
 const Nav = () => {
     const [show, setShow] = useState(false);
 
@@ -124,7 +124,7 @@ const Nav = () => {
                             </div>
                             <img alt='' src={msg} className={`${styles.msg}`} />
                             <Link to='/user'>
-                                <img alt='' src={one} className={`${styles.white}`} />
+                                <img alt='' src={user} className={`${styles.white}`} />
                             </Link>
                         </div>
                         <div className={`${styles.responsive}`}>
