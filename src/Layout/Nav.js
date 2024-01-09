@@ -79,7 +79,7 @@ const Nav = () => {
                                                 className={` pt-2 ${styles.header__link} d-none`}
                                                 href="#">
                                                 <div className={`${styles.lang}`}>
-                                                    <span>{code}</span>
+                                                    <span>Ar</span>
                                                     <img alt='' src={lang} />
                                                 </div>
                                             </Link>
@@ -92,7 +92,7 @@ const Nav = () => {
                                                     className={` pt-2 ${styles.header__link} d-none`}
                                                     href="#">
                                                     <div className={`${styles.lang}`}>
-                                                        <span>{code}</span>
+                                                        <span>En</span>
                                                         <img alt='' src={lang} />
                                                     </div>
                                                 </Link>
@@ -104,7 +104,7 @@ const Nav = () => {
                                                     className={` pt-2 ${styles.header__link} `}
                                                     href="#">
                                                     <div className={`${styles.lang}`}>
-                                                        <span>{code}</span>
+                                                        <span className={`${styles.codelang}`}>{code}</span>
                                                         <img alt='' src={lang} />
                                                     </div>
                                                 </Link>

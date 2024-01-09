@@ -201,3 +201,6 @@ font-size: 40px !important;
             padding-top: 15px;
         }
 }
+.codelang{
+    text-transform: capitalize;
+}
