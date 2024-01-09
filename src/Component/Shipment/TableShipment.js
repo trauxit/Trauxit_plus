@@ -23,8 +23,8 @@ export const data = [
             lastName: 'Lee',
         },
         address: '5-5-20222',
-        city: '15',
-        state: '200',
+        city: '15 km',
+        state: '200 EGP',
         status: "pending"
     },
     {
@@ -34,8 +34,8 @@ export const data = [
             lastName: 'Anderson',
         },
         address: '1-2-2022',
-        city: '22',
-        state: '150',
+        city: '22 km',
+        state: '150 EGP',
         status: "pending"
     },
     {
@@ -45,8 +45,8 @@ export const data = [
             lastName: 'Garcia',
         },
         address: '8-5-2023',
-        city: '10',
-        state: '30',
+        city: '10 km',
+        state: '30 EGP',
         status: "pending"
     },
     {
@@ -56,8 +56,8 @@ export const data = [
             lastName: 'Davis',
         },
         address: '2-10-2024',
-        city: '70',
-        state: '140',
+        city: '70 km',
+        state: '140 EGP',
         status: "pending"
     },
     {
@@ -67,8 +67,8 @@ export const data = [
             lastName: 'Smith',
         },
         address: '4-7-2022',
-        city: '50',
-        state: '200',
+        city: '50 km',
+        state: '200 EGP',
         status: "pending"
     },
     {
@@ -78,8 +78,8 @@ export const data = [
             lastName: 'Yan',
         },
         address: '30-1-2023',
-        city: '17',
-        state: '60',
+        city: '17 km',
+        state: '60 EGP',
         status: "pending"
     },
     {
@@ -89,8 +89,8 @@ export const data = [
             lastName: 'Upton',
         },
         address: '18-9-20222',
-        city: '120',
-        state: '140',
+        city: '120 km',
+        state: '140 EGP',
         status: "pending"
     },
     {
@@ -100,8 +100,8 @@ export const data = [
             lastName: 'Harris',
         },
         address: '8-9-2023',
-        city: '50',
-        state: '50',
+        city: '50 km',
+        state: '50 EGP',
         status: "pending"
     },
     {
@@ -111,8 +111,8 @@ export const data = [
             lastName: 'Yan',
         },
         address: '14-2-2022',
-        city: '8',
-        state: '140',
+        city: '8 km',
+        state: '140 EGP',
         status: "pending"
     },
     {
@@ -122,8 +122,8 @@ export const data = [
             lastName: 'Upton',
         },
         address: '23-1-2024',
-        city: '13',
-        state: '190',
+        city: '13 km',
+        state: '190 EGP',
         status: "pending"
     },
     {
@@ -133,8 +133,8 @@ export const data = [
             lastName: 'Harris',
         },
         address: '4-1-2023',
-        city: '140',
-        state: '200',
+        city: '140 km',
+        state: '200 EGP',
         status: "pending"
     }, {
         id: '6',
@@ -143,8 +143,8 @@ export const data = [
             lastName: 'Yan',
         },
         address: '20-2-2015',
-        city: '30',
-        state: '100',
+        city: '30 km',
+        state: '100 EGP',
         status: "pending"
     },
     {
@@ -154,8 +154,8 @@ export const data = [
             lastName: 'Upton',
         },
         address: '7-5-2023',
-        city: '70',
-        state: '130',
+        city: '70 km',
+        state: '130 EGP',
         status: "pending"
     },
     {
@@ -165,8 +165,8 @@ export const data = [
             lastName: 'Harris',
         },
         address: '12-8-2021',
-        city: '180',
-        state: '180',
+        city: '180 km',
+        state: '180 EGP',
         status: "pending"
     },
 ];
@@ -220,7 +220,7 @@ const TableShipment = () => {
                     {
                         accessorKey: 'state', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
-                        header: `${t("Price $")}`,
+                        header: `${t("Price")}`,
                         size: 200,
                     },
                     {

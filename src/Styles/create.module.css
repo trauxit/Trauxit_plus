@@ -72,8 +72,8 @@ margin-right: 10px;
         text-decoration: none;
 }
 .need__para{
-border: 1px solid var(--black, #1C1A19);
-    background-color: var(--second-color, #EEEEEC);
+border: 1px solid #EEEEEC;
+    background-color: transparent;
     padding: 15px ;
     color: var(--black, #1C1A19);
         font-size: 18px;
@@ -84,7 +84,7 @@ font-family: 'AlegreyaSans-Bold';
 }
 .need__input,
 .need__input2{
-    background-color: var(--second-color, #EEEEEC) !important;
+    background-color: transparent !important;
 border: none !important;
 }
 .need__input::placeholder,
@@ -99,7 +99,7 @@ border: none !important;
 .need__input:focus,
 .need__input2:focus{
     box-shadow: none !important;
-        background-color: var(--second-color, #EEEEEC) !important;
+        background-color: transparent !important;
 
 }
 
@@ -147,8 +147,8 @@ body[dir='rtl'] .upload__para{
     margin-bottom: 70px;
 }
 .lift__para {
-    border: 1px solid var(--black, #1C1A19);
-    background-color: var(--second-color, #EEEEEC);
+    border: 1px solid #EEEEEC;
+    background-color: transparent;
     color: var(--black, #1C1A19);
     font-size: 18px;
     font-style: normal;
@@ -160,11 +160,7 @@ body[dir='rtl'] .upload__para{
     padding: 25px;
     padding-bottom: 10px;
 }
-.lift__para hr{
-    background-color: #1C1A19;
-    border: 1px solid #1C1A19 !important;
-    opacity: 1;
-}
+
 .skills__para{
 color: var(--black, #1C1A19);
 opacity: 0.4;
@@ -340,4 +336,11 @@ body[dir='rtl'] .pay__para {
 body[dir='rtl'] .pay__title {
     text-align: center;
 
+}
+.usdico{
+    border: none !important;
+
+}
+.usdico:focus{
+    box-shadow: none !important;
 }

@@ -318,3 +318,6 @@ body[dir='rtl'] .pend__title {
 body[dir='rtl'] .pend__para {
     text-align: right;
 }
+.acc__img{
+    width: 50px;
+}

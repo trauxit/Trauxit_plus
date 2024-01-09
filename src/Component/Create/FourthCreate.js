@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from '../../Styles/create.module.css'
 import { useTranslation } from 'react-i18next';
+import Form from 'react-bootstrap/Form';
 
 const FourthCreate = () => {
     const [active, setActive] = useState('hour')
@@ -47,18 +48,23 @@ const FourthCreate = () => {
             </div>
             <h3 className={`${styles.ti__title}`}>{t("What is your estimated budget?")}</h3>
             <div className={`${styles.create__price}`}>
-                <div className={`${styles.usd}`}>
-                    <p>{t("USD")}</p>
+
+                <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.usd} mb-3 mt-4`}>
+                    <Form.Control placeholder={t("USD")} name="usd" type='text'
+                        className={`${styles.usdico}`}
+                    />
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                     </svg>
-                </div>
-                <div className={`${styles.hour}`}>
-                    <p>{t("Standard ($25-$100 USD Per Hour)")}</p>
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.hour} mb-3 mt-4`}>
+                    <Form.Control placeholder={t("Standard ($25-$100 USD Per Hour)")} name="hour" type='text'
+                        className={`${styles.usdico}`}
+                    />
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                     </svg>
-                </div>
+                </Form.Group>
             </div>
             <div className='mb-4'>
                 {
@@ -66,19 +72,25 @@ const FourthCreate = () => {
                     active === 'fixed' ?
                         <>
                             <h3 className={`${styles.ti__title}`}>{t("Minimum budget")}</h3>
-                            <div className={`${styles.hour}`}>
-                                <p>$10</p>
+
+                            <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.hour} mb-3 mt-4`}>
+                                <Form.Control placeholder={t("$10")} name="hour" type='text'
+                                    className={`${styles.usdico}`}
+                                />
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                                 </svg>
-                            </div>
+                            </Form.Group>
                             <h3 className={`${styles.ti__title}`}>{t("Minimum budget")}</h3>
-                            <div className={`${styles.hour}`}>
-                                <p>$10</p>
+
+                            <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.hour} mb-3 mt-4`}>
+                                <Form.Control placeholder={t("$10")} name="hour" type='text'
+                                    className={`${styles.usdico}`}
+                                />
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.33306 2.66675H8.66639V10.6667L12.3331 7.00008L13.2797 7.94675L7.99973 13.2267L2.71973 7.94675L3.66639 7.00008L7.33306 10.6667V2.66675Z" fill="#1C1A19" />
                                 </svg>
-                            </div>
+                            </Form.Group>
                         </>
                         :
                         ""

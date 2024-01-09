@@ -15,7 +15,6 @@ const ThirdCreate = () => {
                     <Form.Control className={`${styles.need__input}`} placeholder={t("Need ForkLift for Ras Gharib Concession")} name="need"
                     />
                 </Form.Group>
-                <hr />
             </div>
             <h3 className={`${styles.ti__title}`}>{t("Project Description")}</h3>
             <Form.Group controlId="need" className={`${styles.need__para} mb-3 mt-4`}>

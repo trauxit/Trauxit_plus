@@ -14,6 +14,8 @@ import logo from '../../assets/images/APP.png'
 import Form from 'react-bootstrap/Form';
 import Header from '../../Layout/Header'
 import { useTranslation } from 'react-i18next';
+import one from '../../assets/images/one.png'
+import three from '../../assets/images/tjree.png'
 
 const Msg = () => {
     const { t, i18n } = useTranslation();
@@ -38,9 +40,9 @@ const Msg = () => {
                                 <h3 className={`${styles.pin__msg}`}>{t("Pinned Messages")}</h3>
                                 <div className={`${styles.chat}`}>
                                     <div className={`${styles.user__chat}`}>
-                                        <img alt='' src={user} className={`${styles.user}`} />
+                                        <img alt='' src={three} className={`${styles.user}`} />
                                         <div>
-                                            <h3>Ashraf Boma</h3>
+                                            <h3>Ashraf Ibrahim</h3>
                                             <p>Hi Trauxit, can you please </p>
                                         </div>
                                     </div>
@@ -56,7 +58,7 @@ const Msg = () => {
                                     <div className={`${styles.user__chat}`}>
                                         <img alt='' src={user} className={`${styles.user}`} />
                                         <div>
-                                            <h3>Mahmoud Hok</h3>
+                                            <h3>Mahmoud ali</h3>
                                             <p>Confirmed, tomorrow then </p>
                                         </div>
                                     </div>
@@ -70,7 +72,7 @@ const Msg = () => {
                                 <h3 className={`${styles.pin__msg}`}>{t("Recent Messages")}</h3>
                                 <div className={`${styles.chat}`}>
                                     <div className={`${styles.user__chat}`}>
-                                        <img alt='' src={user} className={`${styles.user}`} />
+                                        <img alt='' src={one} className={`${styles.user}`} />
                                         <div>
                                             <h3>Ola Adel</h3>
                                             <p>Hi Trauxit, can you please </p>
@@ -86,7 +88,22 @@ const Msg = () => {
                                 </div>
                                 <div className={`${styles.chat}`}>
                                     <div className={`${styles.user__chat}`}>
-                                        <img alt='' src={user} className={`${styles.user}`} />
+                                        <img alt='' src={three} className={`${styles.user}`} />
+                                        <div>
+                                            <h3>ahmed adel</h3>
+                                            <p>Hi Trauxit, can you please </p>
+                                        </div>
+                                    </div>
+                                    <div className={`${styles.name}`}>
+                                        <p>2min ago</p>
+                                        <div className={`${styles.num}`}>
+                                            <img alt='' src={check} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={`${styles.chat}`}>
+                                    <div className={`${styles.user__chat}`}>
+                                        <img alt='' src={one} className={`${styles.user}`} />
                                         <div>
                                             <h3>Basmala Ayman</h3>
                                             <p>Confirmed, tomorrow then </p>
@@ -115,21 +132,7 @@ const Msg = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={`${styles.chat}`}>
-                                    <div className={`${styles.user__chat}`}>
-                                        <img alt='' src={user} className={`${styles.user}`} />
-                                        <div>
-                                            <h3>Ashraf Boma</h3>
-                                            <p>Hi Trauxit, can you please </p>
-                                        </div>
-                                    </div>
-                                    <div className={`${styles.name}`}>
-                                        <p>2min ago</p>
-                                        <div className={`${styles.num}`}>
-                                            <img alt='' src={check} />
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </Col>
                         <Col xxl='8'>
@@ -137,11 +140,11 @@ const Msg = () => {
                                 <div className={`${styles.top}`}>
                                     <div className={`${styles.user__chat}`}>
                                         <div className={`${styles.online}`}>
-                                            <img alt='' src={user} className={`${styles.user}`} />
+                                            <img alt='' src={three} className={`${styles.user}`} />
                                             <img alt='' src={online} className={`${styles.online__img}`} />
                                         </div>
                                         <div>
-                                            <h3>Ashraf Boma</h3>
+                                            <h3>Ashraf adel</h3>
                                             <p>Online</p>
                                         </div>
                                     </div>

@@ -102,10 +102,15 @@ body[dir='rtl'] .business__title{
     font-weight: 700;
     line-height: normal;
 }
-.switch svg {
+body[dir='rtl'] .switch svg {
     position: absolute;
     left: 90%;
     top: 0px;
+}
+.switch svg {
+    position: absolute;
+    left: 90%;
+    top: -50%;
 }
 body[dir='rtl'] .switch{ 
     display: flex;

@@ -7,6 +7,9 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import user from '../../assets/images/APP.png'
 import verified from '../../assets/images/material-symbols_verified.svg'
 import view from '../../assets/images/Rectangle 3463660.png'
+import one from '../../assets/images/one.png'
+import two from '../../assets/images/two.png'
+import three from '../../assets/images/tjree.png'
 import Accordion from 'react-bootstrap/Accordion';
 import Header from '../../Layout/Header'
 import { useTranslation } from 'react-i18next';
@@ -50,7 +53,7 @@ const Wallet = () => {
                                             <div className={`${styles.acc__body}`}>
                                                 <div className={`${styles.acc__user}`}>
                                                     <img alt='' src={view} />
-                                                    <p>Mahmoud Hok</p>
+                                                    <p>Mahmoud Ali</p>
                                                 </div>
                                                 <p>Jun 6,2024</p>
                                                 <p>-$23,000</p>
@@ -93,7 +96,7 @@ const Wallet = () => {
                                         <Accordion.Header >
                                             <div className={`${styles.acc__body}`}>
                                                 <div className={`${styles.acc__user}`}>
-                                                    <img alt='' src={view} />
+                                                    <img alt='' src={three} className={`${styles.acc__img}`} />
                                                     <p>Ashraf ibrahem</p>
                                                 </div>
                                                 <p>Jun 6,2024</p>
@@ -137,7 +140,7 @@ const Wallet = () => {
                                         <Accordion.Header >
                                             <div className={`${styles.acc__body}`}>
                                                 <div className={`${styles.acc__user}`}>
-                                                    <img alt='' src={view} />
+                                                    <img alt='' src={one} />
                                                     <p>Basmala ayman</p>
                                                 </div>
                                                 <p>Jun 6,2024</p>
@@ -279,7 +282,7 @@ const Wallet = () => {
                                     <div className={`${styles.invoice__user}`}>
                                         <img alt='' src={view} />
                                         <div>
-                                            <h2>Mahmoud Hok</h2>
+                                            <h2>Mahmoud ali</h2>
                                             <p>Due on Jun 14, 2024</p>
                                         </div>
                                     </div>
@@ -287,7 +290,7 @@ const Wallet = () => {
                                 </div>
                                 <div className={`${styles.invoice__body}`}>
                                     <div className={`${styles.invoice__user}`}>
-                                        <img alt='' src={view} />
+                                        <img alt='' src={one} />
                                         <div>
                                             <h2>Basmala</h2>
                                             <p>Due on Jun 14, 2024</p>
@@ -297,7 +300,7 @@ const Wallet = () => {
                                 </div>
                                 <div className={`${styles.invoice__body}`}>
                                     <div className={`${styles.invoice__user}`}>
-                                        <img alt='' src={view} />
+                                        <img alt='' src={three} className={`${styles.acc__img}`} />
                                         <div>
                                             <h2>Ahmed</h2>
                                             <p>Due on Jun 14, 2024</p>
@@ -307,7 +310,7 @@ const Wallet = () => {
                                 </div>
                                 <div className={`${styles.invoice__body}`}>
                                     <div className={`${styles.invoice__user}`}>
-                                        <img alt='' src={view} />
+                                        <img alt='' src={one} />
                                         <div>
                                             <h2>Ola</h2>
                                             <p>Due on Jun 14, 2024</p>

@@ -3,6 +3,7 @@ import Sidebar from '../../Layout/Sidebar'
 import Header from '../../Layout/Header'
 import styles from '../../Styles/project.module.css'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 const Project = () => {
     const [active, setActive] = useState('open')
     const { t, i18n } = useTranslation();
@@ -52,7 +53,7 @@ const Project = () => {
                     <div className={`${styles.project__content}`}>
                         <h3>{t("Create a New Project")}</h3>
                         <p>{t("Create a new project and get your project done in an easy way")}</p>
-                        <button>{t("Create a New Project")}</button>
+                        <Link to='/create'><button>{t("Create a New Project")}</button></Link>
                     </div>
                 </div>
 
