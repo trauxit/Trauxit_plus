@@ -21,6 +21,7 @@ body[dir='rtl'] .sidebar{
         transition: all .5s ease-in-out;
     }
 
+    
     .top {
         height: 50px;
         display: flex;

@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom'
 import Header from '../../Layout/Header'
 import { useTranslation } from 'react-i18next';
 
+
 const Insight = () => {
     const [active, setActive] = useState('posted')
     const [job, setJob] = useState('post')
