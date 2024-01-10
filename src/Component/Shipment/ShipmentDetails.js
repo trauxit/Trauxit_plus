@@ -9,6 +9,7 @@ import map from '../../assets/images/63864b53222772dc9da55b62_turn by turn nav 2
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 
+
 const ShipmentDetails = () => {
     const { t, i18n } = useTranslation();
 
