@@ -28,3 +28,9 @@ body[dir='rtl'] .footer{
     margin-right: 18% !important;
     margin-left: 40px !important;
 }
+@media (min-width:600px) and (max-width:900px) {
+    .footer{
+        margin:30px auto;
+        margin-left: 30px !important;
+    }
+}

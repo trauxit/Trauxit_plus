@@ -292,3 +292,17 @@ textarea.form-control {
     margin-bottom: 0 !important;
     background-color: transparent !important;
 }
+@media (min-width:1200px) and (max-width:1400px) {
+    .css-8k4lth{
+        left: 60% !important;
+    }
+        .mantine-1m3tpc2{
+            width: 900px !important;
+        }
+                           .input-group{
+                            flex-wrap: nowrap !important;
+                           }
+           .imagecontact .form-control{
+            width: 100% !important;
+           }
+}

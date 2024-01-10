@@ -268,3 +268,11 @@ margin-left: 10px;
             line-height: normal;
             border: none !important;
 }
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .label{
+        font-size: 10px;
+        font-weight: 400 !important;
+        
+    }
+}

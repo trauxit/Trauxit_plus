@@ -18,7 +18,7 @@ font-family: 'AlegreyaSans-Regular';
     justify-content: space-between;
     position: fixed;
         background-color: #1C1A19;
-        z-index: 99999 !important;
+        z-index: 999 !important;
 }
 
 .logo__body {
@@ -138,6 +138,8 @@ width: 70px;
 }
 .responsive{
     display: none;
+    position: relative;
+    z-index: 99999999999999999 !important;
 }
 @media (min-width:0px) and (max-width:600px) {
 .inputBox_container {
@@ -195,7 +197,9 @@ font-size: 40px !important;
             padding-right: 10px;
         }
     .responsive{
-        display: block;
+        display:block !important;
+        position: relative !important;
+        z-index: 99999999999 !important;
     }
         .menu__icon {
             font-size: 55px !important;

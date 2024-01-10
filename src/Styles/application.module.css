@@ -115,3 +115,8 @@ margin-bottom: 20px;
 .t{
     margin-right: 30px;
 }
+@media (min-width:1200px) and (max-width:1400px) {
+.app__para{
+    padding: 5px 20px;
+}
+}

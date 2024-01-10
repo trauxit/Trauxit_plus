@@ -81,3 +81,8 @@ body[dir='rtl'] .loads {
     font-weight: 800;
     line-height: normal;
 }
+@media (min-width:1200px) and (max-width:1400px) {
+    .loads{
+        width: 100% !important;
+    }
+}

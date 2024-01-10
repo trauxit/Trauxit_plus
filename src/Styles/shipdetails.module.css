@@ -236,3 +236,9 @@ display: flex;
 justify-content: right;
 width: fit-content;
 }
+@media (min-width:1200px) and (max-width:1400px) {
+    .line{
+        width: 100%;
+    }
+
+}

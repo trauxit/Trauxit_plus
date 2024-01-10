@@ -25,7 +25,7 @@ const ShipmentDetails = () => {
                         <p className={`${styles.ship__para}`}>{t("Shipments/ Shipment details")}</p>
                     </div>
                     <Row>
-                        <Col xxl='9' className={`${styles.col}`}>
+                        <Col xxl='9' xl='8' className={`${styles.col}`}>
                             <div className={`${styles.ship__line}`}>
                                 <img alt='' src={line} className={`${styles.line}`} />
                                 <div className={`${styles.line__img}`}>
@@ -105,7 +105,7 @@ const ShipmentDetails = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xxl='3'>
+                        <Col xl='3'>
                             <div className={`${styles.right}`}>
                                 <h3 className={`${styles.right__title}`}>{t("Shipment Details")}</h3>
                                 <div className={`${styles.right__body}`}>

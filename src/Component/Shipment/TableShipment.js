@@ -190,44 +190,37 @@ const TableShipment = () => {
                     {
                         accessorKey: 'id', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
-                        header: `${t("ID")}`,
-                        size: 100,
+                        header: `${t("ID")}`
                     },
                     {
                         accessorKey: 'address', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
                         header: `${t("Date Applied")}`,
-                        size: 200,
                     },
                     {
                         accessorKey: 'name.firstName', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
                         header: `${t("Pick up")}`,
-                        size: 200,
                     },
                     {
                         accessorKey: 'name.lastName', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
                         header: `${t("Drop Off")}`,
-                        size: 200,
                     },
                     {
                         accessorKey: 'city', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
                         header: `${t("Distance")}`,
-                        size: 200,
                     },
                     {
                         accessorKey: 'state', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
                         header: `${t("Price")}`,
-                        size: 200,
                     },
                     {
                         accessorKey: 'status', //accessorKey used to define `data` column. `id` gets set to accessorKey automatically
                         enableClickToCopy: true,
                         header: `${t("Status")}`,
-                        size: 200,
                     },
 
                 ],
@@ -263,7 +256,7 @@ const TableShipment = () => {
             <>
 
                 <Row className={`${styles.row__details}`}>
-                    <Col xxl='3'>
+                    <Col xl='3'>
                         <div className={`${styles.route}`}>
                             <h3>{t("History")}</h3>
                             <div className={`${styles.route__details}`}>
@@ -285,7 +278,7 @@ const TableShipment = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl='8'>
+                    <Col xl='8'>
                         <div className={`${styles.cargo}`}>
                             <p className={`${styles.cargo__para}`}>{t("Cargo details")} </p>
                             <p className={`${styles.cargo__status}`}>{t("PAID - APPROVED")}</p>

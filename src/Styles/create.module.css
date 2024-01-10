@@ -344,3 +344,16 @@ body[dir='rtl'] .pay__title {
 .usdico:focus{
     box-shadow: none !important;
 }
+@media (min-width:1200px) and (max-width:1400px) {
+.need__input,
+.need__para,
+.imagecontact{
+    width: 100% !important;
+}
+.upload__para{
+    left: 75%;
+}
+.hour{
+    width: 100%;
+}
+}

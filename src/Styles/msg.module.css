@@ -320,3 +320,29 @@ font-family: 'AlegreyaSans-Bold';
                         border: 1px solid #FF8201;
                     
 }
+@media (min-width:1200px) and (max-width:1400px) {
+    .msg__side,
+    .inputBox_container{
+        width: 100%;
+    }
+    .user__chat h3{
+        font-size: 12px;
+    }
+    .user__chat p{
+        font-size: 10px;
+    }
+    .user__chat img{
+        width: 50px;
+    }
+    .name p{
+        font-size: 7px;
+    }
+    .num p{
+        left: 17px;
+        font-size: 10px;
+    }
+    .online__img{
+        top: 29px;
+        left: 18px;
+    }
+}

@@ -28,7 +28,7 @@ const Msg = () => {
                 <div className={`${styles.homeContainer}`}>
                     <p className={`${styles.new__title}`}>{t("Recent News:")} <span className={`${styles.new__para}`}> {t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")}</span> </p>
                     <Row>
-                        <Col xxl='4'>
+                        <Col xl='4'>
                             <div className={`${styles.msg__side}`}>
                                 <div className={`${styles.inputBox_container}`}>
                                     <svg className={`${styles.search_icon}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
@@ -135,7 +135,7 @@ const Msg = () => {
 
                             </div>
                         </Col>
-                        <Col xxl='8'>
+                        <Col xl='8'>
                             <div className={`${styles.msg__content}`}>
                                 <div className={`${styles.top}`}>
                                     <div className={`${styles.user__chat}`}>

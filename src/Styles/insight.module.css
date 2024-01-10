@@ -127,7 +127,7 @@ body[dir='rtl'] .new__title {
      padding: 5px 15px !important;
      line-height: 1.625rem !important;
      position: relative;
-     z-index: 10000 !important;
+     z-index: 100 !important;
      margin-bottom: 20% !important;
  }
 
@@ -206,7 +206,7 @@ body[dir='rtl'] .new__title {
      width: 100%;
      position: relative;
      background-color: #fff;
-     z-index: 10000 !important;
+     z-index: 100 !important;
         margin-bottom: 20% !important;
  }
 
@@ -577,4 +577,31 @@ body[dir='rtl'] .tab__para {
     line-height: normal;
     font-family: 'AlegreyaSans-Regular' !important;
     text-decoration-line: underline;
+}
+@media (min-width:1200px) and (max-width:1400px) {
+.summary__chart{
+    margin-left: 25px;
+}
+.summary__body{
+    width: 100% !important;
+    margin-left:10px ;
+    margin-right: 25px;
+}
+.summary__title{
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    display: none;
+}
+.job__para{
+    font-size: 12px;
+}
+.active__job{
+    font-size: 10px;
+}
+.chart{
+    margin-left: 15px;
+}
+.table{
+    margin-left: 40px;
+}
 }
