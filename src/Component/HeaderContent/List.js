@@ -19,7 +19,7 @@ const List = () => {
                     <p className={`${styles.plus__para}`}>{t("Table shows some details about Projects information")}</p>
 
                     <Row>
-                        <Col xl='3'>
+                        <Col xl='3' md='3'>
                             <div className={`${styles.list}`}>
                                 <div className={`${styles.list__body}`}>
                                     <h3>{t("Lists")}</h3>
@@ -41,7 +41,7 @@ const List = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xl='9'>
+                        <Col xl='9' md='9'>
                             <div className={`${styles.list} ${styles.fav}`}>
                                 <div className={`${styles.list__body}`}>
                                     <h3>{t("Favorites")} </h3>

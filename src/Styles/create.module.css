@@ -429,7 +429,24 @@ body[dir='rtl'] .pay__title {
         width: 100%;
     }
 }
-
+@media (min-width:600px) and (max-width:900px) {
+.need__input,
+    .need__para,
+    .imagecontact {
+        width: 100% !important;
+    }
+        .upload__para {
+            left: 79%;
+        }
+          .hour {
+              width: 100%;
+          }
+                  .allpay {
+                      display: flex;
+                      flex-direction: column;
+                      row-gap: 10px;
+                  }
+}
 @media (min-width:1200px) and (max-width:1400px) {
 
     .need__input,

@@ -321,6 +321,12 @@ textarea.form-control {
  .input-group {
      flex-wrap: nowrap !important;
  }
+  .imagecontact .form-control {
+      width: 100% !important;
+  }
+  .imagecontact .form-control::placeholder {
+      font-size: 12px;
+  }
 }
 @media (min-width:1200px) and (max-width:1400px) {
     .css-8k4lth{
