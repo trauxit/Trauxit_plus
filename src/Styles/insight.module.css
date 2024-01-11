@@ -578,6 +578,45 @@ body[dir='rtl'] .tab__para {
     font-family: 'AlegreyaSans-Regular' !important;
     text-decoration-line: underline;
 }
+@media (min-width:0px) and (max-width:600px) {
+.summary__body {
+       display: flex;
+       flex-direction: column;
+       width: 100% !important;
+       height: fit-content !important;
+       margin-top: 15px;
+    }
+    .chart{
+        width: 100% !important;
+    }
+        .summary__title{
+            display: none;
+        }
+                                .home {
+                                    display: flex !important;
+                                    flex-direction: column !important;
+                                }
+}
+@media (min-width:600px) and (max-width:900px) {
+.summary__title{
+    display: none;
+}
+.insight__jobs{
+    width: 100%;
+}
+.logo{
+    left: 75px;
+}
+.span{
+    font-size: 13px;
+}
+.job__para{
+    font-size: 15px;
+}
+.active__para{
+    font-size: 15px;
+}
+}
 @media (min-width:1200px) and (max-width:1400px) {
 .summary__chart{
     margin-left: 25px;

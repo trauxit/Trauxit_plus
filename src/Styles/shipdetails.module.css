@@ -236,6 +236,26 @@ display: flex;
 justify-content: right;
 width: fit-content;
 }
+@media (min-width:0px) and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeContainer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .line{
+        width: 100%;
+    }
+        .user__details img{
+            width: 50px;
+        }
+        .right{
+            margin-top: 15px;
+            width: 100%;
+        }
+}
 @media (min-width:1200px) and (max-width:1400px) {
     .line{
         width: 100%;

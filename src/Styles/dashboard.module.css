@@ -397,6 +397,12 @@ body[dir='rtl'] .tab__para {
 
     .business__body {
         padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        padding-right: 20px;
     }
 
     .booked {

@@ -137,3 +137,15 @@ margin-top: 40px;
         .fav{
             padding-bottom: 80px;
         }
+@media (min-width:0px) and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .fav{
+        margin-top: 15px;
+    }
+        .browse__btn{
+            width: 100%;
+        }
+}

@@ -28,7 +28,7 @@ const Insight = () => {
                     <p className={`${styles.new__title}`}>{t("Recent News:")} <span className={`${styles.new__para}`}> {t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")}</span> </p>
                     <Appglobal />
                     <Row className='mt-5'>
-                        <Col xl='4'>
+                        <Col xl='4' md='4'>
                             <div className={`${styles.insight__jobs}`}>
                                 <div className={`${styles.logo__body}`}>
                                     <img alt='' src={eliilogo} className={`${styles.ellilogo}`} />
@@ -62,7 +62,7 @@ const Insight = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xxl='7' xl='8'>
+                        <Col xxl='7' xl='8' md='8'>
                             <div className={`${styles.summary__chart}`}>
                                 <h3 className={`${styles.summary__title}`}>{t("Profile Summary")}</h3>
                                 <div className={`${styles.summary__body}`}>

@@ -159,3 +159,22 @@ display: flex;
         margin-top: 100px;
         margin-bottom: 10%;
 }
+@media (min-width:0px) and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeContainer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+        .project__option,
+                .project__select{
+            display: flex;
+            flex-direction: column;
+        }
+        .inputBox_container{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+}

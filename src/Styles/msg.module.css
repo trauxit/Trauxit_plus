@@ -320,6 +320,33 @@ font-family: 'AlegreyaSans-Bold';
                         border: 1px solid #FF8201;
                     
 }
+@media (min-width:0px) and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeContainer{
+        padding-left: 10px;
+        width: 100%;
+        padding-right: 10px;
+    }
+        .msg__side,
+        .inputBox_container{
+            width: 100%;
+        }
+        .msg__side{
+            margin-bottom: 15px;
+        }
+}
+@media (min-width:600px) and (max-width:900px) {
+    .msg__side{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+        .inputBox_container{
+            width: 100%;
+        }
+}
 @media (min-width:1200px) and (max-width:1400px) {
     .msg__side,
     .inputBox_container{

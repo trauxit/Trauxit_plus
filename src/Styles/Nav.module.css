@@ -141,6 +141,24 @@ width: 70px;
     position: relative;
     z-index: 99999999999999999 !important;
 }
+.ul li{
+    text-align: center;
+    margin-bottom: 30px !important;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #333;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.06);
+}
+.li2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width:0px) and (max-width:600px) {
 .inputBox_container {
 display: none;

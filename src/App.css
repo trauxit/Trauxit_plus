@@ -292,6 +292,34 @@ textarea.form-control {
     margin-bottom: 0 !important;
     background-color: transparent !important;
 }
+@media (min-width:0px) and (max-width:600px) {
+.css-8k4lth {
+      left: 5% !important;
+      top:1540px !important
+        
+    }
+        .input-group {
+            flex-wrap: nowrap !important;
+        }
+                .imagecontact .form-control{
+                    width: 100% !important;
+                }
+                .imagecontact .form-control::placeholder{
+                    font-size: 5px;
+                }
+}
+@media (min-width:600px) and (max-width:900px) {
+.css-8k4lth{
+    left: 45% !important;
+    top:100% !important;
+}
+ .mantine-1m3tpc2 {
+     width: 700px !important;
+ }
+ .input-group {
+     flex-wrap: nowrap !important;
+ }
+}
 @media (min-width:1200px) and (max-width:1400px) {
     .css-8k4lth{
         left: 60% !important;

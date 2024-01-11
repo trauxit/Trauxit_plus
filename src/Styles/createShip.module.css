@@ -268,7 +268,26 @@ margin-left: 10px;
             line-height: normal;
             border: none !important;
 }
-
+@media (min-width:0px) and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeContainer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mapphoto img{
+        width: 100% !important;
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        margin-top: 10px;
+    }
+}
 @media (min-width:1200px) and (max-width:1400px) {
     .label{
         font-size: 10px;

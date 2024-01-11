@@ -115,6 +115,29 @@ margin-bottom: 20px;
 .t{
     margin-right: 30px;
 }
+@media (min-width:0px) and (max-width:600px) {
+    .home {
+            display: flex;
+            flex-direction: column;
+        }
+                .list__body {
+                    display: flex;
+                    flex-direction: column;
+                }
+                                .active__body{
+                                    display: grid;
+                                    grid-template-columns: repeat(2,1fr);
+                                }
+                                                                .active__body p{
+                                                                    text-align: center;
+                                                                }
+}
+@media (min-width:600px) and (max-width:900px) {
+    .list__body{
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media (min-width:1200px) and (max-width:1400px) {
 .app__para{
     padding: 5px 20px;

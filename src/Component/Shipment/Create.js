@@ -124,7 +124,7 @@ const Create = () => {
                                         )}
                                     </div>
                                     <div className={`${styles.field}`}>
-                                        <Row>
+                                        <Row className={`${styles.one}`}>
                                             <Col>
                                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                                     <Form.Label className={`${styles.label}`}>{t("Commodity description")}</Form.Label>

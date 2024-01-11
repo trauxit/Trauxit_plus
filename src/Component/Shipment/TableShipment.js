@@ -256,7 +256,7 @@ const TableShipment = () => {
             <>
 
                 <Row className={`${styles.row__details}`}>
-                    <Col xl='3'>
+                    <Col xl='3' md='3' xs='3'>
                         <div className={`${styles.route}`}>
                             <h3>{t("History")}</h3>
                             <div className={`${styles.route__details}`}>
@@ -278,7 +278,7 @@ const TableShipment = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xl='8'>
+                    <Col xl='8' md='8' xs='8'>
                         <div className={`${styles.cargo}`}>
                             <p className={`${styles.cargo__para}`}>{t("Cargo details")} </p>
                             <p className={`${styles.cargo__status}`}>{t("PAID - APPROVED")}</p>

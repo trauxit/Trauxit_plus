@@ -26,7 +26,7 @@ const Wallet = () => {
                     <p className={`${styles.new__title}`}>{t("Recent News:")} <span className={`${styles.new__para}`}>{t("El Molla Inspects MIDOR Expansion Project. Sunday, 31st December 2023")}</span> </p>
 
                     <Row>
-                        <Col xxl='8'>
+                        <Col xxl='8' >
                             <Row className={`${styles.wallet__chart}`}>
                                 <Col>
                                     <div className={`${styles.chart__body}`}>
@@ -227,7 +227,7 @@ const Wallet = () => {
                                 </Accordion>
                             </div>
                         </Col>
-                        <Col xxl='4'>
+                        <Col xxl='4' >
                             <div className={`${styles.verified}`}>
                                 <div className={`${styles.verified__body}`}>
                                     <div className={`${styles.user__body}`}>
