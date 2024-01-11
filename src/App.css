@@ -328,6 +328,21 @@ textarea.form-control {
       font-size: 12px;
   }
 }
+@media (min-width:900px) and (max-width:1200px) {
+.css-8k4lth {
+        left: 50% !important;
+top: 900px !important;
+    }
+        .mantine-1m3tpc2 {
+            width: 950px !important;
+        }
+                .input-group {
+                    flex-wrap: nowrap !important;
+                }
+                                .imagecontact .form-control {
+                                    width: 100% !important;
+                                }
+}
 @media (min-width:1200px) and (max-width:1400px) {
     .css-8k4lth{
         left: 60% !important;

@@ -645,3 +645,16 @@ body[dir='rtl'] .tab__para {
     margin-left: 40px;
 }
 }
+@media (min-width:900px) and (max-width:1200px) {
+    .summary__body {
+            width: 100% !important;
+            margin-left: 10px;
+            margin-right: 25px;
+        }
+    
+        .summary__title {
+            font-weight: 400 !important;
+            font-size: 12px !important;
+            display: none;
+        }
+}

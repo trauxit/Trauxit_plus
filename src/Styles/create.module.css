@@ -463,3 +463,16 @@ body[dir='rtl'] .pay__title {
         width: 100%;
     }
 }
+@media (min-width:900px) and (max-width:1200px) {
+    .need__input,
+        .need__para,
+        .imagecontact {
+            width: 100% !important;
+        }
+                .upload__para {
+                    left: 85%;
+                }
+                                .hour {
+                                    width: 100%;
+                                }
+}

@@ -314,16 +314,6 @@ body[dir='rtl'] .active::before{
 }
 @media (min-width:900px) and (max-width:1200px) {
     .sidebar{
-        margin-left: 15px !important;
-        width: 100% !important;
+    display: none;
     }
-ul{
-    margin-left: 0px;
-}
-.active::before{
-    left: 37%;
-}
-.active::after{
-    left: 37%;
-}
 }

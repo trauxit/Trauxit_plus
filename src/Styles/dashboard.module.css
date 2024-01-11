@@ -440,6 +440,15 @@ body[dir='rtl'] .tab__para {
             font-size: 12px;
         }
 }
+@media (min-width:900px) and (max-width:1200px) {
+    .loads {
+            width: 100% !important;
+        }
+                .home {
+                    display: flex;
+                    flex-direction: column;
+                }
+}
 @media (min-width:1200px) and (max-width:1400px) {
     .loads{
         width: 100% ;

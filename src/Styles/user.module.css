@@ -506,3 +506,18 @@ width: 100%;
 .modal{
     z-index: 99999999 !important;
 }
+@media (min-width:900px) and (max-width:1200px) {
+    .img{
+        left: 65px !important;
+    }
+    .ca img,
+        .cars__para{
+        width: 100%;
+    }
+    .images{
+        padding-left: 5px;
+    }
+    .follower{
+        width: 40px !important;
+    }
+}

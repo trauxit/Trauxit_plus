@@ -257,7 +257,7 @@ width: fit-content;
             width: 100%;
         }
 }
-@media (min-width:1200px) and (max-width:1400px) {
+@media (min-width:900px) and (max-width:1400px) {
     .line{
         width: 100%;
     }

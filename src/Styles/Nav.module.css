@@ -228,3 +228,22 @@ font-size: 40px !important;
 .codelang{
     text-transform: capitalize;
 }
+
+@media (min-width:900px) and (max-width:1200px) {
+    .responsive {
+            display: block !important;
+            position: relative !important;
+            z-index: 99999999999 !important;
+        }
+                .items {
+                    display: flex;
+                    padding-right: 10px;
+                }
+                                .inputBox_container {
+                                    width: 100%;
+                                }
+                                                                .menu__icon {
+                                                                    font-size: 55px !important;
+                                                                    padding-top: 15px;
+                                                                }
+}

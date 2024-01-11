@@ -43,7 +43,7 @@ const User = () => {
 
             <section>
                 <Row className={`${styles.row}`}>
-                    <Col xxl='3' className={`${styles.col}`}>
+                    <Col xxl='3' lg='3' className={`${styles.col}`}>
                         <div className={`${styles.user}`}>
                             <div className={`${styles.user__img}`}>
                             </div>
@@ -90,7 +90,7 @@ const User = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl='9'>
+                    <Col xxl='9' lg='9'>
                         <div className={`${styles.main}`}>
                             <div className={`${styles.user__post}`}>
                                 <div className={`${styles.post}`}>

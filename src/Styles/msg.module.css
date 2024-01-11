@@ -374,3 +374,9 @@ font-family: 'AlegreyaSans-Bold';
         left: 18px;
     }
 }
+@media (min-width:900px) and (max-width:1200px) {
+    .msg__side,
+        .inputBox_container {
+            width: 100%;
+        }
+}
