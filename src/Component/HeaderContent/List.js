@@ -6,6 +6,7 @@ import { Col, Row } from 'react-bootstrap'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+
 const List = () => {
     const { t, i18n } = useTranslation();
     return (
