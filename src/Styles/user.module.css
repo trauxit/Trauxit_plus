@@ -506,6 +506,26 @@ width: 100%;
 .modal{
     z-index: 99999999 !important;
 }
+@media (min-width:0px) and (max-width:600px) {
+    .row{
+        padding: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+    .main{
+        margin-top: 10px;
+    }
+        .ca img,
+        .cars__para {
+            width: 100%;
+        }
+                .img {
+                    left: 135px !important;
+                }
+                                .user__details p{
+                                    font-size: 10px;
+                                }
+}
 @media (min-width:900px) and (max-width:1200px) {
     .img{
         left: 65px !important;

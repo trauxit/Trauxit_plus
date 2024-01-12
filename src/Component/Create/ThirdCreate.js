@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../../Styles/create.module.css'
 import Form from 'react-bootstrap/Form';
 import { useTranslation } from 'react-i18next';
 
 const ThirdCreate = () => {
     const { t, i18n } = useTranslation();
+    const [skills, setSkills] = useState([]);
+    const handleInputChange = (event) => {
+        if (event.key !== 'Enter') return
+        const value = event.target.value
+        if (!value.trim()) return
+        setSkills([...skills, value])
+        event.target.value = ''
+    };
+    function removetag(index) {
+        setSkills(skills.filter((el, i) => i !== index))
+    }
 
     return (
         <>
@@ -27,12 +38,21 @@ const ThirdCreate = () => {
             <div className={`${styles.dir}`}>
                 <p className={`${styles.skills__para}`}>{t("Enter up to 5 skills that best describe your project.")}</p>
             </div>
-            <div className='second__step mb-5'>
-                <Form.Group controlId="exampleForm.ControlTextarea1" className={`${styles.textareaship} mb-3 mt-4`}>
-                    <Form.Control as="textarea" className='cont shipt' rows={7} placeholder={t('Enter Skills here...')} name="Pickupdescription"
+
+            <div className={`${styles.boxskill} mb-5`}>
+                {
+                    skills.map((tag, index) => (
+                        <span className={`${styles.tag}`} key={index}>{tag} <span onClick={() => removetag(index)}>&times;</span></span>
+
+                    ))
+                }
+                <Form.Group controlId="exampleForm.ControlTextarea1" className={``}>
+
+                    <Form.Control placeholder={t('Enter Skills here...')} className={`${styles.skillinput}`} onKeyDown={handleInputChange}
                     />
                 </Form.Group>
             </div>
+
         </>
     )
 }

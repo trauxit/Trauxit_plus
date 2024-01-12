@@ -476,3 +476,40 @@ body[dir='rtl'] .pay__title {
                                     width: 100%;
                                 }
 }
+.skillinput{
+    border: none !important;
+}
+.skillinput:focus{
+    box-shadow: none !important;
+}
+.boxskill{
+    border: 1px solid #EEEEEC;
+padding-top: 10px;
+
+    padding-left: 10px;
+}
+.tag{
+    background-color: rgb(142, 175, 194);
+    padding: 5px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    padding-right: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.tag span{
+    color: #000;
+    background-color: #fff;
+    padding:  0 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-left: 10px;
+}

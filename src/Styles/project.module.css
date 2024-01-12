@@ -45,7 +45,7 @@ body[dir='rtl'] .plus__para {
     column-gap: 20px;
     margin-left: 0px;
     position: relative;
-    z-index: 999999;
+    z-index: 99;
     cursor: pointer;
 }
 .project__option p{
