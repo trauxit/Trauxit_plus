@@ -38,7 +38,7 @@ const SecondCreate = () => {
         <>
             <h3 className={`${styles.tell__title}`}>{t("Tell us what you need done")}</h3>
             <p className={`${styles.tell__para}`}>{t("Create Job for our Workers to apply and review bids - please take your time writing your job post for better results")}</p>
-            <h3 className={`${styles.ti__title}`}>{t("TiTLE")}</h3>
+            <h3 className={`${styles.ti__title}`}>{t("TITLE")}</h3>
             <Form.Group controlId="need" className={`${styles.need__para} mb-3 mt-4`}>
                 <Form.Control className={`${styles.need__input}`} placeholder={t("Need ForkLift for Ras Gharib Concession")} name="need"
                 />
