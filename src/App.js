@@ -17,6 +17,7 @@ import Project from './Component/HeaderContent/Project';
 import ShipmentDetails from './Component/Shipment/ShipmentDetails';
 import CreateShipment from './Component/Shipment/Create'
 import User from './Component/User/User';
+import Jobs from './Component/Jobs/Jobs';
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,7 @@ function App() {
           <Route path="/shipment-details/:id" element={<ShipmentDetails />} />
           <Route path="/create-shipment" element={<CreateShipment />} />
           <Route path="/user" element={<User />} />
+          <Route path="/jobs" element={<Jobs />} />
 
         </Routes>
         <Footer />
