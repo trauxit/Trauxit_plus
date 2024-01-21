@@ -13,6 +13,7 @@ import three from '../../assets/images/tjree.png'
 import Accordion from 'react-bootstrap/Accordion';
 import Header from '../../Layout/Header'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'
 
 const Wallet = () => {
     const { t, i18n } = useTranslation();
@@ -317,6 +318,9 @@ const Wallet = () => {
                                         </div>
                                     </div>
                                     <p className={`${styles.price}`}>$10,000</p>
+                                </div>
+                                <div className={`${styles.viewbtns}`}>
+                                    <Link className={`${styles.view__btn}`}>View More</Link>
                                 </div>
                             </div>
                         </Col>

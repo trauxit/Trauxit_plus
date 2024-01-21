@@ -14,8 +14,8 @@ const Appglobal = () => {
             <div className={`${styles.booked}`}>
                 <div className={`${styles.loads}`}>
                     <div>
-                        <h4 className={`${styles.book__title}`}>{t("Booked Loads")}</h4>
-                        <p className={`${styles.book__para}`}>+59</p>
+                        <h4 className={`${styles.book__title}`}>{t("application sent")}</h4>
+                        <p className={`${styles.book__para}`}>+208</p>
                         <img alt='' src={vector} /><span className={`${styles.book__num}`}> 55.3%</span>
                     </div>
                     <div className={`${styles.business__img}`}>
@@ -25,8 +25,8 @@ const Appglobal = () => {
                 </div>
                 <div className={`${styles.loads}`}>
                     <div>
-                        <h4 className={`${styles.book__title}`}>{t("Total Paid")}</h4>
-                        <p className={`${styles.book__para}`}>{t("E£ 23,000")}</p>
+                        <h4 className={`${styles.book__title}`}>{t("profile viewed")}</h4>
+                        <p className={`${styles.book__para}`}>{t("50")}</p>
                         <img alt='' src={vector} /><span className={`${styles.book__num}`}> 55.3%</span>
                     </div>
                     <div className={`${styles.business__img}`}>
@@ -36,8 +36,8 @@ const Appglobal = () => {
                 </div>
                 <div className={`${styles.loads}`}>
                     <div>
-                        <h4 className={`${styles.book__title}`}>{t("Posted Jobs")}</h4>
-                        <p className={`${styles.book__para}`}>+7</p>
+                        <h4 className={`${styles.book__title}`}>{t("unread message")}</h4>
+                        <p className={`${styles.book__para}`}>10</p>
                         <img alt='' src={vector} /><span className={`${styles.book__num}`}> 55.3%</span>
                     </div>
                     <div className={`${styles.business__img}`}>

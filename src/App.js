@@ -18,6 +18,10 @@ import ShipmentDetails from './Component/Shipment/ShipmentDetails';
 import CreateShipment from './Component/Shipment/Create'
 import User from './Component/User/User';
 import Jobs from './Component/Jobs/Jobs';
+import Profile from './Component/User/Profile';
+import Signup from './Component/Auth/Signup';
+import Company from './Component/Auth/Company';
+import Personal from './Component/Auth/Personal';
 function App() {
   return (
     <div className="App">
@@ -38,7 +42,10 @@ function App() {
           <Route path="/create-shipment" element={<CreateShipment />} />
           <Route path="/user" element={<User />} />
           <Route path="/jobs" element={<Jobs />} />
-
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/ascompany' element={<Company />} />
+          <Route path='asindividual' element={<Personal />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

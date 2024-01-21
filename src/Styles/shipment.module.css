@@ -251,6 +251,19 @@ body[dir='rtl'] .second {
     font-weight: 800;
     line-height: normal;
 }
+.create__btn{
+    border-radius: 8px;
+        background: var(--main-color, #FF8201);
+        padding: 15px 70px;
+        color: #FFF;
+            text-align: center;
+    font-family: 'AlegreyaSans-Bold';
+                font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: capitalize;
+}
 
 @media (min-width:0px) and (max-width:600px) {
     .home {

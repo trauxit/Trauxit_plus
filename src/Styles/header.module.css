@@ -21,12 +21,45 @@ border-radius: 0px 0px 10px 10px;
         z-index: 999 !important;
         height: 70px;
 }
-
+.wrapper1{
+    width: fit-content;
+        padding: 5px 5px 0px 0px !important;
+        display: flex;
+        align-items: center !important;
+        position: fixed;
+        background: #A0A0A0;
+        z-index: 999 !important;
+        height: 70px;
+                border-radius: 0px 0px 0px 40px !important;
+}
+.navbar1{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #fff;
+        font-family: 'AlegreyaSans-Regular';
+        border-radius: 0px 0px 0px 40px !important;
+        justify-content: flex-end !important;
+        margin-top: 4px !important;
+        -webkit-border-radius: 0px 0px 0px 40px !important;
+        -moz-border-radius: 0px 0px 0px 40px !important;
+        -ms-border-radius: 0px 0px 0px 40px !important;
+        -o-border-radius: 0px 0px 0px 40px !important;
+}
 
 
 
 .items {
     padding-right: 45px;
+}
+.items1{
+    padding-left: 45px !important;
+    border-radius: 0px 0px 0px 40px !important;
+    -webkit-border-radius: 0px 0px 0px 40px !important;
+    -moz-border-radius: 0px 0px 0px 40px !important;
+    -ms-border-radius: 0px 0px 0px 40px !important;
+    -o-border-radius: 0px 0px 0px 40px !important;
 }
 body[dir='rtl'] .wrapper{
 display: flex;

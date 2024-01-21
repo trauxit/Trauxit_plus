@@ -114,16 +114,16 @@ const ShipmentDetails = () => {
                                     <p>{t("DRY VAN")}</p>
                                 </div>
                                 <div className={`${styles.right__body}`}>
-                                    <h3>{t("Carrier type")}</h3>
-                                    <p>{t("DRY VAN")}</p>
+                                    <h3>{t("Commodity")}</h3>
+                                    <p>{t("Clothing")}</p>
                                 </div>
                                 <div className={`${styles.right__body}`}>
-                                    <h3>{t("Carrier type")}</h3>
-                                    <p>{t("DRY VAN")}</p>
+                                    <h3>{t("Weight in KG")}</h3>
+                                    <p>{t("40,000")}</p>
                                 </div>
                                 <div className={`${styles.right__body}`}>
-                                    <h3>{t("Carrier type")}</h3>
-                                    <p>{t("DRY VAN")}</p>
+                                    <h3>{t("Packing Type")}</h3>
+                                    <p>{t("Pallets")}</p>
                                 </div>
                             </div>
                         </Col>

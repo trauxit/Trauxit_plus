@@ -323,6 +323,26 @@ body[dir='rtl'] .pend__para {
 .acc__img{
     width: 50px;
 }
+.viewbtns{
+    text-align: center;
+    margin: 15px 0;
+    margin-top: 25px !important;
+}
+.view__btn{
+    border-radius: 8px;
+        background: var(--main-color, #FF8201);
+        padding: 15px 70px;
+        color: #FFF;
+            text-align: center;
+    font-family: 'AlegreyaSans-Bold';
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-decoration: none;
+        
+        
+}
 @media (min-width:0px) and (max-width:600px) {
     .home {
             display: flex;

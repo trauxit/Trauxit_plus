@@ -294,66 +294,175 @@ textarea.form-control {
     margin-bottom: 0 !important;
     background-color: transparent !important;
 }
+
+.stepper .mantine-yxmaw9{
+    display:  block !important;
+}
+.mantine-7qna17{
+    width: 20% !important;
+}
+.mantine-gszoqu,
+.mantine-1cn2mlo{
+        padding: 22px 20px !important;
+        border-radius: 16px !important;
+        border: 1px solid var(--third-color, #D0D4CA) !important;
+        width: 640px !important;
+        -webkit-border-radius: 16px !important;
+        -moz-border-radius: 16px !important;
+        -ms-border-radius: 16px !important;
+        -o-border-radius: 16px !important;
+}
+.demo .mantine-1cn2mlo,
+.demo .mantine-1v7s5f8,
+.demo .mantine-1ejqehl,
+.demo .mantine-gszoqu{
+    width: 190px !important;
+}
+.demo col{
+    width: 190px !important;
+}
 @media (min-width:0px) and (max-width:600px) {
-.css-8k4lth {
-      left: 5% !important;
-      top:1540px !important
-        
+    .css-8k4lth {
+        left: 5% !important;
+        top: 1540px !important
     }
-        .input-group {
-            flex-wrap: nowrap !important;
+
+    .input-group {
+        flex-wrap: nowrap !important;
+    }
+
+    .imagecontact .form-control {
+        width: 100% !important;
+    }
+
+    .imagecontact .form-control::placeholder {
+        font-size: 5px;
+    }
+        .mantine-gszoqu,
+        .mantine-1cn2mlo,
+                .companysignup_city__8p64c{
+            width: 100% !important;
         }
-                .imagecontact .form-control{
+                .demo .mantine-1cn2mlo,
+                .demo .mantine-1v7s5f8,
+                .demo .mantine-1ejqehl,
+                .demo .mantine-gszoqu {
                     width: 100% !important;
                 }
-                .imagecontact .form-control::placeholder{
-                    font-size: 5px;
+        
+                .demo col {
+                    width: 100% !important;
                 }
 }
+
 @media (min-width:600px) and (max-width:900px) {
-.css-8k4lth{
-    left: 45% !important;
-    top:100% !important;
-}
- .mantine-1m3tpc2 {
-     width: 700px !important;
- }
- .input-group {
-     flex-wrap: nowrap !important;
- }
-  .imagecontact .form-control {
-      width: 100% !important;
-  }
-  .imagecontact .form-control::placeholder {
-      font-size: 12px;
-  }
-}
-@media (min-width:900px) and (max-width:1200px) {
-.css-8k4lth {
-        left: 50% !important;
-top: 900px !important;
+    .css-8k4lth {
+        left: 45% !important;
+        top: 100% !important;
     }
-        .mantine-1m3tpc2 {
-            width: 950px !important;
+
+    .mantine-1m3tpc2 {
+        width: 700px !important;
+    }
+
+    .input-group {
+        flex-wrap: nowrap !important;
+    }
+
+    .imagecontact .form-control {
+        width: 100% !important;
+    }
+
+    .imagecontact .form-control::placeholder {
+        font-size: 12px;
+    }
+        .mantine-gszoqu,
+        .mantine-1cn2mlo,
+        .companysignup_city__8p64c {
+            width: 100% !important;
         }
-                .input-group {
-                    flex-wrap: nowrap !important;
+        .demo .mantine-1cn2mlo,
+        .demo .mantine-1v7s5f8,
+        .demo .mantine-1ejqehl,
+        .demo .mantine-gszoqu {
+            width: 100% !important;
+        }
+    
+        .demo col {
+            width: 100% !important;
+        }
+                .mantine-gszoqu,
+                .mantine-1cn2mlo,
+                .companysignup_city__8p64c {
+                    width: 100% !important;
                 }
-                                .imagecontact .form-control {
-                                    width: 100% !important;
-                                }
 }
+
+@media (min-width:900px) and (max-width:1200px) {
+    .css-8k4lth {
+        left: 50% !important;
+        top: 900px !important;
+    }
+
+    .mantine-1m3tpc2 {
+        width: 950px !important;
+    }
+
+    .input-group {
+        flex-wrap: nowrap !important;
+    }
+
+    .imagecontact .form-control {
+        width: 100% !important;
+    }
+        .demo .mantine-1cn2mlo,
+        .demo .mantine-1v7s5f8,
+        .demo .mantine-1ejqehl,
+        .demo .mantine-gszoqu {
+            width: 100% !important;
+        }
+    
+        .demo col {
+            width: 100% !important;
+        }
+    
+        .mantine-gszoqu,
+        .mantine-1cn2mlo,
+        .companysignup_city__8p64c {
+            width: 100% !important;
+        }
+}
+
 @media (min-width:1200px) and (max-width:1400px) {
-    .css-8k4lth{
+    .css-8k4lth {
         left: 60% !important;
     }
-        .mantine-1m3tpc2{
-            width: 900px !important;
-        }
-                           .input-group{
-                            flex-wrap: nowrap !important;
-                           }
-           .imagecontact .form-control{
-            width: 100% !important;
-           }
+
+    .mantine-1m3tpc2 {
+        width: 900px !important;
+    }
+
+    .input-group {
+        flex-wrap: nowrap !important;
+    }
+
+    .imagecontact .form-control {
+        width: 100% !important;
+    }
+         .demo .mantine-1cn2mlo,
+         .demo .mantine-1v7s5f8,
+         .demo .mantine-1ejqehl,
+         .demo .mantine-gszoqu {
+             width: 100% !important;
+         }
+    
+         .demo col {
+             width: 100% !important;
+         }
+    
+         .mantine-gszoqu,
+         .mantine-1cn2mlo,
+         .companysignup_city__8p64c {
+             width: 100% !important;
+         }
 }

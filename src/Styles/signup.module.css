@@ -1,0 +1,125 @@
+.sec{
+    padding-top: 30px;
+        padding-left: 45px;
+        padding-right: 40px;
+}
+.reg__title{
+    color: var(--black-color, #070606);
+        text-align: center;
+font-family: 'AlegreyaSans-Bold';
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130%;
+        /* 67.6px */
+        text-transform: uppercase;
+
+}
+.reg__para{
+    color: var(--black-color, #070606);
+        text-align: center;
+    font-family: 'AlegreyaSans-Regular';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        /* 33.6px */
+}
+.row{
+    padding-top: 30px;
+        padding-left: 55px;
+        padding-right: 40px;
+        width: 100%;
+        column-gap: 20px;
+
+}
+.col{
+    border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 55px;
+}
+.images{
+    position: relative;
+}
+.company{
+    position: absolute;
+    left: 45%;
+    top:25px
+}
+.com__title{
+    color: var(--secondary, #1C1A19);
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130%;
+font-family: 'AlegreyaSans-Bold';
+margin: 10px 0;
+}
+.com__para,
+.com__para1{
+    color: var(--black-color, #070606);
+        text-align: center;
+    font-family: 'AlegreyaSans-Regular';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 25.2px */
+        text-transform: capitalize;
+        width: 380px;
+        margin: auto;
+        margin: 20px auto;
+}
+.link{
+    border-radius: 12px;
+        background: #FF8201;
+        padding: 10px 100px;
+        color: #FFF;
+font-family: 'AlegreyaSans-Bold';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration: none;
+}
+.link svg{
+    margin-left: 8px;
+}
+.com__para1{
+    margin-bottom: 35px;
+}
+@media (min-width:0px) and (max-width:600px) {
+    .row{
+        padding-left: 20px;
+        padding-right: 0;
+        row-gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .company{
+        left: 38%;
+    }
+    .com__para,
+    .com__para1{
+        width: 100%;
+    }
+}
+@media (min-width:600px) and (max-width:900px) {
+    .row{
+        row-gap: 30px;
+    }
+}
+@media (min-width:900px) and (max-width:1200px) {
+    .company{
+        left: 40%;
+    }
+}
+@media (min-width:1200px) and (max-width:1400px) {
+    .company{
+        left: 43%;
+    }
+}

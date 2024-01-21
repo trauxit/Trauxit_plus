@@ -273,6 +273,14 @@ const TableApp = () => {
             accessorKey: 'state',
             header: `${t("Position")}`,
         },
+        {
+            accessorKey: 'state',
+            header: `${t("Contact")}`,
+        },
+        {
+            accessorKey: 'address',
+            header: `${t("Status")}`,
+        },
     ];
     const table = useMaterialReactTable({
         columns,
