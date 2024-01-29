@@ -129,7 +129,7 @@ const Nav = (props) => {
                                 <img alt='' src={notification} className={styles.noti} />
                             </div>
                             <img alt='' src={msg} className={`${styles.msg}`} />
-                            <Link to='/user'>
+                            <Link to='/shipper-profile'>
                                 <img alt='' src={user} className={`${styles.white}`} />
                             </Link>
                         </div>

@@ -22,6 +22,12 @@ import Profile from './Component/User/Profile';
 import Signup from './Component/Auth/Signup';
 import Company from './Component/Auth/Company';
 import Personal from './Component/Auth/Personal';
+import TopUp from './Component/Wallet/TopUp';
+import PayInvoice from './Component/Wallet/PayInvoice';
+import Payment from './Component/Wallet/Payment';
+import Other from './Component/Wallet/Other';
+import ShipperProfile from './Component/User/ShipperProfile';
+import CarrierProfile from './Component/User/CarrierProfile';
 function App() {
   return (
     <div className="App">
@@ -45,7 +51,13 @@ function App() {
           <Route path='/profile' element={<Profile />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/ascompany' element={<Company />} />
-          <Route path='asindividual' element={<Personal />}/>
+          <Route path='asindividual' element={<Personal />} />
+          <Route path='/top-up' element={<TopUp />} />
+          <Route path='/pay-invoice' element={<PayInvoice />} />
+          <Route path='/payment' element={<Payment />} />
+          <Route path='/other-payment' element={<Other />} />
+          <Route path='shipper-profile' element={<ShipperProfile />} />
+          <Route path='/carrier-profile' element={<CarrierProfile />} />
         </Routes>
         <Footer />
       </BrowserRouter>

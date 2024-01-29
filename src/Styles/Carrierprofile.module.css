@@ -1,0 +1,319 @@
+.home {
+    display: flex;
+    border-radius: 20px;
+}
+
+.homeContainer {
+    flex: 6;
+    font-family: 'AlegreyaSansSC-Regular';
+    text-align: left;
+    padding-left: 40px;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.back__link {
+    border-radius: 8px;
+    border: 1px solid rgba(151, 156, 158, 0.25);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    padding: 13px 28px 12px 13.25px;
+    color: #000;
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.back__link svg {
+    margin-right: 10px;
+
+}
+.frame{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile {
+    background: url('../assets/images/carrieruser.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 34px 36px;
+}
+
+.profile__body,
+.profile__title {
+    display: flex;
+    align-items: center;
+}
+
+.profile__body {
+    column-gap: 15px;
+}
+
+.profile__title {
+    column-gap: 70px;
+}
+
+.profile__name {
+    font-family: 'AlegreyaSans-Bold';
+    color: #575555;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.profile__address,
+.owner {
+    color: #575555;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family: 'AlegreyaSans-Regular';
+}
+
+.owner {
+    padding-left: 20px;
+}
+
+.profile__follow {
+    display: flex;
+    column-gap: 30px;
+}
+
+.profile__follow h3 {
+    color: #575555;
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.profile__follow p {
+    color: #575555;
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.user__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.swap {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    cursor: pointer;
+}
+
+.swap__active {
+    border-radius: 4px;
+background: var(--main-color, #FF8201);
+    font-family: 'AlegreyaSans-Bold';
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.swap__para {
+    color: #000;
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link {
+    border-radius: 8px;
+    background: var(--black, #1C1A19);
+    padding: 10px 50px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: 'AlegreyaSans-Bold';
+}
+
+.link svg {
+    margin-left: 8px;
+}
+/*-------------------------------*/
+.row{
+    width: 100%;
+}
+.profile__complete {
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.18);
+    margin-left: 34px;
+    margin-top: -30px;
+    padding: 17px 23px 28px 23px;
+    text-align: center;
+}
+.complete__title{
+    color: var(--subtitle-color, #979C9E);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 629px;
+            font-family: 'AlegreyaSans-Regular';
+            margin: auto;
+}
+.profile__info {
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.18);
+    margin-left: 34px;
+    padding: 17px 23px 28px 23px;
+    margin-top: 30px;
+}
+
+.profile__info h4 {
+    color: var(--black-emy, #262525);
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profile__info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__info h3 {
+    color: var(--black, #1C1A19);
+    font-family: 'AlegreyaSans-Bold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile__info p {
+    color: var(--black, #1C1A19);
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+}
+.capacity__body{
+    background: #FFF;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.18);
+        margin-left: 34px;
+        margin-top: -30px;
+        padding: 17px 23px 28px 23px;
+}
+.capacity__body div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.capacity{
+    color: var(--black-emy, #262525);
+    font-family: 'AlegreyaSans-Regular';
+            font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 10px 0;
+}
+.capacity__body h3{
+    color: var(--black, #1C1A19);
+        font-family: 'AlegreyaSans-Bold';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+.capacity__body p{
+    color: var(--black, #1C1A19);
+        font-family: 'AlegreyaSans-Regular';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: left;
+}
+.review,
+.review__body,
+.review__user {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+        background: #EEEEEC;
+        padding: 23px 36px !important;
+}
+
+.review__body,
+.review__user,
+.review {
+    align-items: normal !important;
+}
+
+.review__user {
+    column-gap: 8px !important;
+}
+
+.user__name {
+    padding: 0px !important;
+    margin: 0px !important;
+    align-items: normal !important;
+    flex-direction: column !important;
+}
+
+.user__name p span {
+    margin-left: 5px !important;
+}
+
+.review {
+    margin-top: 30px !important;
+}
+
+.body__para {
+    margin-top: 10px;
+}
