@@ -63,7 +63,7 @@ const CarrierProfile = () => {
                                 <p className={`${active === 'Reviews' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('Reviews')}>Reviews</p>
 
                             </div>
-                            <div>
+                            <div className={`${styles.msg}`}>
                                 <Link className={`${styles.link}`}>
                                     Message
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">

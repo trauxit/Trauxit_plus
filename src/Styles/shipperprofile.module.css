@@ -422,3 +422,50 @@ color: var(--black-emy, #262525);
 .complete{
     background: #32B24A;
 }
+@media (min-width:0px) and (max-width:600px) {
+    .homeContainer{
+        padding-left: 0;
+    }
+        .profile__title,
+                .user__body,
+                .content{
+            display: flex;
+            flex-direction: column;
+        }
+                .body__title{
+                    width: 100%;
+                }
+                .about__para{
+                    width: 100%;
+                }
+.book p{
+    width: 100%;
+}
+.recent__body{
+    display: flex;
+    flex-direction: column;
+}
+
+   .profile__info h3{
+    font-size: 15px;
+   }  
+   .profile__info p{
+    font-size: 15px;
+   }     
+   .profile__about{
+    margin-top: 15px;
+   } 
+   .home{
+    display: flex;
+    flex-direction: column;
+   }   
+   .profile__body{
+    display: flex;
+    flex-direction: column;
+   }
+}
+@media (min-width:600px) and (max-width:900px) {
+    .homeContainer{
+        padding-left: 0;
+    }
+}
