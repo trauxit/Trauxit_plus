@@ -227,6 +227,13 @@ margin-top: 35px !important;
     -o-border-radius: 8px !important;
 }
 .other__table .css-rqglhn-MuiTable-root{
-  width: 50% !important;
   margin: auto;
+}
+body[dir='rtl'] .mantine-1ejqehl{
+  text-align: right !important;
+  direction: rtl !important;
+}
+body[dir='rtl'] .mantine-1bomxl4{
+  text-align: right !important;
+    direction: rtl !important;
 }

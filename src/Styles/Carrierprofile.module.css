@@ -9,6 +9,10 @@
     text-align: left;
     padding-left: 40px;
 }
+body[dir='rtl'] .homeContainer {
+    padding-left: 0;
+    padding-right: 40px;
+}
 .back{
     display: flex;
     align-items: center;
@@ -31,7 +35,9 @@
 
 .back__link svg {
     margin-right: 10px;
-
+}
+body[dir='rtl'] .back__link svg{
+    margin-left: 10px;
 }
 .frame{
     border-radius: 50%;
@@ -157,7 +163,7 @@ background: var(--main-color, #FF8201);
 .link {
     border-radius: 8px;
     background: var(--black, #1C1A19);
-    padding: 10px 50px;
+    padding: 10px 30px;
     margin-right: 10px;
     text-decoration: none;
     color: #FFF;
@@ -167,8 +173,12 @@ background: var(--main-color, #FF8201);
     font-weight: 800;
     line-height: normal;
     font-family: 'AlegreyaSans-Bold';
+    width: 150px;
 }
-
+body[dir='rtl'] .msg {
+    display: flex;
+    column-gap: 20px;
+}
 .link svg {
     margin-left: 8px;
 }
@@ -183,6 +193,9 @@ background: var(--main-color, #FF8201);
     margin-top: -30px;
     padding: 17px 23px 28px 23px;
     text-align: center;
+}
+body[dir='rtl'] .profile__complete{
+    margin-right: 34px;
 }
 .complete__title{
     color: var(--subtitle-color, #979C9E);
@@ -211,7 +224,10 @@ background: var(--main-color, #FF8201);
     font-weight: 400;
     line-height: normal;
 }
-
+body[dir='rtl'] .profile__info h4{
+    text-align: right;
+    margin-bottom: 10px;
+}
 .profile__info div {
     display: flex;
     align-items: center;

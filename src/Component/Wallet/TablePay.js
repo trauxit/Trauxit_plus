@@ -21,6 +21,8 @@ import {
 import payuser from '../../assets/images/payuser.png'
 import styles from '../../Styles/wallet.module.css'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 export const data = [
     {
         name: {
@@ -131,41 +133,43 @@ export const data = [
         state: 'New York',
     },
 ]
-const columns = [
-    {
-        accessorFn: (row) => `${row.name.firstName}`,
-        header: `Name`,
-        Cell: ({ renderedCellValue, row, cell }) => (
-            <>
-                <img alt='' src={payuser} />
-                <span> {row.original.name.firstName}</span>
-            </>
-        ),
-    },
-    {
-        accessorKey: 'name.lastName',
-        header: 'Invoice Number',
-    },
-    {
-        accessorKey: 'address',
-        header: 'Date',
-    },
-    {
-        accessorKey: 'city',
-        header: 'Amount',
-    },
-    {
-        accessorFn: (row) => `${row.state}`,
-        header: `Select For pay Invoice`,
-        Cell: ({ renderedCellValue, row, cell }) => (
-            <>
-                <button className={`${styles.select__btn}`}>Select</button>
-            </>
-        ),
-    },
 
-];
 const TablePay = () => {
+    const { t, i18n } = useTranslation();
+    const columns = [
+        {
+            accessorFn: (row) => `${row.name.firstName}`,
+            header: `Name`,
+            Cell: ({ renderedCellValue, row, cell }) => (
+                <>
+                    <img alt='' src={payuser} />
+                    <span> {row.original.name.firstName}</span>
+                </>
+            ),
+        },
+        {
+            accessorKey: 'name.lastName',
+            header: `${t("Invoice Number")}`,
+        },
+        {
+            accessorKey: 'address',
+            header: `${t("Date")}`,
+        },
+        {
+            accessorKey: 'city',
+            header: `${t("Amount")}`,
+        },
+        {
+            accessorFn: (row) => `${row.state}`,
+            header: `${t("Select For pay Invoice")}`,
+            Cell: ({ renderedCellValue, row, cell }) => (
+                <>
+                    <button className={`${styles.select__btn}`}>{t("Select")}</button>
+                </>
+            ),
+        },
+
+    ];
     const table = useMaterialReactTable({
         columns,
         data, //must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
@@ -243,13 +247,13 @@ const TablePay = () => {
             <div className={`${styles.total__body}`}>
                 <div></div>
                 <div className={`${styles.amount__body}`}>
-                    <h6>Total amount:</h6>
+                    <h6>{t("Total amount:")}</h6>
                     <p>19,570.00</p>
                 </div>
             </div>
             <div className={`${styles.total__body}`}>
                 <div></div>
-                <Link className={`${styles.invoice__btn}`} to='/payment'>Pay Invoice</Link>
+                <Link className={`${styles.invoice__btn}`} to='/payment'>{t("Pay Invoice")}</Link>
             </div>
         </>
     )

@@ -9,7 +9,10 @@
     text-align: left;
     padding-left: 40px;
 }
-
+body[dir='rtl'] .homeContainer{
+    padding-left: 0;
+    padding-right: 40px;
+}
 .profile {
     background: url('../assets/images/back.png');
     background-repeat: no-repeat;
@@ -137,8 +140,12 @@
     font-family: 'AlegreyaSans-Bold';
     margin-right: 10px;
     text-decoration: none;
+    width: 150px;
 }
-
+body[dir='rtl'] .links{
+display: flex;
+column-gap: 20px;
+}
 /*---------------------------------------*/
 /*complete*/
 .row {
@@ -153,7 +160,9 @@
     margin-top: -30px;
     padding: 17px 23px 28px 23px;
 }
-
+body[dir='rtl'] .profile__complete {
+    margin-right: 34px;
+}
 .complete__title {
     color: #000;
     font-family: 'AlegreyaSans-Bold';
@@ -162,6 +171,9 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 30px;
+}
+body[dir='rtl'] .complete__title{
+    text-align: right;
 }
 .prog{
     margin-bottom: 20px;
@@ -173,6 +185,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+}
+body[dir='rtl'] .about__title{
+    text-align: right;
 }
 .about__para{
     color: var(--black, #1C1A19);
@@ -198,6 +213,10 @@ background: #FFF;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+}
+body[dir='rtl'] .profile__info h4{
+    text-align: right;
+    margin-bottom: 10px;
 }
 .profile__info div{
     display: flex;
@@ -262,6 +281,12 @@ color: var(--black-emy, #262525);
         font-weight: 400;
         line-height: normal;
         text-transform: capitalize;
+}
+body[dir='rtl'] .content__date{ 
+    text-align: right;
+}
+body[dir='rtl'] .body__title{
+    text-align: right;
 }
 .profile__info{
     padding-bottom: 140px;
@@ -335,8 +360,20 @@ color: var(--black-emy, #262525);
         line-height: normal;
         width: 447px;
 }
+body[dir='rtl'] .book h3{
+    text-align: right;
+}
+body[dir='rtl'] .book p {
+    text-align: right;
+}
 .change h3{
     padding-top: 10px;
+}
+body[dir='rtl'] .change h3 {
+    text-align: right;
+}
+body[dir='rtl'] .change p {
+    text-align: right;
 }
 .suggest__body{
     display: flex;
@@ -418,6 +455,8 @@ color: var(--black-emy, #262525);
             font-weight: 400;
             line-height: normal;
             padding: 5px 20px;
+            width: 100px;
+            text-align: center;
 }
 .complete{
     background: #32B24A;
@@ -463,6 +502,12 @@ color: var(--black-emy, #262525);
     display: flex;
     flex-direction: column;
    }
+.linksocial{
+padding: 10px 50px;
+}
+.profile__follow h3{
+    text-align: center;
+}
 }
 @media (min-width:600px) and (max-width:900px) {
     .homeContainer{

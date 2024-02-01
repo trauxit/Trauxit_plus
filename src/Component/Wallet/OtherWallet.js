@@ -10,8 +10,7 @@ import { NumberInput, TextInput, Box } from '@mantine/core';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useTranslation } from 'react-i18next';
-
-const TopUp = () => {
+const OtherWallet = () => {
     const [topping, setTopping] = useState("card")
     const form = useForm({
         initialValues: { name: '', email: '', age: 0 },
@@ -28,7 +27,6 @@ const TopUp = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const { t, i18n } = useTranslation();
-
     return (
         <>
             <Header />
@@ -145,7 +143,9 @@ const TopUp = () => {
                                     </div>
 
                                     <Button className={`${styles.confirm__btn}`} onClick={handleClose}>
-                                        {t("Confirmation")}
+                                        <Link to='/confirm'>
+                                            {t("Confirmation")}
+                                        </Link>
                                     </Button>
                                 </Modal.Body>
                             </Modal>
@@ -158,4 +158,4 @@ const TopUp = () => {
     )
 }
 
-export default TopUp
+export default OtherWallet

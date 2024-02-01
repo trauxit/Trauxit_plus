@@ -28,6 +28,9 @@ import Payment from './Component/Wallet/Payment';
 import Other from './Component/Wallet/Other';
 import ShipperProfile from './Component/User/ShipperProfile';
 import CarrierProfile from './Component/User/CarrierProfile';
+import OtherWallet from './Component/Wallet/OtherWallet';
+import Confirm from './Component/Wallet/Confirm';
+import PayWallet from './Component/Wallet/PayWallet';
 function App() {
   return (
     <div className="App">
@@ -58,6 +61,9 @@ function App() {
           <Route path='/other-payment' element={<Other />} />
           <Route path='shipper-profile' element={<ShipperProfile />} />
           <Route path='/carrier-profile' element={<CarrierProfile />} />
+          <Route path='/other-wallet' element={<OtherWallet />} />
+          <Route path='/confirm' element={<Confirm />} />
+          <Route path='/pay-wallet' element={<PayWallet />} />
         </Routes>
         <Footer />
       </BrowserRouter>

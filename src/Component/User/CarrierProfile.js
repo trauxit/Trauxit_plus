@@ -8,10 +8,12 @@ import frame from '../../assets/images/Frame 1984078003.png'
 import { Col, Row } from 'react-bootstrap'
 import user from '../../assets/images/Rectangle 3463660.png'
 import star1 from '../../assets/images/star-icon.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const CarrierProfile = () => {
     const [active, setActive] = useState('summary')
+    const { t, i18n } = useTranslation();
 
     return (
         <>
@@ -24,20 +26,20 @@ const CarrierProfile = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
                                     <path d="M18.7487 8.49969C18.7487 8.10187 18.5906 7.72034 18.3093 7.43903C18.028 7.15773 17.6465 6.99969 17.2487 6.99969H5.36868L9.30868 3.05969C9.57364 2.77534 9.71789 2.39925 9.71103 2.01065C9.70417 1.62205 9.54675 1.25128 9.27192 0.976449C8.9971 0.701623 8.62633 0.5442 8.23773 0.537343C7.84912 0.530487 7.47303 0.674733 7.18868 0.939693L0.68868 7.43969C0.407779 7.72094 0.25 8.10219 0.25 8.49969C0.25 8.89719 0.407779 9.27844 0.68868 9.55969L7.18868 16.0597C7.47303 16.3247 7.84912 16.4689 8.23773 16.462C8.62633 16.4552 8.9971 16.2978 9.27192 16.0229C9.54675 15.7481 9.70417 15.3773 9.71103 14.9887C9.71789 14.6001 9.57364 14.224 9.30868 13.9397L5.36868 9.99969H17.2487C17.6465 9.99969 18.028 9.84166 18.3093 9.56035C18.5906 9.27905 18.7487 8.89752 18.7487 8.49969Z" fill="#1C1A19" />
                                 </svg>
-                                Back
+                                {t("Back")}
                             </Link>
                             <div className={`${styles.profile__follow}`}>
                                 <div>
                                     <h3>234</h3>
-                                    <p>Trips</p>
+                                    <p>{t("Trips")}</p>
                                 </div>
                                 <div>
                                     <h3>4.8</h3>
-                                    <p>Ratings</p>
+                                    <p>{t("Ratings")}</p>
                                 </div>
                                 <div>
                                     <h3>$12/hr</h3>
-                                    <p>Rate</p>
+                                    <p>{t("Rate")}</p>
                                 </div>
                             </div>
                         </div>
@@ -58,9 +60,9 @@ const CarrierProfile = () => {
                         </div>
                         <div className={`${styles.content}`}>
                             <div className={`${styles.swap}`}>
-                                <p className={`${active === 'summary' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('summary')}>Profile Summary</p>
-                                <p className={`${active === 'Carrier' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('Carrier')}>Carrier Details</p>
-                                <p className={`${active === 'Reviews' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('Reviews')}>Reviews</p>
+                                <p className={`${active === 'summary' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('summary')}>{t("Profile Summary")}</p>
+                                <p className={`${active === 'Carrier' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('Carrier')}>{t("Carrier Details")}</p>
+                                <p className={`${active === 'Reviews' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('Reviews')}>{t("Reviews")}</p>
 
                             </div>
                             <div className={`${styles.msg}`}>
@@ -87,48 +89,48 @@ const CarrierProfile = () => {
                                 <Row className={`${styles.row}`}>
                                     <Col>
                                         <div className={`${styles.profile__complete}`}>
-                                            <p className={`${styles.complete__title}`}>is an experienced and dedicated carrier, providing reliable transportation solutions with a focus on customer satisfaction.</p>
+                                            <p className={`${styles.complete__title}`}>{t("is an experienced and dedicated carrier, providing reliable transportation solutions with a focus on customer satisfaction.")}</p>
                                         </div>
                                     </Col>
                                 </Row>
                                 <Row className={`${styles.row}`}>
                                     <Col>
                                         <div className={`${styles.profile__info}`}>
-                                            <h4>Info</h4>
+                                            <h4>{t("Info")}</h4>
                                             <div>
-                                                <h3>USDOT NUMBER:</h3>
+                                                <h3>{t("USDOT NUMBER:")}</h3>
                                                 <p>12345678</p>
                                             </div>
                                             <div>
-                                                <h3>Language Spoken:</h3>
+                                                <h3>{t("Language Spoken:")}</h3>
                                                 <p>English</p>
                                             </div>
                                             <div>
-                                                <h3>Homebase</h3>
+                                                <h3>{t("Homebase")}</h3>
                                                 <p>12345678</p>
                                             </div>
                                             <div>
-                                                <h3>MC NUMBER:</h3>
+                                                <h3>{t("MC NUMBER:")}</h3>
                                                 <p>9876545</p>
                                             </div>
                                             <div>
-                                                <h3>Insurance Certificate:</h3>
+                                                <h3>{t("Insurance Certificate:")}</h3>
                                                 <p>View</p>
                                             </div>
                                             <div>
-                                                <h3>Safety Rating:</h3>
+                                                <h3>{t("Safety Rating:")}</h3>
                                                 <p>Satisfactory</p>
                                             </div>
                                             <div>
-                                                <h3>Operating Authority:</h3>
+                                                <h3>{t("Operating Authority:")}</h3>
                                                 <p>Authorized.</p>
                                             </div>
                                             <div>
-                                                <h3>Daily driving hours:</h3>
+                                                <h3>{t("Daily driving hours:")}</h3>
                                                 <p>8hr</p>
                                             </div>
                                             <div>
-                                                <h3>Loss and Damage Rates</h3>
+                                                <h3>{t("Loss and Damage Rates")}</h3>
                                                 <p>2%</p>
                                             </div>
                                         </div>
@@ -145,50 +147,50 @@ const CarrierProfile = () => {
                                 <Row className={`${styles.row}`}>
                                     <Col>
                                         <div className={`${styles.capacity__body}`}>
-                                            <h4 className={`${styles.capacity}`}>Capacity and Availability:</h4>
+                                            <h4 className={`${styles.capacity}`}>{t("Capacity and Availability:")}</h4>
                                             <div>
-                                                <h3> truck type:</h3>
+                                                <h3> {t("truck type:")}</h3>
                                                 <p>Large Truck</p>
                                             </div>
                                             <div>
-                                                <h3>Capacity:</h3>
+                                                <h3>{t("Capacity:")}</h3>
                                                 <p>10 tons</p>
                                             </div>
                                             <div>
-                                                <h3>Available Loading Times:</h3>
+                                                <h3>{t("Available Loading Times:")}</h3>
                                                 <p>8:00 AM - 5:00 PM</p>
                                             </div>
                                             <div>
-                                                <h3>Maximum Allowed Weight:</h3>
+                                                <h3>{t("Maximum Allowed Weight:")}</h3>
                                                 <p>20 tons</p>
                                             </div>
                                             <div>
-                                                <h3>Insurance and Licenses:</h3>
+                                                <h3>{t("Insurance and Licenses:")}</h3>
                                                 <p>Up-to-date</p>
                                             </div>
                                             <div>
-                                                <h3>Driving Hours:</h3>
+                                                <h3>{t("Driving Hours:")}</h3>
                                                 <p>	11 hours driving, 10 hours rest</p>
                                             </div>
                                             <div>
-                                                <h3 className={`${styles.h__title}`}>Performance Record and Safety Rates</h3>
+                                                <h3 className={`${styles.h__title}`}>{t("Performance Record and Safety Rates")}</h3>
                                                 <p className={`${styles.h__para}`}>On-time deliveries, low accident rate</p>
                                             </div>
-                                            <h4 className={`${styles.capacity} mt-4 mb-4`}>Previous Shipping Details:</h4>
+                                            <h4 className={`${styles.capacity} mt-4 mb-4`}>{t("Previous Shipping Details:")}</h4>
                                             <div>
-                                                <h3>Number of Shipments</h3>
+                                                <h3>{t("Number of Shipments")}</h3>
                                                 <p>10</p>
                                             </div>
                                             <div>
-                                                <h3>Destinations</h3>
+                                                <h3>{t("Destinations")}</h3>
                                                 <p>	Various</p>
                                             </div>
                                             <div>
-                                                <h3>Sizes</h3>
+                                                <h3>{t("Sizes")}</h3>
                                                 <p>	Various</p>
                                             </div>
                                             <div>
-                                                <h3>Weights</h3>
+                                                <h3>{t("Weights")}</h3>
                                                 <p>	Various</p>
                                             </div>
                                         </div>

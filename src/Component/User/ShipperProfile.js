@@ -10,10 +10,13 @@ import line from '../../assets/images/Line 30.png'
 import place from '../../assets/images/place.png'
 import line2 from '../../assets/images/Line 32.png'
 import suggestimg from '../../assets/images/suguser.svg'
+import { useTranslation } from 'react-i18next';
+
 const ShipperProfile = () => {
     const [active, setActive] = useState('overview')
     const [choose, setChoose] = useState('today')
     const [choose2, setChoose2] = useState('all')
+    const { t, i18n } = useTranslation();
 
     return (
         <>
@@ -43,27 +46,27 @@ const ShipperProfile = () => {
                             <div className={`${styles.profile__follow}`}>
                                 <div>
                                     <h3>24.3k</h3>
-                                    <p>Followers</p>
+                                    <p>{t("Followers")}</p>
                                 </div>
                                 <div>
                                     <h3>24.3k</h3>
-                                    <p>Following</p>
+                                    <p>{t("Following")}</p>
                                 </div>
                             </div>
                         </div>
                         <div className={`${styles.content}`}>
                             <div className={`${styles.swap}`}>
-                                <p className={`${active === 'overview' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('overview')}>Overview</p>
-                                <p className={`${active === 'activities' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('activities')}>Activities</p>
+                                <p className={`${active === 'overview' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('overview')}>{t("Overview")}</p>
+                                <p className={`${active === 'activities' ? styles.swap__active : styles.swap__para}`} onClick={() => setActive('activities')}>{t("Activities")}</p>
                             </div>
-                            <div>
+                            <div className={`${styles.links}`}>
                                 <Link className={`${styles.link}`}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                         <path d="M8 2.99985L9.5 4.49985M7 9.99985H11M3 7.99985L2.5 9.99985L4.5 9.49985L10.293 3.70685C10.4805 3.51932 10.5858 3.26501 10.5858 2.99985C10.5858 2.73468 10.4805 2.48038 10.293 2.29285L10.207 2.20685C10.0195 2.01938 9.76516 1.91406 9.5 1.91406C9.23484 1.91406 8.98053 2.01938 8.793 2.20685L3 7.99985Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    Edit Profile
+                                    {t("Edit Profile ")}
                                 </Link>
-                                <Link className={`${styles.link}`}> Social</Link>
+                                <Link className={`${styles.link} ${styles.linksocial}`}> {t("Social")}</Link>
                             </div>
                         </div>
                     </div>
@@ -73,7 +76,7 @@ const ShipperProfile = () => {
                                 <Row className={`${styles.row}`}>
                                     <Col>
                                         <div className={`${styles.profile__complete}`}>
-                                            <h3 className={`${styles.complete__title}`}>Complete Your Profile</h3>
+                                            <h3 className={`${styles.complete__title}`}>{t("Complete Your Profile")}</h3>
                                             <div className={`${styles.prog}`}>
                                                 <Tooltip label="34%" opened position="top">
                                                     <Progress color="orange" value={34} size="xl" radius="md" />
@@ -81,29 +84,29 @@ const ShipperProfile = () => {
                                             </div>
                                         </div>
                                         <div className={`${styles.profile__info}`}>
-                                            <h4>Info</h4>
+                                            <h4>{t("Info")}</h4>
                                             <div>
-                                                <h3>Full Name:</h3>
+                                                <h3>{t("Full Name:")}</h3>
                                                 <p>Mohamed Adel Attia</p>
                                             </div>
                                             <div>
-                                                <h3>Mobile Number:</h3>
+                                                <h3>{t("Mobile Number:")}</h3>
                                                 <p>+1-555-123-4567</p>
                                             </div>
                                             <div>
-                                                <h3>Email:</h3>
+                                                <h3>{t("Email")}</h3>
                                                 <p>info@xyzshipping.com</p>
                                             </div>
                                             <div>
-                                                <h3>Location:</h3>
+                                                <h3>{t("Location")}</h3>
                                                 <p>123 Main Street, Anytown, USA</p>
                                             </div>
                                             <div>
-                                                <h3>Company Name:</h3>
+                                                <h3>{t("Company Name:")}</h3>
                                                 <p>XYZ Shipping Inc.</p>
                                             </div>
                                             <div>
-                                                <h3>Join Date:</h3>
+                                                <h3>{t("Join Date:")}</h3>
                                                 <p>14/5/2023</p>
                                             </div>
                                         </div>
@@ -111,12 +114,12 @@ const ShipperProfile = () => {
                                     </Col>
                                     <Col>
                                         <div className={`${styles.profile__about}`}>
-                                            <h3 className={`${styles.about__title}`}>About</h3>
+                                            <h3 className={`${styles.about__title}`}>{t("About")}</h3>
                                             <p className={`${styles.about__para}`}>Lorem ipsum dolor sit amet consectetur. Ornare sem donec pellentesque ornare neque mollis mattis. Amet at justo senectus nisl at orci. Vulputate sit id sit venenatis consectetur pharetra quisque. Pellentesque arcu massa erat viverra sit. Pretium nunc purus mi nulla augue. Et ut tincidunt urna vulputate.</p>
                                         </div>
                                         <div className={`${styles.posts}`}>
                                             <div className={`${styles.posts__popular}`}>
-                                                <h3 className={`${styles.post__title}`}>Popular Posts</h3>
+                                                <h3 className={`${styles.post__title}`}>{t("Popular Posts")}</h3>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M14.5 12.0005C14.5 12.6635 14.2366 13.2994 13.7678 13.7682C13.2989 14.2371 12.663 14.5005 12 14.5005C11.337 14.5005 10.7011 14.2371 10.2322 13.7682C9.76339 13.2994 9.5 12.6635 9.5 12.0005C9.5 11.3374 9.76339 10.7016 10.2322 10.2327C10.7011 9.76387 11.337 9.50048 12 9.50048C12.663 9.50048 13.2989 9.76387 13.7678 10.2327C14.2366 10.7016 14.5 11.3374 14.5 12.0005ZM13.5 12.0005C13.4999 11.6025 13.3417 11.2209 13.0602 10.9396C12.7787 10.6583 12.397 10.5003 11.999 10.5005C11.601 10.5006 11.2194 10.6588 10.9381 10.9403C10.6568 11.2218 10.4989 11.6035 10.499 12.0015C10.4991 12.3994 10.6573 12.781 10.9388 13.0623C11.2203 13.3436 11.602 13.5016 12 13.5015C12.398 13.5013 12.7796 13.3431 13.0609 13.0616C13.3422 12.7801 13.5001 12.3984 13.5 12.0005ZM14.5 4.56348C14.5 5.22652 14.2366 5.8624 13.7678 6.33124C13.2989 6.80008 12.663 7.06348 12 7.06348C11.337 7.06348 10.7011 6.80008 10.2322 6.33124C9.76339 5.8624 9.5 5.22652 9.5 4.56348C9.5 3.90044 9.76339 3.26455 10.2322 2.79571C10.7011 2.32687 11.337 2.06348 12 2.06348C12.663 2.06348 13.2989 2.32687 13.7678 2.79571C14.2366 3.26455 14.5 3.90044 14.5 4.56348ZM13.5 4.56348C13.4999 4.16552 13.3417 3.78391 13.0602 3.50261C12.7787 3.2213 12.397 3.06334 11.999 3.06348C11.601 3.06361 11.2194 3.22182 10.9381 3.50332C10.6568 3.78481 10.4989 4.16652 10.499 4.56448C10.4991 4.96243 10.6573 5.34404 10.9388 5.62534C11.2203 5.90665 11.602 6.06461 12 6.06448C12.398 6.06434 12.7796 5.90613 13.0609 5.62464C13.3422 5.34314 13.5001 4.96143 13.5 4.56348ZM14.5 19.4375C14.5 20.1005 14.2366 20.7364 13.7678 21.2052C13.2989 21.6741 12.663 21.9375 12 21.9375C11.337 21.9375 10.7011 21.6741 10.2322 21.2052C9.76339 20.7364 9.5 20.1005 9.5 19.4375C9.5 18.7744 9.76339 18.1386 10.2322 17.6697C10.7011 17.2009 11.337 16.9375 12 16.9375C12.663 16.9375 13.2989 17.2009 13.7678 17.6697C14.2366 18.1386 14.5 18.7744 14.5 19.4375ZM13.5 19.4375C13.4999 19.0395 13.3417 18.6579 13.0602 18.3766C12.7787 18.0953 12.397 17.9373 11.999 17.9375C11.601 17.9376 11.2194 18.0958 10.9381 18.3773C10.6568 18.6588 10.4989 19.0405 10.499 19.4385C10.4991 19.8364 10.6573 20.218 10.9388 20.4993C11.2203 20.7806 11.602 20.9386 12 20.9385C12.398 20.9383 12.7796 20.7801 13.0609 20.4986C13.3422 20.2171 13.5001 19.8354 13.5 19.4375Z" fill="black" />
                                                 </svg>
@@ -125,21 +128,21 @@ const ShipperProfile = () => {
                                             <div className={`${styles.posts__body}`}>
                                                 <img alt='' src={place} />
                                                 <div>
-                                                    <h3 className={`${styles.body__title}`}>Nice update on the current state of freight from Paulo Fernandes</h3>
+                                                    <h3 className={`${styles.body__title}`}>{t("Nice update on the current state of freight from Paulo Fernandes")}</h3>
                                                     <p className={`${styles.content__date}`}>15/dec/2021</p>
                                                 </div>
                                             </div>
                                             <div className={`${styles.posts__body}`}>
                                                 <img alt='' src={place} />
                                                 <div>
-                                                    <h3 className={`${styles.body__title}`}>Nice update on the current state of freight from Paulo Fernandes</h3>
+                                                    <h3 className={`${styles.body__title}`}>{t("Nice update on the current state of freight from Paulo Fernandes")}</h3>
                                                     <p className={`${styles.content__date}`}>15/dec/2021</p>
                                                 </div>
                                             </div>
                                             <div className={`${styles.posts__body}`}>
                                                 <img alt='' src={place} />
                                                 <div>
-                                                    <h3 className={`${styles.body__title}`}>Nice update on the current state of freight from Paulo Fernandes</h3>
+                                                    <h3 className={`${styles.body__title}`}>{t("Nice update on the current state of freight from Paulo Fernandes")}</h3>
                                                     <p className={`${styles.content__date}`}>15/dec/2021</p>
                                                 </div>
                                             </div>
@@ -150,32 +153,32 @@ const ShipperProfile = () => {
                                     <Col>
                                         <div className={`${styles.recent}`}>
                                             <div className={`${styles.recent__body}`}>
-                                                <h3>Recent Activities</h3>
+                                                <h3>{t("Recent Activities")}</h3>
                                                 <div className={`${styles.recent__choose}`}>
-                                                    <p className={`${choose === 'today' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose('today')}>Today</p>
-                                                    <p className={`${choose === 'weekly' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose('weekly')}>Weekly</p>
-                                                    <p className={`${choose === 'monthly' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose('monthly')}>Monthly</p>
+                                                    <p className={`${choose === 'today' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose('today')}>{t("Today")}</p>
+                                                    <p className={`${choose === 'weekly' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose('weekly')}>{t("Weekly")}</p>
+                                                    <p className={`${choose === 'monthly' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose('monthly')}>{t("Monthly")}</p>
                                                 </div>
                                             </div>
                                             <img alt='' src={line2} className={`${styles.line}`} />
                                             <div>
                                                 <div className={`${styles.book}`}>
-                                                    <h3>Booking Number 12345</h3>
+                                                    <h3>{t("Booking Number 12345")}</h3>
                                                     <p>Date: January 20, 2024 - Destination: City Port - Delivery Status: Pending</p>
                                                 </div>
                                                 <div className={`${styles.book} mt-5`}>
-                                                    <h3>Booking Number 12345</h3>
+                                                    <h3>{t("Booking Number 12345")}</h3>
                                                     <p>Date: January 20, 2024 - Destination: City Port - Delivery Status: Pending</p>
                                                 </div>
                                             </div>
                                             <img alt='' src={line2} className={`${styles.line}`} />
                                             <div className={`${styles.change}`}>
-                                                <h3> you changed your profile picture</h3>
+                                                <h3>{t("you changed your profile picture")}</h3>
                                                 <p>Date: January 20, 2024</p>
                                             </div>
                                             <img alt='' src={line2} className={`${styles.line}`} />
                                             <div className={`${styles.change}`}>
-                                                <h3>You Have Received 4 new Followers</h3>
+                                                <h3>{t("You Have Received 4 new Followers")}</h3>
                                                 <p>Date: January 20, 2024</p>
                                             </div>
                                         </div>
@@ -185,7 +188,7 @@ const ShipperProfile = () => {
                                     <Col>
                                         <div className={`${styles.suggest}`}>
                                             <div className={`${styles.recent__body}`}>
-                                                <h3>Suggestions</h3>
+                                                <h3>{t("Suggestions")}</h3>
                                                 <div className={`${styles.recent__choose}`}>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                         <path d="M14.5 12.0005C14.5 12.6635 14.2366 13.2994 13.7678 13.7682C13.2989 14.2371 12.663 14.5005 12 14.5005C11.337 14.5005 10.7011 14.2371 10.2322 13.7682C9.76339 13.2994 9.5 12.6635 9.5 12.0005C9.5 11.3374 9.76339 10.7016 10.2322 10.2327C10.7011 9.76387 11.337 9.50048 12 9.50048C12.663 9.50048 13.2989 9.76387 13.7678 10.2327C14.2366 10.7016 14.5 11.3374 14.5 12.0005ZM13.5 12.0005C13.4999 11.6025 13.3417 11.2209 13.0602 10.9396C12.7787 10.6583 12.397 10.5003 11.999 10.5005C11.601 10.5006 11.2194 10.6588 10.9381 10.9403C10.6568 11.2218 10.4989 11.6035 10.499 12.0015C10.4991 12.3994 10.6573 12.781 10.9388 13.0623C11.2203 13.3436 11.602 13.5016 12 13.5015C12.398 13.5013 12.7796 13.3431 13.0609 13.0616C13.3422 12.7801 13.5001 12.3984 13.5 12.0005ZM14.5 4.56348C14.5 5.22652 14.2366 5.8624 13.7678 6.33124C13.2989 6.80008 12.663 7.06348 12 7.06348C11.337 7.06348 10.7011 6.80008 10.2322 6.33124C9.76339 5.8624 9.5 5.22652 9.5 4.56348C9.5 3.90044 9.76339 3.26455 10.2322 2.79571C10.7011 2.32687 11.337 2.06348 12 2.06348C12.663 2.06348 13.2989 2.32687 13.7678 2.79571C14.2366 3.26455 14.5 3.90044 14.5 4.56348ZM13.5 4.56348C13.4999 4.16552 13.3417 3.78391 13.0602 3.50261C12.7787 3.2213 12.397 3.06334 11.999 3.06348C11.601 3.06361 11.2194 3.22182 10.9381 3.50332C10.6568 3.78481 10.4989 4.16652 10.499 4.56448C10.4991 4.96243 10.6573 5.34404 10.9388 5.62534C11.2203 5.90665 11.602 6.06461 12 6.06448C12.398 6.06434 12.7796 5.90613 13.0609 5.62464C13.3422 5.34314 13.5001 4.96143 13.5 4.56348ZM14.5 19.4375C14.5 20.1005 14.2366 20.7364 13.7678 21.2052C13.2989 21.6741 12.663 21.9375 12 21.9375C11.337 21.9375 10.7011 21.6741 10.2322 21.2052C9.76339 20.7364 9.5 20.1005 9.5 19.4375C9.5 18.7744 9.76339 18.1386 10.2322 17.6697C10.7011 17.2009 11.337 16.9375 12 16.9375C12.663 16.9375 13.2989 17.2009 13.7678 17.6697C14.2366 18.1386 14.5 18.7744 14.5 19.4375ZM13.5 19.4375C13.4999 19.0395 13.3417 18.6579 13.0602 18.3766C12.7787 18.0953 12.397 17.9373 11.999 17.9375C11.601 17.9376 11.2194 18.0958 10.9381 18.3773C10.6568 18.6588 10.4989 19.0405 10.499 19.4385C10.4991 19.8364 10.6573 20.218 10.9388 20.4993C11.2203 20.7806 11.602 20.9386 12 20.9385C12.398 20.9383 12.7796 20.7801 13.0609 20.4986C13.3422 20.2171 13.5001 19.8354 13.5 19.4375Z" fill="black" />
@@ -250,61 +253,61 @@ const ShipperProfile = () => {
                                     <Col>
                                         <div className={`${styles.activity}`}>
                                             <div className={`${styles.recent__body}`}>
-                                                <h3>Activities</h3>
+                                                <h3>{t("Activities")}</h3>
                                                 <div className={`${styles.recent__choose}`}>
-                                                    <p className={`${choose2 === 'all' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose2('all')}>All</p>
-                                                    <p className={`${choose2 === 'recent' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose2('recent')}>Recently</p>
+                                                    <p className={`${choose2 === 'all' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose2('all')}>{t("All")}</p>
+                                                    <p className={`${choose2 === 'recent' ? styles.choose__active : styles.choose__para}`} onClick={() => setChoose2('recent')}>{t("Recently")}</p>
                                                 </div>
                                             </div>
                                             <img alt='' src={line2} className={`${styles.line}`} />
                                             <div className={`${styles.job__body}`}>
                                                 <div>
-                                                    <h3> Job Posted</h3>
+                                                    <h3>{t("Job Posted")}</h3>
                                                     <p className={`${styles.job__date}`}> January 20, 2024 </p>
                                                 </div>
                                                 <div>
-                                                    <p className={`${styles.job__para}`}>Forklift Operator needed for Ras Gharib Concession</p>
-                                                    <p className={`${styles.pending}`}>Pending</p>
+                                                    <p className={`${styles.job__para}`}>{t("Forklift Operator needed for Ras Gharib Concession")}</p>
+                                                    <p className={`${styles.pending}`}>{t("Pending")}</p>
                                                 </div>
                                             </div>
                                             <div className={`${styles.job__body}`}>
                                                 <div>
-                                                    <h3> Job Posted</h3>
+                                                    <h3>{t("Job Posted")}</h3>
                                                     <p className={`${styles.job__date}`}> January 20, 2024 </p>
                                                 </div>
                                                 <div>
-                                                    <p className={`${styles.job__para}`}>Forklift Operator needed for Ras Gharib Concession</p>
-                                                    <p className={`${styles.complete}`}>Completed</p>
+                                                    <p className={`${styles.job__para}`}>{t("Forklift Operator needed for Ras Gharib Concession")}</p>
+                                                    <p className={`${styles.complete}`}>{t("Completed")}</p>
                                                 </div>
                                             </div>
                                             <div className={`${styles.job__body}`}>
                                                 <div>
-                                                    <h3> Job Posted</h3>
+                                                    <h3>{t("Job Posted")}</h3>
                                                     <p className={`${styles.job__date}`}> January 20, 2024 </p>
                                                 </div>
                                                 <div>
-                                                    <p className={`${styles.job__para}`}>Forklift Operator needed for Ras Gharib Concession</p>
-                                                    <p className={`${styles.complete}`}>Completed</p>
+                                                    <p className={`${styles.job__para}`}>{t("Forklift Operator needed for Ras Gharib Concession")}</p>
+                                                    <p className={`${styles.complete}`}>{t("Completed")}</p>
                                                 </div>
                                             </div>
                                             <div className={`${styles.job__body}`}>
                                                 <div>
-                                                    <h3> Job Posted</h3>
+                                                    <h3>{t("Job Posted")}</h3>
                                                     <p className={`${styles.job__date}`}> January 20, 2024 </p>
                                                 </div>
                                                 <div>
-                                                    <p className={`${styles.job__para}`}>Forklift Operator needed for Ras Gharib Concession</p>
-                                                    <p className={`${styles.complete}`}>Completed</p>
+                                                    <p className={`${styles.job__para}`}>{t("Forklift Operator needed for Ras Gharib Concession")}</p>
+                                                    <p className={`${styles.complete}`}>{t("Completed")}</p>
                                                 </div>
                                             </div>
                                             <div className={`${styles.job__body}`}>
                                                 <div>
-                                                    <h3> Job Posted</h3>
+                                                    <h3>{t("Job Posted")}</h3>
                                                     <p className={`${styles.job__date}`}> January 20, 2024 </p>
                                                 </div>
                                                 <div>
-                                                    <p className={`${styles.job__para}`}>Forklift Operator needed for Ras Gharib Concession</p>
-                                                    <p className={`${styles.complete}`}>Completed</p>
+                                                    <p className={`${styles.job__para}`}>{t("Forklift Operator needed for Ras Gharib Concession")}</p>
+                                                    <p className={`${styles.complete}`}>{t("Completed")}</p>
                                                 </div>
                                             </div>
                                         </div>
