@@ -63,8 +63,7 @@ function App() {
           <Route path='/carrier-profile' element={<CarrierProfile />} />
           <Route path='/other-wallet' element={<OtherWallet />} />
           <Route path='/confirm' element={<Confirm />} />
-          <Route path='/pay-wallet' element={<PayWallet />} />
-          
+          <Route path='/pay-wallet' element={<PayWallet />} /> 
         </Routes>
         <Footer />
       </BrowserRouter>
