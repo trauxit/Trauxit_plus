@@ -9,7 +9,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import i18next from 'i18next';
 import HttpApi from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
-
+import Store from './Redux/store';
+import { Provider } from 'react-redux';
 i18next
   .use(initReactI18next)
   .use(LanguageDetector)
@@ -32,7 +33,9 @@ i18next
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={Store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 

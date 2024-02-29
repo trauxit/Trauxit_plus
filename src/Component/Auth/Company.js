@@ -20,14 +20,13 @@ const Company = () => {
     });
     const [city, setCity] = useState('');
     const [method, setMethod] = useState('');
-    console.log(active)
     return (
         <>
             <Headersign />
             <section className={`stepper ${styles.sec}`}>
                 <h3 className={`${styles.regcom}`}>Registration</h3>
                 <p className={`${styles.reg__para}`}>Please select one of the two options</p>
-                <form onSubmit={form.onSubmit(console.log)}>
+                <form>
                     <Stepper active={active} color="orange" size="xs" onStepClick={setActive}>
                         <Stepper.Step label="" description="">
                             <h3 className={`${styles.info}`}>Company Information:</h3>
