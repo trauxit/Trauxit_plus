@@ -74,7 +74,7 @@ const Nav = (props) => {
                                 </svg>
                                 <input className={`${styles.inputBox}`} id="inputBox" type="text" placeholder={t("Search....")} />
                             </div>
-                            <div className={`${styles.notification__body}`}>
+                            {/*<div className={`${styles.notification__body}`}>
                                 <img alt='' src={white} className={`${styles.white2}`} />
                                 {languages.map(({ code, name }, index) => (
                                     <>
@@ -119,11 +119,8 @@ const Nav = (props) => {
                                         }
                                     </>
                                 ))}
-                                {/* <div className={`${styles.lang}`}>
-                                    <span>En</span>
-                                    <img alt='' src={lang} />
-                                </div> */}
-                            </div>
+                                
+                            </div>*/}
                             <div className={`${styles.notification__body}`}>
                                 <img alt='' src={white} className={`${styles.white2}`} />
                                 <img alt='' src={notification} className={styles.noti} />
