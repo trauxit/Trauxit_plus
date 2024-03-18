@@ -11,15 +11,7 @@ export const loginUser = createAsyncThunk(
 export const signupUser = createAsyncThunk(
     'user/signupUser',
     async (userCredentials) => {
-        const request = await axios.post(``, userCredentials);
-        const response = await request.data.data;
-        return response;
-    }
-);
-export const signupCompany = createAsyncThunk(
-    'user/signupCompany',
-    async (userCredentials) => {
-        const request = await axios.post(``, userCredentials);
+        const request = await axios.post(`http://35.181.26.123:3000/api/v1/user/signup`, userCredentials);
         const response = await request.data.data;
         return response;
     }
@@ -86,26 +78,6 @@ const userSlice = createSlice({
                 state.error = null;
             })
             .addCase(signupUser.rejected, (state, action) => {
-                state.loading = false;
-                state.usr = null;
-                console.log(action.error.message)
-                if (action.error.message === 'Request failed with status code 401') {
-                    state.error = 'Access Denied! Invalid Credentials';
-                } else {
-                    state.error = action.error.message
-                }
-            })
-            .addCase(signupCompany.pending, (state) => {
-                state.loading = true;
-                state.usr = null;
-                state.error = null;
-            })
-            .addCase(signupCompany.fulfilled, (state, action) => {
-                state.loading = false;
-                state.usr = action.payload;
-                state.error = null;
-            })
-            .addCase(signupCompany.rejected, (state, action) => {
                 state.loading = false;
                 state.usr = null;
                 console.log(action.error.message)

@@ -55,7 +55,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-           <Route element={<Protectpages />}>
+           
             <Route path="/" element={<Dashboard />} />
             <Route path="/insights" element={<Insight />} />
             <Route path="/applications" element={<Application />} />
@@ -68,8 +68,6 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/shipment-details/:id" element={<ShipmentDetails />} />
             <Route path="/create-shipment" element={<CreateShipment />} />
-            <Route path="/user" element={<User />} />
-            <Route path="/jobs" element={<Jobs />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/top-up' element={<TopUp />} />
             <Route path='/pay-invoice' element={<PayInvoice />} />
@@ -80,7 +78,7 @@ function App() {
             <Route path='/other-wallet' element={<OtherWallet />} />
             <Route path='/confirm' element={<Confirm />} />
             <Route path='/pay-wallet' element={<PayWallet />} />
-          </Route> 
+          
           <Route path='/signup' element={<Signup />} />
           <Route path='/ascompany' element={<Company />} />
           <Route path='asindividual' element={<Personal />} />
